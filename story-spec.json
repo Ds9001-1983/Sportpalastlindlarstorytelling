@@ -1,0 +1,326 @@
+{
+  "project": "sportpalast-lindlar-storytelling",
+  "type": "scrollytelling_premium",
+  "client": {
+    "brand": "Sportpalast Lindlar",
+    "industry": "Premium-Fitnessstudio / Oberbergischer Kreis",
+    "language": "de",
+    "existingUrl": "https://www.sportpalast-lindlar.de",
+    "logoPath": null,
+    "brandColors": ["#0e0e0f", "#f4f1ea", "#e0a23c"]
+  },
+  "i18n": {
+    "locales": ["de", "en", "tr", "ru"],
+    "defaultLocale": "de"
+  },
+  "story": {
+    "archetype": "transformation",
+    "leitmetapher": "Werde deine beste Version",
+    "emotionalCurve": [
+      "ankommen",
+      "entschluss",
+      "anstrengung",
+      "energie",
+      "staerke",
+      "ruhe",
+      "stolz",
+      "zugehoerigkeit"
+    ],
+    "ctaLogic": "delayed_after_arrival",
+    "totalRooms": 8
+  },
+  "rooms": [
+    {
+      "id": "ankunft",
+      "order": 1,
+      "duration_vh": 300,
+      "beat": "Dein Neustart beginnt",
+      "subline": "Lichtdurchflutete Glasarchitektur mit Blick ins Oberbergische.",
+      "assetId": "seq_ankunft"
+    },
+    {
+      "id": "entschluss",
+      "order": 2,
+      "duration_vh": 250,
+      "beat": "Der erste Schritt",
+      "subline": "Du triffst die Entscheidung – wir gehen den Weg mit dir.",
+      "assetId": "seq_entschluss"
+    },
+    {
+      "id": "kraft_egym",
+      "order": 3,
+      "duration_vh": 250,
+      "beat": "Kraft, die zaehlt",
+      "subline": "eGym, Freihantel und Plate-Loaded – Training mit System.",
+      "assetId": "seq_kraft_egym"
+    },
+    {
+      "id": "kurse_energie",
+      "order": 4,
+      "duration_vh": 250,
+      "beat": "Energie im Kollektiv",
+      "subline": "Über 30 Kurse pro Woche – Bewegung, die ansteckt.",
+      "assetId": "seq_kurse_energie"
+    },
+    {
+      "id": "functional",
+      "order": 5,
+      "duration_vh": 250,
+      "beat": "Geh ans Limit",
+      "subline": "Athletic Box und Functional Training für echte Leistung.",
+      "assetId": "seq_functional"
+    },
+    {
+      "id": "regeneration",
+      "order": 6,
+      "duration_vh": 250,
+      "beat": "Komm zur Ruhe",
+      "subline": "250 m² Sauna & Wellness – Regeneration als Teil des Trainings.",
+      "assetId": "seq_regeneration"
+    },
+    {
+      "id": "verwandlung",
+      "order": 7,
+      "duration_vh": 300,
+      "beat": "Deine beste Version",
+      "subline": "Sichtbar stärker, spürbar selbstbewusster.",
+      "assetId": "seq_verwandlung"
+    },
+    {
+      "id": "ankunft_ziel",
+      "order": 8,
+      "duration_vh": 300,
+      "beat": "Willkommen zu Hause",
+      "subline": "Zwei Standorte, ein Ziel: dein Weg, dein Erfolg.",
+      "assetId": "seq_ankunft_ziel"
+    }
+  ],
+  "assets": [
+    {
+      "id": "seq_ankunft",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Wide exterior of a modern glass-fronted fitness building at dawn in the green hills of the German Oberberg region, warm low sun, mist over the valley, accent uplighting in amber gold #e0a23c on the entrance, shot on 35mm Kodak Portra 400, natural film grain, practical light",
+          "negative": "no plastic textures, no glassy reflections overdone, no over-saturation, no AI artifacts, no warped architecture",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Slow camera dolly forward toward the glowing glass entrance, mist drifting, light blooming softly, no zoom, smooth steady motion",
+          "genre": "drama",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_entschluss",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "A determined person stepping through tall sunlit glass doors into a bright fitness lobby, gym bag on shoulder, golden morning light from window source, warm amber #e0a23c reflections, 35mm film, natural skin texture with grain",
+          "negative": "no plastic skin, no glassy eyes, no perfect symmetry, no AI artifacts",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Camera tracks with the person as they walk in, fabric of jacket moves naturally, light shifts across face, calm confident pace",
+          "genre": "drama",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_kraft_egym",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Focused athlete training on a sleek strength machine in a spacious modern gym hall, warm hall lighting, sweat detail on skin, amber gold #e0a23c rim light, shot on 35mm, natural grain, shallow depth of field",
+          "negative": "no plastic skin, no over-saturation, no AI artifacts, no distorted equipment",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Tight handheld push-in on controlled rep, muscle tension, weight stack moving, breath visible, energetic but grounded",
+          "genre": "action",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_kurse_energie",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Group fitness class mid-movement in a bright studio with large windows, diverse people in sync, motion energy, warm practical lighting with amber gold #e0a23c accents, 35mm film grain",
+          "negative": "no plastic skin, no identical faces, no over-saturation, no AI artifacts",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Camera arcs across the class as bodies move in rhythm, hair and fabric flutter, dynamic but smooth crane-like motion",
+          "genre": "action",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_functional",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Athlete doing functional training with battle ropes inside an athletic box area, chalk dust in air, dramatic side light, amber gold #e0a23c highlights, 35mm film, natural sweat and grain",
+          "negative": "no plastic skin, no over-saturation, no AI artifacts, no floating objects",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Slow-motion ropes waving, dust particles drifting in light beams, athlete bracing, intense controlled effort",
+          "genre": "action",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_regeneration",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Calm sauna and wellness area with warm wooden panels, soft steam, low golden light, a person relaxing, amber gold #e0a23c glow, 35mm film grain, intimate quiet mood",
+          "negative": "no plastic textures, no over-saturation, no AI artifacts, no harsh light",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Steam drifts upward slowly, light flickers gently, very slow drifting camera, restful breathing pace",
+          "genre": "drama",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_verwandlung",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Confident person standing tall in the gym, stronger posture, soft top light from above, warm amber gold #e0a23c key light, proud calm expression, 35mm film, natural skin texture with grain",
+          "negative": "no plastic skin, no glassy eyes, no over-saturation, no AI artifacts",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Very slow push-in on the face and posture as light grows warmer, subtle exhale, sense of arrival and pride",
+          "genre": "drama",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    },
+    {
+      "id": "seq_ankunft_ziel",
+      "type": "frame_sequence",
+      "generation": {
+        "keyframe": {
+          "model": "soul_cinematic",
+          "prompt": "Wide cinematic shot of the gym interior opening toward large windows with the green Oberberg landscape beyond, people training in the distance, golden hour light, amber gold #e0a23c warmth, 35mm film grain",
+          "negative": "no plastic textures, no over-saturation, no AI artifacts, no warped perspective",
+          "aspectRatio": "16:9"
+        },
+        "motion": {
+          "model": "seedance_2_0",
+          "prompt": "Wide crane move pulling back to reveal the full space and the view outside, warm light flooding in, expansive and welcoming",
+          "genre": "epic",
+          "duration": 5,
+          "fps": 30
+        }
+      },
+      "output": { "desktop": {}, "mobile": {} }
+    }
+  ],
+  "modules": [
+    { "type": "angebote_cards", "after": "ankunft_ziel" },
+    { "type": "social_proof", "after": "angebote_cards" },
+    { "type": "mitglieds_cta", "after": "social_proof" },
+    { "type": "team_kontakt", "after": "mitglieds_cta" }
+  ],
+  "performanceBudget": {
+    "lcp_max_ms": 3000,
+    "cls_max": 0.1,
+    "inp_max_ms": 200,
+    "initial_js_kb_max": 250,
+    "total_mb_max": 8,
+    "frameSequenceDesktopMB_max": 25,
+    "frameKeyframesMobileMB_max": 3,
+    "lighthouseScore_min": 75,
+    "accessibilityScore_min": 95
+  },
+  "qaChecks": {
+    "stufe": 2,
+    "breakpoints": [375, 768, 1024, 1280, 1536],
+    "scrollPositions": [0, 0.25, 0.5, 0.75, 1]
+  },
+  "tracking": {
+    "consent": {
+      "provider": "custom",
+      "deferTrackingUntilConsent": true
+    },
+    "google": { "ga4MeasurementId": null, "gtmContainerId": null },
+    "meta": { "pixelId": null, "capiToken": null }
+  },
+  "seo": {
+    "title": "Sportpalast Lindlar — Werde deine beste Version",
+    "description": "Premium-Fitnessstudio im Oberbergischen: eGym, über 30 Kurse, Sauna & Wellness, Physio. Werde deine beste Version – ab 39,95 €/Monat.",
+    "structuredData": {
+      "type": "SportsActivityLocation",
+      "additional": ["ExerciseGym", "LocalBusiness"]
+    },
+    "hreflang": [
+      { "lang": "de", "url": "https://www.sportpalast-lindlar.de/de" },
+      { "lang": "en", "url": "https://www.sportpalast-lindlar.de/en" },
+      { "lang": "tr", "url": "https://www.sportpalast-lindlar.de/tr" },
+      { "lang": "ru", "url": "https://www.sportpalast-lindlar.de/ru" }
+    ]
+  },
+  "versioning": {
+    "current": "0.1.0",
+    "created": "2026-05-21T00:00:00Z",
+    "lastModified": "2026-05-21T00:00:00Z",
+    "status": "draft",
+    "changelog": [
+      {
+        "version": "0.1.0",
+        "date": "2026-05-21",
+        "changes": [
+          "Story-Spec initialisiert (Variante A – Transformation, 8 Rooms)",
+          "Mehrsprachigkeit de/en/tr/ru festgelegt"
+        ]
+      }
+    ]
+  },
+  "deploy": {
+    "platform": "vercel",
+    "plan": "pro",
+    "domain": "sportpalast-lindlar.de",
+    "region": "fra1"
+  }
+}

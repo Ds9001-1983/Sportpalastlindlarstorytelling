@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Sportpalast Lindlar — Become your best self",
+    "description": "Premium fitness club in the Oberberg region: eGym, 30+ classes, sauna & wellness, physiotherapy. Become your best self – from €39.95/month."
+  },
+  "nav": {
+    "offers": "What we offer",
+    "membership": "Become a member",
+    "contact": "Contact",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "hero": {
+    "brand": "Sportpalast Lindlar",
+    "claim": "Your path · your goal · our support",
+    "scrollHint": "Scroll",
+    "rooms": {
+      "ankunft": {
+        "beat": "Your fresh start begins",
+        "subline": "Light-flooded glass architecture with a view across the Oberberg hills."
+      },
+      "entschluss": {
+        "beat": "The first step",
+        "subline": "You make the decision – we walk the path with you."
+      },
+      "kraft_egym": {
+        "beat": "Strength that counts",
+        "subline": "eGym, free weights and plate-loaded – training with a system."
+      },
+      "kurse_energie": {
+        "beat": "Energy in the group",
+        "subline": "More than 30 classes a week – movement that's contagious."
+      },
+      "functional": {
+        "beat": "Go to your limit",
+        "subline": "Athletic box and functional training for real performance."
+      },
+      "regeneration": {
+        "beat": "Find your calm",
+        "subline": "250 m² sauna & wellness – recovery as part of the training."
+      },
+      "verwandlung": {
+        "beat": "Your best self",
+        "subline": "Visibly stronger, noticeably more confident."
+      },
+      "ankunft_ziel": {
+        "beat": "Welcome home",
+        "subline": "Two locations, one goal: your path, your success."
+      }
+    }
+  },
+  "offers": {
+    "kicker": "All included",
+    "heading": "A palace for your training",
+    "subheading": "2,000 m² of training space, 250 m² of wellness and a team that knows you.",
+    "items": {
+      "egym": {
+        "title": "eGym & strength",
+        "text": "Smart strength training with eGym, free weights and plate-loaded machines."
+      },
+      "ausdauer": {
+        "title": "Cardio & Vibrafit",
+        "text": "A modern cardio world and Vibrafit training for endurance and metabolism."
+      },
+      "kurse": {
+        "title": "30+ classes",
+        "text": "From athletic to lady fitness – more than 30 classes scheduled every week."
+      },
+      "functional": {
+        "title": "Functional & athletic box",
+        "text": "Open floors, battle ropes and an athletic box for functional training."
+      },
+      "wellness": {
+        "title": "Sauna & wellness",
+        "text": "250 m² of sauna and wellness – recovery that belongs to the experience."
+      },
+      "physio": {
+        "title": "Physio & rehab sports",
+        "text": "Integrated physiotherapy and rehab sports for lasting health."
+      }
+    }
+  },
+  "proof": {
+    "kicker": "Real voices",
+    "heading": "What our members experience",
+    "ratingLabel": "Average rating",
+    "items": [
+      {
+        "quote": "State-of-the-art equipment, a team that cares and a view that makes every workout better. I love coming here every day.",
+        "name": "Sandra K.",
+        "role": "Member since 2022"
+      },
+      {
+        "quote": "The classes are incredible – over 30 a week, something for every level. And the sauna afterwards. Perfect.",
+        "name": "Murat D.",
+        "role": "Member since 2021"
+      },
+      {
+        "quote": "After my rehab I simply stayed at the club. Physio and training under one roof – exactly what I wanted.",
+        "name": "Heike B.",
+        "role": "Member since 2023"
+      }
+    ]
+  },
+  "membership": {
+    "kicker": "Join us",
+    "heading": "Start your transformation",
+    "text": "All training types, 30+ classes, sauna, body analysis and access to both clubs – all included.",
+    "priceLabel": "Membership",
+    "priceValue": "from €39.95",
+    "priceSuffix": "/ month",
+    "bullets": [
+      "All training areas & 30+ classes",
+      "250 m² sauna & wellness included",
+      "Body analysis & My Sports app",
+      "Access to Lindlar and Meinerzhagen",
+      "Free drinks flat included"
+    ],
+    "ctaPrimary": "Book a trial session",
+    "ctaSecondary": "Ask via WhatsApp"
+  },
+  "contact": {
+    "kicker": "Drop by",
+    "heading": "Two locations in the Oberberg region",
+    "hoursHeading": "Opening hours",
+    "hours": [
+      { "days": "Mon & Fri", "time": "08:00 – 22:00" },
+      { "days": "Tue – Thu", "time": "07:00 – 22:00" },
+      { "days": "Sat & Sun", "time": "09:00 – 19:00" }
+    ],
+    "phoneLabel": "Call us",
+    "phoneDisplay": "+49 2266 470206",
+    "whatsappLabel": "Physio via WhatsApp",
+    "directionsLabel": "Get directions",
+    "locations": {
+      "lindlar": {
+        "name": "Sportpalast Lindlar",
+        "address": "Lindlar, Oberberg district"
+      },
+      "meinerzhagen": {
+        "name": "Sportpalast Meinerzhagen",
+        "address": "Meinerzhagen"
+      }
+    },
+    "parking": "120+ free parking spaces"
+  },
+  "footer": {
+    "claim": "Become your best self.",
+    "rights": "All rights reserved.",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  }
+}

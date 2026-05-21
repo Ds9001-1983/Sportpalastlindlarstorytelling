@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Sportpalast Lindlar — En iyi haline dönüş",
+    "description": "Oberberg bölgesinde premium fitness kulübü: eGym, 30'dan fazla ders, sauna & wellness, fizyoterapi. En iyi halin ol – aylık 39,95 €'dan itibaren."
+  },
+  "nav": {
+    "offers": "Sunduklarımız",
+    "membership": "Üye ol",
+    "contact": "İletişim",
+    "language": "Dil",
+    "skipToContent": "İçeriğe geç"
+  },
+  "hero": {
+    "brand": "Sportpalast Lindlar",
+    "claim": "Senin yolun · senin hedefin · bizim desteğimiz",
+    "scrollHint": "Kaydır",
+    "rooms": {
+      "ankunft": {
+        "beat": "Yeni başlangıcın burada",
+        "subline": "Oberberg tepelerine bakan, ışıkla dolu cam mimari."
+      },
+      "entschluss": {
+        "beat": "İlk adım",
+        "subline": "Kararı sen ver – yolu birlikte yürüyelim."
+      },
+      "kraft_egym": {
+        "beat": "Önemli olan güç",
+        "subline": "eGym, serbest ağırlık ve plate-loaded – sistemli antrenman."
+      },
+      "kurse_energie": {
+        "beat": "Toplulukta enerji",
+        "subline": "Haftada 30'dan fazla ders – bulaşıcı bir hareket."
+      },
+      "functional": {
+        "beat": "Sınırına git",
+        "subline": "Athletic box ve fonksiyonel antrenmanla gerçek performans."
+      },
+      "regeneration": {
+        "beat": "Huzura kavuş",
+        "subline": "250 m² sauna & wellness – antrenmanın bir parçası olarak dinlenme."
+      },
+      "verwandlung": {
+        "beat": "En iyi halin",
+        "subline": "Gözle görülür daha güçlü, hissedilir daha özgüvenli."
+      },
+      "ankunft_ziel": {
+        "beat": "Evine hoş geldin",
+        "subline": "İki lokasyon, tek hedef: senin yolun, senin başarın."
+      }
+    }
+  },
+  "offers": {
+    "kicker": "Hepsi dahil",
+    "heading": "Antrenmanın için bir saray",
+    "subheading": "2.000 m² antrenman alanı, 250 m² wellness ve seni tanıyan bir ekip.",
+    "items": {
+      "egym": {
+        "title": "eGym & güç",
+        "text": "eGym, serbest ağırlık ve plate-loaded cihazlarla akıllı güç antrenmanı."
+      },
+      "ausdauer": {
+        "title": "Kardiyo & Vibrafit",
+        "text": "Dayanıklılık ve metabolizma için modern kardiyo dünyası ve Vibrafit."
+      },
+      "kurse": {
+        "title": "30+ ders",
+        "text": "Athletic'ten Lady Fitness'a – her hafta 30'dan fazla ders programda."
+      },
+      "functional": {
+        "title": "Fonksiyonel & athletic box",
+        "text": "Açık alanlar, battle rope ve fonksiyonel antrenman için athletic box."
+      },
+      "wellness": {
+        "title": "Sauna & wellness",
+        "text": "250 m² sauna ve wellness – deneyimin bir parçası olan dinlenme."
+      },
+      "physio": {
+        "title": "Fizyo & rehab spor",
+        "text": "Kalıcı sağlık için entegre fizyoterapi ve rehabilitasyon sporu."
+      }
+    }
+  },
+  "proof": {
+    "kicker": "Gerçek sesler",
+    "heading": "Üyelerimiz neler yaşıyor",
+    "ratingLabel": "Ortalama puan",
+    "items": [
+      {
+        "quote": "En modern cihazlar, ilgilenen bir ekip ve her antrenmanı güzelleştiren bir manzara. Her gün gelmeyi seviyorum.",
+        "name": "Sandra K.",
+        "role": "2022'den beri üye"
+      },
+      {
+        "quote": "Dersler inanılmaz – haftada 30'dan fazla, her seviyeye uygun. Sonrasında da sauna. Mükemmel.",
+        "name": "Murat D.",
+        "role": "2021'den beri üye"
+      },
+      {
+        "quote": "Rehabilitasyondan sonra doğrudan kulüpte kaldım. Fizyo ve antrenman tek çatı altında – tam istediğim buydu.",
+        "name": "Heike B.",
+        "role": "2023'ten beri üye"
+      }
+    ]
+  },
+  "membership": {
+    "kicker": "Aramıza katıl",
+    "heading": "Dönüşümünü başlat",
+    "text": "Tüm antrenman türleri, 30+ ders, sauna, vücut analizi ve iki kulübe de erişim – hepsi dahil.",
+    "priceLabel": "Üyelik",
+    "priceValue": "39,95 €'dan",
+    "priceSuffix": "/ ay",
+    "bullets": [
+      "Tüm antrenman alanları & 30+ ders",
+      "250 m² sauna & wellness dahil",
+      "Vücut analizi & My Sports uygulaması",
+      "Lindlar ve Meinerzhagen'e erişim",
+      "Sınırsız içecek dahil"
+    ],
+    "ctaPrimary": "Deneme antrenmanı ayarla",
+    "ctaSecondary": "WhatsApp'tan sor"
+  },
+  "contact": {
+    "kicker": "Bize uğra",
+    "heading": "Oberberg bölgesinde iki lokasyon",
+    "hoursHeading": "Çalışma saatleri",
+    "hours": [
+      { "days": "Pzt & Cum", "time": "08:00 – 22:00" },
+      { "days": "Sal – Per", "time": "07:00 – 22:00" },
+      { "days": "Cmt & Paz", "time": "09:00 – 19:00" }
+    ],
+    "phoneLabel": "Ara",
+    "phoneDisplay": "+49 2266 470206",
+    "whatsappLabel": "WhatsApp ile fizyo",
+    "directionsLabel": "Yol tarifi al",
+    "locations": {
+      "lindlar": {
+        "name": "Sportpalast Lindlar",
+        "address": "Lindlar, Oberberg bölgesi"
+      },
+      "meinerzhagen": {
+        "name": "Sportpalast Meinerzhagen",
+        "address": "Meinerzhagen"
+      }
+    },
+    "parking": "120+ ücretsiz park yeri"
+  },
+  "footer": {
+    "claim": "En iyi halin ol.",
+    "rights": "Tüm hakları saklıdır.",
+    "imprint": "Künye",
+    "privacy": "Gizlilik",
+    "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  }
+}

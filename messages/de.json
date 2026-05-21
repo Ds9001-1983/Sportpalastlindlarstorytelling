@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Sportpalast Lindlar — Werde deine beste Version",
+    "description": "Premium-Fitnessstudio im Oberbergischen: eGym, über 30 Kurse, Sauna & Wellness, Physiotherapie. Werde deine beste Version – ab 39,95 €/Monat."
+  },
+  "nav": {
+    "offers": "Angebot",
+    "membership": "Mitglied werden",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "skipToContent": "Zum Inhalt springen"
+  },
+  "hero": {
+    "brand": "Sportpalast Lindlar",
+    "claim": "Dein Weg · dein Ziel · unser Support",
+    "scrollHint": "Scrollen",
+    "rooms": {
+      "ankunft": {
+        "beat": "Dein Neustart beginnt",
+        "subline": "Lichtdurchflutete Glasarchitektur mit Blick ins Oberbergische."
+      },
+      "entschluss": {
+        "beat": "Der erste Schritt",
+        "subline": "Du triffst die Entscheidung – wir gehen den Weg mit dir."
+      },
+      "kraft_egym": {
+        "beat": "Kraft, die zählt",
+        "subline": "eGym, Freihantel und Plate-Loaded – Training mit System."
+      },
+      "kurse_energie": {
+        "beat": "Energie im Kollektiv",
+        "subline": "Über 30 Kurse pro Woche – Bewegung, die ansteckt."
+      },
+      "functional": {
+        "beat": "Geh ans Limit",
+        "subline": "Athletic Box und Functional Training für echte Leistung."
+      },
+      "regeneration": {
+        "beat": "Komm zur Ruhe",
+        "subline": "250 m² Sauna & Wellness – Regeneration als Teil des Trainings."
+      },
+      "verwandlung": {
+        "beat": "Deine beste Version",
+        "subline": "Sichtbar stärker, spürbar selbstbewusster."
+      },
+      "ankunft_ziel": {
+        "beat": "Willkommen zu Hause",
+        "subline": "Zwei Standorte, ein Ziel: dein Weg, dein Erfolg."
+      }
+    }
+  },
+  "offers": {
+    "kicker": "Alles drin",
+    "heading": "Ein Palast für dein Training",
+    "subheading": "2000 m² Trainingsfläche, 250 m² Wellness und ein Team, das dich kennt.",
+    "items": {
+      "egym": {
+        "title": "eGym & Kraft",
+        "text": "Intelligentes Krafttraining mit eGym, Freihanteln und Plate-Loaded-Geräten."
+      },
+      "ausdauer": {
+        "title": "Ausdauer & Vibrafit",
+        "text": "Moderne Cardio-Welt und Vibrafit-Training für Kondition und Stoffwechsel."
+      },
+      "kurse": {
+        "title": "Über 30 Kurse",
+        "text": "Von Athletic bis Lady Fitness – jede Woche über 30 Kurse im Plan."
+      },
+      "functional": {
+        "title": "Functional & Athletic Box",
+        "text": "Freie Flächen, Battle Ropes und Athletic Box für funktionelles Training."
+      },
+      "wellness": {
+        "title": "Sauna & Wellness",
+        "text": "250 m² Sauna- und Wellnessbereich – Regeneration, die dazugehört."
+      },
+      "physio": {
+        "title": "Physio & Rehasport",
+        "text": "Angebundene Physiotherapie und Rehasport für nachhaltige Gesundheit."
+      }
+    }
+  },
+  "proof": {
+    "kicker": "Echte Stimmen",
+    "heading": "Was unsere Mitglieder erleben",
+    "ratingLabel": "Durchschnittliche Bewertung",
+    "items": [
+      {
+        "quote": "Modernste Geräte, ein Team das sich kümmert und ein Ausblick, der jedes Training besser macht. Ich komme jeden Tag gern.",
+        "name": "Sandra K.",
+        "role": "Mitglied seit 2022"
+      },
+      {
+        "quote": "Die Kurse sind der Wahnsinn – über 30 pro Woche, für jedes Level etwas. Und danach in die Sauna. Perfekt.",
+        "name": "Murat D.",
+        "role": "Mitglied seit 2021"
+      },
+      {
+        "quote": "Nach meiner Reha bin ich direkt im Studio geblieben. Physio und Training unter einem Dach – genau das wollte ich.",
+        "name": "Heike B.",
+        "role": "Mitglied seit 2023"
+      }
+    ]
+  },
+  "membership": {
+    "kicker": "Werde Teil",
+    "heading": "Starte deine Verwandlung",
+    "text": "Alle Trainingsarten, über 30 Kurse, Sauna, Körperanalyse und Zugang zu beiden Studios – inklusive.",
+    "priceLabel": "Mitgliedschaft",
+    "priceValue": "ab 39,95 €",
+    "priceSuffix": "/ Monat",
+    "bullets": [
+      "Alle Trainingsbereiche & über 30 Kurse",
+      "250 m² Sauna & Wellness inklusive",
+      "Körperanalyse & My-Sports-App",
+      "Zugang zu Lindlar und Meinerzhagen",
+      "Getränkeflat inklusive"
+    ],
+    "ctaPrimary": "Probetraining vereinbaren",
+    "ctaSecondary": "Per WhatsApp anfragen"
+  },
+  "contact": {
+    "kicker": "Komm vorbei",
+    "heading": "Zwei Standorte im Oberbergischen",
+    "hoursHeading": "Öffnungszeiten",
+    "hours": [
+      { "days": "Mo & Fr", "time": "08:00 – 22:00 Uhr" },
+      { "days": "Di – Do", "time": "07:00 – 22:00 Uhr" },
+      { "days": "Sa & So", "time": "09:00 – 19:00 Uhr" }
+    ],
+    "phoneLabel": "Anrufen",
+    "phoneDisplay": "+49 2266 470206",
+    "whatsappLabel": "Physio per WhatsApp",
+    "directionsLabel": "Route planen",
+    "locations": {
+      "lindlar": {
+        "name": "Sportpalast Lindlar",
+        "address": "Lindlar, Oberbergischer Kreis"
+      },
+      "meinerzhagen": {
+        "name": "Sportpalast Meinerzhagen",
+        "address": "Meinerzhagen"
+      }
+    },
+    "parking": "120+ kostenfreie Parkplätze"
+  },
+  "footer": {
+    "claim": "Werde deine beste Version.",
+    "rights": "Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  }
+}

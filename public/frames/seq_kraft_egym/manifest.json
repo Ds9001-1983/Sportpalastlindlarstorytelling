@@ -1,0 +1,10 @@
+{
+  "id": "seq_kraft_egym",
+  "frameCount": 81,
+  "fps": 16,
+  "width": 1280,
+  "height": 720,
+  "format": "webp",
+  "filenamePattern": "frame_{N:03d}.webp",
+  "publicUrl": "/frames/seq_kraft_egym"
+}

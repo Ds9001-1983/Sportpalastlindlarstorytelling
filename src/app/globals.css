@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/*
+  Sportpalast Lindlar — Brand Tokens
+  Cinematic Dark + Gold-Akzent (Thema "Palast", bewusst abseits des Neon-Gym-Klischees).
+  Akzent-Hex ist als Premium-Platzhalter gesetzt und wird am echten Logo final verifiziert.
+*/
+:root {
+  --ink: #0e0e0f;          /* warmes Schwarz, Haupt-Hintergrund */
+  --ink-soft: #16161a;     /* abgesetzte Flächen */
+  --ink-line: #26262c;     /* Borders auf Dark */
+  --paper: #f4f1ea;        /* off-white, helle Sektionen */
+  --paper-dim: #d9d4c7;    /* gedämpftes Beige */
+  --gold: #e0a23c;         /* Akzent (Energie/Premium) */
+  --gold-bright: #f4bd5b;  /* hellerer Akzent für Glows/Hover */
+  --gold-ink: #6b4a12;     /* Gold-Text auf hellem Grund (Kontrast) */
+  --stone: #8a857a;        /* Sekundärtext */
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-line: var(--ink-line);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-ink: var(--gold-ink);
+  --color-stone: var(--stone);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+html {
+  background: var(--ink);
+  color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Lenis: verhindert FOUC beim Smooth-Scroll-Init */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Display-Headlines */
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+/* Reduced-Motion: alle scrub-/transform-Effekte ruhigstellen */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: Text-Overlay-Lesbarkeit über Bild/Canvas */
+.text-scrim {
+  background: linear-gradient(
+    to top,
+    rgba(8, 8, 9, 0.85) 0%,
+    rgba(8, 8, 9, 0.45) 45%,
+    rgba(8, 8, 9, 0) 100%
+  );
+}
