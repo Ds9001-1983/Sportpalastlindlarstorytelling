@@ -15,6 +15,12 @@
   --gold-bright: #f4bd5b;  /* hellerer Akzent für Glows/Hover */
   --gold-ink: #6b4a12;     /* Gold-Text auf hellem Grund (Kontrast) */
   --stone: #8a857a;        /* Sekundärtext */
+  --promo-h: 0px;          /* Höhe des Promo-Banners (vom Banner-JS gesetzt) */
+}
+
+/* Anchor-Ziele unter dem fixierten Header/Banner ausrichten */
+[id] {
+  scroll-margin-top: calc(5rem + var(--promo-h));
 }
 
 @theme inline {
@@ -77,6 +83,20 @@ html.lenis body {
   }
 }
 
+/*
+  Fokus-Indikator (WCAG 2.4.7 / BFSG).
+  Konvention: --gold nur auf dunklem Grund, --gold-ink auf hellem Grund.
+  Helle Sektionen setzen .on-paper, um den Ring kontraststark umzufärben.
+*/
+:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.on-paper :focus-visible {
+  outline-color: var(--gold-ink);
+}
+
 /* Utility: Text-Overlay-Lesbarkeit über Bild/Canvas */
 .text-scrim {
   background: linear-gradient(
@@ -85,4 +105,58 @@ html.lenis body {
     rgba(8, 8, 9, 0.45) 45%,
     rgba(8, 8, 9, 0) 100%
   );
+}
+
+/* Wiederkehrender Gold-Hairline-Separator zwischen Sektionen */
+.gold-hairline {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(224, 162, 60, 0.35) 50%,
+    transparent 100%
+  );
+}
+
+/*
+  Dezentes Filmkorn: schlägt die Brücke zwischen Hero-Frames und statischem UI.
+  Als globaler, nicht-interaktiver Fixed-Layer. Auf reduced-motion ausgeblendet,
+  damit flimmer-empfindliche Nutzer:innen nicht gestört werden.
+*/
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (prefers-reduced-motion: reduce) {
+  .grain::after {
+    display: none;
+  }
+}
+
+/* Subtiler Paper-Verlauf, damit helle Flächen nicht tot/flach wirken */
+.paper-glow {
+  background:
+    radial-gradient(
+      120% 80% at 50% 0%,
+      rgba(224, 162, 60, 0.05) 0%,
+      transparent 55%
+    ),
+    var(--paper);
+}
+
+/*
+  Reveal-Fundament: Initial-States werden ausschließlich per JS (gsap.set) im
+  no-preference-Branch gesetzt — niemals hier via opacity:0. So bleibt der Inhalt
+  bei deaktiviertem JS / reduced-motion / Crawlern sichtbar (Progressive Enhancement).
+  will-change nur als Hinweis.
+*/
+[data-reveal] {
+  will-change: transform, opacity;
 }

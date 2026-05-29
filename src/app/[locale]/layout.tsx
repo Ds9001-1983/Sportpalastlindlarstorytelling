@@ -52,6 +52,11 @@ export async function generateMetadata({
       url: `/${locale}`,
       locale,
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
+    },
     robots: { index: true, follow: true },
   };
 }
@@ -74,7 +79,7 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${display.variable} ${body.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-ink text-paper">
+      <body className="grain min-h-full bg-ink text-paper">
         <NextIntlClientProvider>
           <LenisProvider>{children}</LenisProvider>
         </NextIntlClientProvider>

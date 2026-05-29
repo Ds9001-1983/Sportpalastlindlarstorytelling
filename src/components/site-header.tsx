@@ -18,7 +18,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-[var(--promo-h,0px)] z-50 transition-colors duration-300 ${
         scrolled
           ? 'border-b border-ink-line/60 bg-ink/85 backdrop-blur-md'
           : 'bg-linear-to-b from-ink/60 to-transparent'
@@ -39,6 +39,9 @@ export function SiteHeader() {
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-paper/80 md:flex">
+          <a href="#ziele" className="transition-colors hover:text-paper">
+            {t('goals')}
+          </a>
           <a href="#angebot" className="transition-colors hover:text-paper">
             {t('offers')}
           </a>

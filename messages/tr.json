@@ -5,13 +5,21 @@
   },
   "nav": {
     "offers": "Sunduklarımız",
+    "goals": "Hedefler",
     "membership": "Üye ol",
     "contact": "İletişim",
     "language": "Dil",
     "skipToContent": "İçeriğe geç"
   },
+  "promo": {
+    "badge": "3 ay 0,00 €",
+    "text": "Yaz kampanyası – her şey dahil, 2 lokasyon.",
+    "cta": "Hemen yararlan",
+    "dismiss": "Banner'ı kapat"
+  },
   "hero": {
     "brand": "Sportpalast Lindlar",
+    "h1": "Sportpalast Lindlar – Oberberg bölgesinde premium fitness kulübü. En iyi halin ol.",
     "claim": "Senin yolun · senin hedefin · bizim desteğimiz",
     "scrollHint": "Kaydır",
     "rooms": {
@@ -25,7 +33,7 @@
       },
       "kraft_egym": {
         "beat": "Önemli olan güç",
-        "subline": "eGym, serbest ağırlık ve plate-loaded – sistemli antrenman."
+        "subline": "eGym, serbest ağırlık ve Plate-Loaded – sistemli antrenman."
       },
       "kurse_energie": {
         "beat": "Toplulukta enerji",
@@ -33,7 +41,7 @@
       },
       "functional": {
         "beat": "Sınırına git",
-        "subline": "Athletic box ve fonksiyonel antrenmanla gerçek performans."
+        "subline": "Athletic Box ve Functional antrenmanla gerçek performans."
       },
       "regeneration": {
         "beat": "Huzura kavuş",
@@ -49,34 +57,87 @@
       }
     }
   },
+  "stats": {
+    "kicker": "Rakamlarla saray",
+    "items": [
+      {
+        "to": "2000",
+        "suffix": " m²",
+        "label": "Antrenman alanı"
+      },
+      {
+        "to": "250",
+        "suffix": " m²",
+        "label": "Sauna & wellness"
+      },
+      {
+        "to": "120",
+        "suffix": "+",
+        "label": "Park yeri"
+      },
+      {
+        "to": "30",
+        "suffix": "+",
+        "label": "Ders / hafta"
+      },
+      {
+        "to": "2",
+        "suffix": "",
+        "label": "Lokasyon"
+      }
+    ]
+  },
+  "goals": {
+    "kicker": "Senin hedefin",
+    "heading": "Neye doğru antrenman yapıyorsun?",
+    "subheading": "Nereden başlarsan başla – seni oraya götürürüz. Hedefini seç ve başla.",
+    "items": {
+      "muskelaufbau": "Kas geliştirme & vücut sıkılaştırma",
+      "kondition": "Kondisyonu geliştirme",
+      "ruecken": "Sırt antrenmanı",
+      "alter": "Yaşlandıkça formda kalmak",
+      "gesundheit": "Sağlığı destekleme",
+      "stress": "Stres atma & denge",
+      "abnehmen": "Kilo verme"
+    }
+  },
   "offers": {
     "kicker": "Hepsi dahil",
     "heading": "Antrenmanın için bir saray",
     "subheading": "2.000 m² antrenman alanı, 250 m² wellness ve seni tanıyan bir ekip.",
+    "newTab": "yeni sekmede açılır",
     "items": {
       "egym": {
         "title": "eGym & güç",
-        "text": "eGym, serbest ağırlık ve plate-loaded cihazlarla akıllı güç antrenmanı."
+        "text": "eGym, serbest ağırlık, Plate-Loaded cihazları ve SECA vücut analiziyle akıllı güç antrenmanı."
+      },
+      "kurse": {
+        "title": "30'dan fazla ders",
+        "text": "Athletic'ten Lady Fitness'a, sırt fitness'ına kadar – her hafta 30'dan fazla ders programda."
       },
       "ausdauer": {
         "title": "Kardiyo & Vibrafit",
-        "text": "Dayanıklılık ve metabolizma için modern kardiyo dünyası ve Vibrafit."
-      },
-      "kurse": {
-        "title": "30+ ders",
-        "text": "Athletic'ten Lady Fitness'a – her hafta 30'dan fazla ders programda."
+        "text": "Modern kardiyo dünyası ve Vibrafit – kondisyon ve metabolizma için tüm vücut titreşim antrenmanı."
       },
       "functional": {
-        "title": "Fonksiyonel & athletic box",
-        "text": "Açık alanlar, battle rope ve fonksiyonel antrenman için athletic box."
+        "title": "Functional & Athletic Box",
+        "text": "Açık alanlar, Battle Ropes ve sınırda fonksiyonel antrenman için Athletic Box."
       },
       "wellness": {
         "title": "Sauna & wellness",
-        "text": "250 m² sauna ve wellness – deneyimin bir parçası olan dinlenme."
+        "text": "250 m² iç & dış sauna, Lounge & Café – dinlenme ve sınırsız içecek dahil."
+      },
+      "lady": {
+        "title": "Lady Fitness",
+        "text": "Kadınlara özel, korunaklı bir antrenman alanı – rahat hisset, güçlen."
+      },
+      "personal": {
+        "title": "Personal Training",
+        "text": "Kendi koçunla birebir takip – senin planın, senin hedeflerin, maksimum ilerleme."
       },
       "physio": {
-        "title": "Fizyo & rehab spor",
-        "text": "Kalıcı sağlık için entegre fizyoterapi ve rehabilitasyon sporu."
+        "title": "Fizyo & Rehasport",
+        "text": "Kalıcı sağlık için entegre fizyoterapi ve Rehasport (haftada 5 ders)."
       }
     }
   },
@@ -105,33 +166,47 @@
   "membership": {
     "kicker": "Aramıza katıl",
     "heading": "Dönüşümünü başlat",
-    "text": "Tüm antrenman türleri, 30+ ders, sauna, vücut analizi ve iki kulübe de erişim – hepsi dahil.",
-    "priceLabel": "Üyelik",
+    "text": "Tüm antrenman türleri, 30'dan fazla ders, sauna, vücut analizi ve iki kulübe de erişim – hepsi dahil.",
+    "promoBadge": "3 ay fitness 0,00 €",
+    "priceAfter": "sonrasında",
     "priceValue": "39,95 €'dan",
     "priceSuffix": "/ ay",
+    "bulletsHeading": "3 ücretsiz ayında dahil olanlar:",
     "bullets": [
-      "Tüm antrenman alanları & 30+ ders",
+      "Tüm antrenman alanları & 30'dan fazla ders",
       "250 m² sauna & wellness dahil",
-      "Vücut analizi & My Sports uygulaması",
+      "SECA vücut analizi & My-Sports-App",
       "Lindlar ve Meinerzhagen'e erişim",
       "Sınırsız içecek dahil"
     ],
-    "ctaPrimary": "Deneme antrenmanı ayarla",
-    "ctaSecondary": "WhatsApp'tan sor"
+    "ctaTrial": "Deneme antrenmanı ayarla",
+    "ctaCall": "Ara",
+    "promoNote": "Kampanya, mevcudiyete bağlıdır. Koşullar ve süre kulüpte.",
+    "newTab": "yeni sekmede açılır"
   },
   "contact": {
     "kicker": "Bize uğra",
     "heading": "Oberberg bölgesinde iki lokasyon",
     "hoursHeading": "Çalışma saatleri",
     "hours": [
-      { "days": "Pzt & Cum", "time": "08:00 – 22:00" },
-      { "days": "Sal – Per", "time": "07:00 – 22:00" },
-      { "days": "Cmt & Paz", "time": "09:00 – 19:00" }
+      {
+        "days": "Pzt & Cum",
+        "time": "08:00 – 22:00"
+      },
+      {
+        "days": "Sal – Per",
+        "time": "07:00 – 22:00"
+      },
+      {
+        "days": "Cmt & Paz",
+        "time": "09:00 – 19:00"
+      }
     ],
     "phoneLabel": "Ara",
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "WhatsApp ile fizyo",
     "directionsLabel": "Yol tarifi al",
+    "newTab": "yeni sekmede açılır",
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
@@ -147,8 +222,47 @@
   "footer": {
     "claim": "En iyi halin ol.",
     "rights": "Tüm hakları saklıdır.",
+    "discover": "Keşfet",
+    "membershipCol": "Üyelik",
+    "legalCol": "Hukuki",
+    "kursplan": "Ders programı",
+    "trial": "Deneme antrenmanı",
+    "about": "Hakkımızda",
     "imprint": "Künye",
     "privacy": "Gizlilik",
+    "terms": "Genel şartlar",
+    "withdrawal": "Cayma hakkı",
+    "houseRules": "İç tüzük",
+    "cancel": "Sözleşme feshi",
+    "newTab": "yeni sekmede açılır",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  },
+  "legal": {
+    "backHome": "Ana sayfaya dön",
+    "liveButton": "Tam metne git",
+    "note": "Hukuken bağlayıcı metin buraya eklenecektir. O zamana kadar metnin tamamını mevcut web sitemizde bulabilirsin.",
+    "newTab": "yeni sekmede açılır",
+    "docs": {
+      "impressum": {
+        "title": "Künye",
+        "intro": "§ 5 DDG uyarınca sağlayıcı bilgileri."
+      },
+      "datenschutz": {
+        "title": "Gizlilik",
+        "intro": "GDPR Madde 13 uyarınca verilerinin işlenmesine ilişkin bilgiler."
+      },
+      "agb": {
+        "title": "Genel şartlar",
+        "intro": "Üyelik ve kullanım için genel iş koşulları."
+      },
+      "widerruf": {
+        "title": "Cayma hakkı bildirimi",
+        "intro": "Mesafeli sözleşmede sözleşme kuruluşundaki cayma hakkın."
+      },
+      "hausordnung": {
+        "title": "İç tüzük",
+        "intro": "Sportpalast'ta iyi bir birliktelik için kurallar."
+      }
+    }
   }
 }

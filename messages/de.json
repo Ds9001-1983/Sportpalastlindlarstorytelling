@@ -5,13 +5,21 @@
   },
   "nav": {
     "offers": "Angebot",
+    "goals": "Ziele",
     "membership": "Mitglied werden",
     "contact": "Kontakt",
     "language": "Sprache",
     "skipToContent": "Zum Inhalt springen"
   },
+  "promo": {
+    "badge": "3 Monate für 0,00 €",
+    "text": "Sommeraktion – alles inklusive, 2 Standorte.",
+    "cta": "Jetzt sichern",
+    "dismiss": "Banner schließen"
+  },
   "hero": {
     "brand": "Sportpalast Lindlar",
+    "h1": "Sportpalast Lindlar – Premium-Fitnessstudio im Oberbergischen. Werde deine beste Version.",
     "claim": "Dein Weg · dein Ziel · unser Support",
     "scrollHint": "Scrollen",
     "rooms": {
@@ -49,34 +57,67 @@
       }
     }
   },
+  "stats": {
+    "kicker": "Der Palast in Zahlen",
+    "items": [
+      { "to": "2000", "suffix": " m²", "label": "Trainingsfläche" },
+      { "to": "250", "suffix": " m²", "label": "Sauna & Wellness" },
+      { "to": "120", "suffix": "+", "label": "Parkplätze" },
+      { "to": "30", "suffix": "+", "label": "Kurse / Woche" },
+      { "to": "2", "suffix": "", "label": "Standorte" }
+    ]
+  },
+  "goals": {
+    "kicker": "Dein Ziel",
+    "heading": "Worauf trainierst du hin?",
+    "subheading": "Egal wo du startest – wir bringen dich dahin. Wähle dein Ziel und leg los.",
+    "items": {
+      "muskelaufbau": "Muskelaufbau & Körperstraffung",
+      "kondition": "Kondition verbessern",
+      "ruecken": "Rückentraining",
+      "alter": "Fit bleiben im Alter",
+      "gesundheit": "Gesundheit fördern",
+      "stress": "Stress abbauen & Ausgleich",
+      "abnehmen": "Abnehmen"
+    }
+  },
   "offers": {
     "kicker": "Alles drin",
     "heading": "Ein Palast für dein Training",
     "subheading": "2000 m² Trainingsfläche, 250 m² Wellness und ein Team, das dich kennt.",
+    "newTab": "öffnet in neuem Tab",
     "items": {
       "egym": {
         "title": "eGym & Kraft",
-        "text": "Intelligentes Krafttraining mit eGym, Freihanteln und Plate-Loaded-Geräten."
-      },
-      "ausdauer": {
-        "title": "Ausdauer & Vibrafit",
-        "text": "Moderne Cardio-Welt und Vibrafit-Training für Kondition und Stoffwechsel."
+        "text": "Intelligentes Krafttraining mit eGym, Freihanteln, Plate-Loaded-Geräten und SECA-Körperanalyse."
       },
       "kurse": {
         "title": "Über 30 Kurse",
-        "text": "Von Athletic bis Lady Fitness – jede Woche über 30 Kurse im Plan."
+        "text": "Von Athletic über Lady Fitness bis Rückenfit – jede Woche über 30 Kurse im Plan."
+      },
+      "ausdauer": {
+        "title": "Ausdauer & Vibrafit",
+        "text": "Moderne Cardio-Welt und Vibrafit – Ganzkörper-Vibrationstraining für Kondition und Stoffwechsel."
       },
       "functional": {
         "title": "Functional & Athletic Box",
-        "text": "Freie Flächen, Battle Ropes und Athletic Box für funktionelles Training."
+        "text": "Freie Flächen, Battle Ropes und die Athletic Box für funktionelles Training am Limit."
       },
       "wellness": {
         "title": "Sauna & Wellness",
-        "text": "250 m² Sauna- und Wellnessbereich – Regeneration, die dazugehört."
+        "text": "250 m² Sauna innen & außen, Lounge & Café – Regeneration und Getränkeflat inklusive."
+      },
+      "lady": {
+        "title": "Lady Fitness",
+        "text": "Ein geschützter Trainingsbereich exklusiv für Frauen – wohlfühlen und stark werden."
+      },
+      "personal": {
+        "title": "Personal Training",
+        "text": "1:1-Betreuung mit eigenem Coach – dein Plan, deine Ziele, maximaler Fortschritt."
       },
       "physio": {
         "title": "Physio & Rehasport",
-        "text": "Angebundene Physiotherapie und Rehasport für nachhaltige Gesundheit."
+        "text": "Angebundene Physiotherapie und Rehasport (5 Kurse/Woche) für nachhaltige Gesundheit."
       }
     }
   },
@@ -106,18 +147,22 @@
     "kicker": "Werde Teil",
     "heading": "Starte deine Verwandlung",
     "text": "Alle Trainingsarten, über 30 Kurse, Sauna, Körperanalyse und Zugang zu beiden Studios – inklusive.",
-    "priceLabel": "Mitgliedschaft",
+    "promoBadge": "3 Monate Fitness für 0,00 €",
+    "priceAfter": "danach",
     "priceValue": "ab 39,95 €",
     "priceSuffix": "/ Monat",
+    "bulletsHeading": "In deinen 3 Gratis-Monaten enthalten:",
     "bullets": [
       "Alle Trainingsbereiche & über 30 Kurse",
       "250 m² Sauna & Wellness inklusive",
-      "Körperanalyse & My-Sports-App",
+      "SECA Körperanalyse & My-Sports-App",
       "Zugang zu Lindlar und Meinerzhagen",
       "Getränkeflat inklusive"
     ],
-    "ctaPrimary": "Probetraining vereinbaren",
-    "ctaSecondary": "Per WhatsApp anfragen"
+    "ctaTrial": "Probetraining sichern",
+    "ctaCall": "Anrufen",
+    "promoNote": "Aktion vorbehaltlich Verfügbarkeit. Konditionen und Laufzeit im Studio.",
+    "newTab": "öffnet in neuem Tab"
   },
   "contact": {
     "kicker": "Komm vorbei",
@@ -132,6 +177,7 @@
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "Physio per WhatsApp",
     "directionsLabel": "Route planen",
+    "newTab": "öffnet in neuem Tab",
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
@@ -147,8 +193,47 @@
   "footer": {
     "claim": "Werde deine beste Version.",
     "rights": "Alle Rechte vorbehalten.",
+    "discover": "Entdecken",
+    "membershipCol": "Mitgliedschaft",
+    "legalCol": "Rechtliches",
+    "kursplan": "Kursplan",
+    "trial": "Probetraining",
+    "about": "Über uns",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
+    "terms": "AGB",
+    "withdrawal": "Widerruf",
+    "houseRules": "Hausordnung",
+    "cancel": "Verträge kündigen",
+    "newTab": "öffnet in neuem Tab",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  },
+  "legal": {
+    "backHome": "Zur Startseite",
+    "liveButton": "Zum vollständigen Text",
+    "note": "Der rechtsverbindliche Text wird hier eingepflegt. Bis dahin findest du ihn vollständig auf unserer bestehenden Website.",
+    "newTab": "öffnet in neuem Tab",
+    "docs": {
+      "impressum": {
+        "title": "Impressum",
+        "intro": "Anbieterkennzeichnung gemäß § 5 DDG."
+      },
+      "datenschutz": {
+        "title": "Datenschutz",
+        "intro": "Informationen zur Verarbeitung deiner Daten gemäß Art. 13 DSGVO."
+      },
+      "agb": {
+        "title": "AGB",
+        "intro": "Allgemeine Geschäftsbedingungen für Mitgliedschaft und Nutzung."
+      },
+      "widerruf": {
+        "title": "Widerrufsbelehrung",
+        "intro": "Dein Widerrufsrecht bei Vertragsabschluss im Fernabsatz."
+      },
+      "hausordnung": {
+        "title": "Hausordnung",
+        "intro": "Regeln für ein gutes Miteinander im Sportpalast."
+      }
+    }
   }
 }

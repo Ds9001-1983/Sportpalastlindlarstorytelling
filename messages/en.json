@@ -5,13 +5,21 @@
   },
   "nav": {
     "offers": "What we offer",
+    "goals": "Goals",
     "membership": "Become a member",
     "contact": "Contact",
     "language": "Language",
     "skipToContent": "Skip to content"
   },
+  "promo": {
+    "badge": "3 months for €0.00",
+    "text": "Summer offer – all included, 2 locations.",
+    "cta": "Claim it now",
+    "dismiss": "Close banner"
+  },
   "hero": {
     "brand": "Sportpalast Lindlar",
+    "h1": "Sportpalast Lindlar – premium fitness club in the Oberberg region. Become your best self.",
     "claim": "Your path · your goal · our support",
     "scrollHint": "Scroll",
     "rooms": {
@@ -49,34 +57,87 @@
       }
     }
   },
+  "stats": {
+    "kicker": "The palace in numbers",
+    "items": [
+      {
+        "to": "2000",
+        "suffix": " m²",
+        "label": "Training space"
+      },
+      {
+        "to": "250",
+        "suffix": " m²",
+        "label": "Sauna & wellness"
+      },
+      {
+        "to": "120",
+        "suffix": "+",
+        "label": "Parking spaces"
+      },
+      {
+        "to": "30",
+        "suffix": "+",
+        "label": "Classes / week"
+      },
+      {
+        "to": "2",
+        "suffix": "",
+        "label": "Locations"
+      }
+    ]
+  },
+  "goals": {
+    "kicker": "Your goal",
+    "heading": "What are you training towards?",
+    "subheading": "No matter where you start – we'll get you there. Pick your goal and get going.",
+    "items": {
+      "muskelaufbau": "Build muscle & tone up",
+      "kondition": "Improve fitness",
+      "ruecken": "Back training",
+      "alter": "Stay fit as you age",
+      "gesundheit": "Boost your health",
+      "stress": "Reduce stress & find balance",
+      "abnehmen": "Lose weight"
+    }
+  },
   "offers": {
     "kicker": "All included",
     "heading": "A palace for your training",
     "subheading": "2,000 m² of training space, 250 m² of wellness and a team that knows you.",
+    "newTab": "opens in a new tab",
     "items": {
       "egym": {
         "title": "eGym & strength",
-        "text": "Smart strength training with eGym, free weights and plate-loaded machines."
-      },
-      "ausdauer": {
-        "title": "Cardio & Vibrafit",
-        "text": "A modern cardio world and Vibrafit training for endurance and metabolism."
+        "text": "Smart strength training with eGym, free weights, plate-loaded machines and SECA body analysis."
       },
       "kurse": {
         "title": "30+ classes",
-        "text": "From athletic to lady fitness – more than 30 classes scheduled every week."
+        "text": "From Athletic to Lady Fitness and back fitness – more than 30 classes scheduled every week."
+      },
+      "ausdauer": {
+        "title": "Cardio & Vibrafit",
+        "text": "A modern cardio world and Vibrafit – full-body vibration training for fitness and metabolism."
       },
       "functional": {
         "title": "Functional & athletic box",
-        "text": "Open floors, battle ropes and an athletic box for functional training."
+        "text": "Open floors, battle ropes and the Athletic Box for functional training at your limit."
       },
       "wellness": {
         "title": "Sauna & wellness",
-        "text": "250 m² of sauna and wellness – recovery that belongs to the experience."
+        "text": "250 m² of sauna indoors & outdoors, Lounge & Café – recovery and free drinks included."
+      },
+      "lady": {
+        "title": "Lady Fitness",
+        "text": "A protected training area exclusively for women – feel comfortable and grow strong."
+      },
+      "personal": {
+        "title": "Personal training",
+        "text": "1:1 coaching with your own coach – your plan, your goals, maximum progress."
       },
       "physio": {
         "title": "Physio & rehab sports",
-        "text": "Integrated physiotherapy and rehab sports for lasting health."
+        "text": "Integrated physiotherapy and rehab sports (5 classes/week) for lasting health."
       }
     }
   },
@@ -106,32 +167,46 @@
     "kicker": "Join us",
     "heading": "Start your transformation",
     "text": "All training types, 30+ classes, sauna, body analysis and access to both clubs – all included.",
-    "priceLabel": "Membership",
+    "promoBadge": "3 months of fitness for €0.00",
+    "priceAfter": "then",
     "priceValue": "from €39.95",
     "priceSuffix": "/ month",
+    "bulletsHeading": "Included in your 3 free months:",
     "bullets": [
       "All training areas & 30+ classes",
       "250 m² sauna & wellness included",
-      "Body analysis & My Sports app",
+      "SECA body analysis & My-Sports-App",
       "Access to Lindlar and Meinerzhagen",
       "Free drinks flat included"
     ],
-    "ctaPrimary": "Book a trial session",
-    "ctaSecondary": "Ask via WhatsApp"
+    "ctaTrial": "Book a trial session",
+    "ctaCall": "Call us",
+    "promoNote": "Offer subject to availability. Terms and contract duration at the club.",
+    "newTab": "opens in a new tab"
   },
   "contact": {
     "kicker": "Drop by",
     "heading": "Two locations in the Oberberg region",
     "hoursHeading": "Opening hours",
     "hours": [
-      { "days": "Mon & Fri", "time": "08:00 – 22:00" },
-      { "days": "Tue – Thu", "time": "07:00 – 22:00" },
-      { "days": "Sat & Sun", "time": "09:00 – 19:00" }
+      {
+        "days": "Mon & Fri",
+        "time": "08:00 – 22:00"
+      },
+      {
+        "days": "Tue – Thu",
+        "time": "07:00 – 22:00"
+      },
+      {
+        "days": "Sat & Sun",
+        "time": "09:00 – 19:00"
+      }
     ],
     "phoneLabel": "Call us",
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "Physio via WhatsApp",
     "directionsLabel": "Get directions",
+    "newTab": "opens in a new tab",
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
@@ -147,8 +222,47 @@
   "footer": {
     "claim": "Become your best self.",
     "rights": "All rights reserved.",
+    "discover": "Discover",
+    "membershipCol": "Membership",
+    "legalCol": "Legal",
+    "kursplan": "Class schedule",
+    "trial": "Trial session",
+    "about": "About us",
     "imprint": "Imprint",
     "privacy": "Privacy",
+    "terms": "Terms & conditions",
+    "withdrawal": "Right of withdrawal",
+    "houseRules": "House rules",
+    "cancel": "Cancel contracts",
+    "newTab": "opens in a new tab",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
+  },
+  "legal": {
+    "backHome": "Back to home",
+    "liveButton": "Read the full text",
+    "note": "The legally binding text will be added here. Until then, you'll find it in full on our existing website.",
+    "newTab": "opens in a new tab",
+    "docs": {
+      "impressum": {
+        "title": "Legal notice",
+        "intro": "Provider identification pursuant to § 5 DDG."
+      },
+      "datenschutz": {
+        "title": "Privacy policy",
+        "intro": "Information on the processing of your data pursuant to Art. 13 GDPR."
+      },
+      "agb": {
+        "title": "Terms & conditions",
+        "intro": "General terms and conditions for membership and use."
+      },
+      "widerruf": {
+        "title": "Right of withdrawal",
+        "intro": "Your right of withdrawal when entering into a distance contract."
+      },
+      "hausordnung": {
+        "title": "House rules",
+        "intro": "Rules for getting along well at the Sportpalast."
+      }
+    }
   }
 }

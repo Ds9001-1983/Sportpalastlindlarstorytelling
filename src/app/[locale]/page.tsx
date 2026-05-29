@@ -5,6 +5,11 @@ import { StoryRoom } from '@/components/story-room';
 import { MobileStory } from '@/components/mobile-story';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { PromoBanner } from '@/components/promo-banner';
+import { StickyCta } from '@/components/sticky-cta';
+import { Reveal } from '@/components/reveal';
+import { Stats } from '@/components/sections/stats';
+import { Goals } from '@/components/sections/goals';
 import { Offers } from '@/components/sections/offers';
 import { SocialProof } from '@/components/sections/social-proof';
 import { MembershipCta } from '@/components/sections/membership-cta';
@@ -72,8 +77,12 @@ export default async function HomePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <PromoBanner />
       <SiteHeader />
       <main id="top">
+        {/* Genau eine H1 für die ganze Seite (Story-Beats bleiben H2). */}
+        <h1 className="sr-only">{t('h1')}</h1>
+
         {/* Desktop: Frame-Sequence-Scrollytelling (gepinnte Rooms) */}
         <div className="hidden md:block">
           {rooms.map((r) => (
@@ -95,12 +104,18 @@ export default async function HomePage({
         <MobileStory rooms={rooms} />
 
         {/* Content-Module nach der Hero (CTA delayed_after_arrival) */}
+        <Stats />
+        <Goals />
         <Offers />
         <SocialProof />
         <MembershipCta />
         <Contact />
       </main>
       <SiteFooter />
+
+      {/* Sticky Mobile-CTA + zentraler Scroll-Reveal-Layer */}
+      <StickyCta />
+      <Reveal />
     </>
   );
 }
