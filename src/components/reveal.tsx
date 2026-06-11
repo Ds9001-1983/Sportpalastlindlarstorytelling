@@ -36,25 +36,49 @@ export function Reveal() {
         },
         (context) => {
           const isDesktop = !!context.conditions?.desktop;
-          const dist = isDesktop ? 36 : 22;
-          const dur = isDesktop ? 0.9 : 0.7;
+          const dist = isDesktop ? 20 : 12;
+          const dur = isDesktop ? 0.5 : 0.4;
+          // Elemente, die beim Trigger bereits tiefer als 60% im Viewport stehen
+          // (Anker-Sprung, Reload mit Scroll-Restore, sehr schnelles Scrollen),
+          // hat der Nutzer schon im Blick → Sofort-Reveal statt Entrance.
+          const DEEP = 0.6;
 
           // 1) Generische Reveals (Karten, Blöcke) — gestaffelt pro Sichtbar-Gruppe
           const reveals = gsap.utils.toArray<HTMLElement>('[data-reveal]');
           if (reveals.length) {
             gsap.set(reveals, { y: dist, autoAlpha: 0 });
             ScrollTrigger.batch('[data-reveal]', {
-              start: 'top 85%',
+              start: 'top 92%',
               once: true,
-              onEnter: (batch) =>
-                gsap.to(batch, {
-                  y: 0,
-                  autoAlpha: 1,
-                  duration: dur,
-                  ease: 'power3.out',
-                  stagger: 0.08,
-                  overwrite: true,
-                }),
+              interval: 0.06,
+              batchMax: 6,
+              onEnter: (batch) => {
+                const vh = window.innerHeight;
+                const deep: Element[] = [];
+                const fresh: Element[] = [];
+                for (const el of batch) {
+                  (el.getBoundingClientRect().top < vh * DEEP
+                    ? deep
+                    : fresh
+                  ).push(el);
+                }
+                if (deep.length) {
+                  // Sofort statt Mini-Tween: nach einem Sprung gibt es keinen
+                  // Bewegungskontext, und auf schwachen Geräten (RAF-Starvation)
+                  // darf hier nichts "hängen".
+                  gsap.set(deep, { y: 0, autoAlpha: 1, overwrite: true });
+                }
+                if (fresh.length) {
+                  gsap.to(fresh, {
+                    y: 0,
+                    autoAlpha: 1,
+                    duration: dur,
+                    ease: 'power3.out',
+                    stagger: 0.05,
+                    overwrite: true,
+                  });
+                }
+              },
             });
           }
 
@@ -64,13 +88,13 @@ export function Reveal() {
             gsap.set(el, { clipPath: 'inset(0 100% 0 0)', y: 8 });
             ScrollTrigger.create({
               trigger: el,
-              start: 'top 88%',
+              start: 'top 92%',
               once: true,
               onEnter: () =>
                 gsap.to(el, {
                   clipPath: 'inset(0 0% 0 0)',
                   y: 0,
-                  duration: 1,
+                  duration: 0.8,
                   ease: 'power4.out',
                 }),
             });
@@ -90,17 +114,27 @@ export function Reveal() {
             const proxy = { v: 0 };
             ScrollTrigger.create({
               trigger: el,
-              start: 'top 90%',
+              start: 'top 95%',
               once: true,
-              onEnter: () =>
+              onEnter: (self) => {
+                // Anker-Sprung/Restore: Element steht schon mittig oder die
+                // Scroll-Velocity ist hoch → verkürzt zählen.
+                const jumped =
+                  Math.abs(self.getVelocity()) > 3000 ||
+                  el.getBoundingClientRect().top < window.innerHeight * 0.5;
                 gsap.to(proxy, {
                   v: to,
-                  duration: 1.6,
-                  ease: 'power2.out',
+                  duration: jumped ? 0.4 : 0.8,
+                  ease: 'power3.out',
                   onUpdate: () => {
                     el.textContent = prefix + fmt.format(proxy.v) + suffix;
                   },
-                }),
+                  // Endwert garantiert exakt (kein Rundungsrest wie „1.999")
+                  onComplete: () => {
+                    el.textContent = prefix + fmt.format(to) + suffix;
+                  },
+                });
+              },
             });
           });
 

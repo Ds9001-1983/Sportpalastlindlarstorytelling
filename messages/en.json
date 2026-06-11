@@ -1,19 +1,24 @@
 {
   "meta": {
     "title": "Sportpalast Lindlar — Become your best self",
-    "description": "Premium fitness club in the Oberberg region: eGym, 30+ classes, sauna & wellness, physiotherapy. Become your best self – from €39.95/month."
+    "description": "Premium fitness club in the Oberberg region: eGym, more than 30 classes a week, 250 m² sauna & wellness, physiotherapy & rehab sports. Book your trial session now."
   },
   "nav": {
     "offers": "What we offer",
     "goals": "Goals",
+    "courses": "Classes",
+    "prices": "Prices",
+    "about": "About us",
     "membership": "Become a member",
     "contact": "Contact",
     "language": "Language",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
   },
   "promo": {
     "badge": "3 months for €0.00",
-    "text": "Summer offer – all included, 2 locations.",
+    "text": "Summer offer until 31 Aug – all included, 2 locations.",
     "cta": "Claim it now",
     "dismiss": "Close banner"
   },
@@ -41,7 +46,7 @@
       },
       "functional": {
         "beat": "Go to your limit",
-        "subline": "Athletic box and functional training for real performance."
+        "subline": "Athletic Box and functional training for real performance."
       },
       "regeneration": {
         "beat": "Find your calm",
@@ -60,31 +65,12 @@
   "stats": {
     "kicker": "The palace in numbers",
     "items": [
-      {
-        "to": "2000",
-        "suffix": " m²",
-        "label": "Training space"
-      },
-      {
-        "to": "250",
-        "suffix": " m²",
-        "label": "Sauna & wellness"
-      },
-      {
-        "to": "120",
-        "suffix": "+",
-        "label": "Parking spaces"
-      },
-      {
-        "to": "30",
-        "suffix": "+",
-        "label": "Classes / week"
-      },
-      {
-        "to": "2",
-        "suffix": "",
-        "label": "Locations"
-      }
+      { "to": "2000", "suffix": " m²", "label": "Training space" },
+      { "to": "140", "suffix": "+", "label": "Machines" },
+      { "to": "30", "suffix": "+", "label": "Classes / week" },
+      { "to": "250", "suffix": " m²", "label": "Sauna & wellness" },
+      { "to": "130", "suffix": "+", "label": "Parking spaces" },
+      { "to": "2", "suffix": "", "label": "Locations" }
     ]
   },
   "goals": {
@@ -104,42 +90,147 @@
   "offers": {
     "kicker": "All included",
     "heading": "A palace for your training",
-    "subheading": "2,000 m² of training space, 250 m² of wellness and a team that knows you.",
+    "subheading": "2,000 m² of training space, 140+ machines, 250 m² of wellness and a team that knows you.",
     "newTab": "opens in a new tab",
     "items": {
       "egym": {
         "title": "eGym & strength",
-        "text": "Smart strength training with eGym, free weights, plate-loaded machines and SECA body analysis."
+        "text": "Smart strength training with the eGym Fitness Hub, free weights, plate-loaded machines and SECA body analysis."
       },
       "kurse": {
         "title": "30+ classes",
-        "text": "From Athletic to Lady Fitness and back fitness – more than 30 classes scheduled every week."
+        "text": "From Hot Iron and Yoga to Jumping Fitness – more than 30 classes every week in the 230 m² studio with stage."
       },
       "ausdauer": {
         "title": "Cardio & Vibrafit",
-        "text": "A modern cardio world and Vibrafit – full-body vibration training for fitness and metabolism."
+        "text": "A modern cardio world with panoramic views and Vibrafit – full-body vibration training for endurance and metabolism."
       },
       "functional": {
-        "title": "Functional & athletic box",
+        "title": "Functional & Athletic Box",
         "text": "Open floors, battle ropes and the Athletic Box for functional training at your limit."
       },
       "wellness": {
         "title": "Sauna & wellness",
-        "text": "250 m² of sauna indoors & outdoors, Lounge & Café – recovery and free drinks included."
+        "text": "250 m² of sauna indoors & outdoors, relaxation room, Lounge & Café – recovery and free drinks included."
       },
       "lady": {
         "title": "Lady Fitness",
-        "text": "A protected training area exclusively for women – feel comfortable and grow strong."
+        "text": "A protected training area exclusively for women – plus a ladies' sauna day every Wednesday."
       },
       "personal": {
         "title": "Personal training",
-        "text": "1:1 coaching with your own coach – your plan, your goals, maximum progress."
+        "text": "1:1 coaching with your own coach in 30- or 60-minute sessions – your plan, your goals."
       },
       "physio": {
         "title": "Physio & rehab sports",
-        "text": "Integrated physiotherapy and rehab sports (5 classes/week) for lasting health."
+        "text": "Integrated physiotherapy and rehab sports with 100% of the costs covered by health insurers."
       }
     }
+  },
+  "schedule": {
+    "kicker": "Your weekly plan",
+    "heading": "More than 30 classes a week",
+    "subheading": "Strength, cardio, yoga, martial arts and rehab sports – in the 230 m² studio with stage and high-end sound.",
+    "asOf": "As of June 2026 – subject to change.",
+    "liveNote": "You'll find the up-to-date class schedule in the live schedule.",
+    "livePdfLabel": "Open live class schedule",
+    "planHeading": "Weekly class schedule",
+    "newTab": "opens in a new tab",
+    "teaser": {
+      "heading": "This week at the palace",
+      "text": "Pilates in the morning, Hot Iron in the evening, Yoga on Saturday – more than 30 classes a week, all included in your membership.",
+      "cta": "See the full class schedule"
+    },
+    "categories": {
+      "strength": {
+        "title": "Strength & endurance",
+        "courses": ["Body Workout", "Functional Training", "Hot Iron", "Zirkel Training", "Pilates"]
+      },
+      "cardio": {
+        "title": "Cardio & fat burning",
+        "courses": ["Step Aerobic", "Dance Aerobic Choreo", "Jumping Fitness", "Zumba", "Fatburner Workout", "Intervall Mix"]
+      },
+      "mind": {
+        "title": "Mind-body & relaxation",
+        "courses": ["Yoga", "Ashtanga Yoga", "Yin Yoga", "Energetic Flow Yoga", "Rücken & Relax", "Deepwork"]
+      },
+      "special": {
+        "title": "Special & rehab",
+        "courses": ["Boxen & Kickboxen", "WingTsun", "Rehasport", "Rehasport Soft", "Rückenfit"]
+      }
+    },
+    "days": [
+      {
+        "day": "Monday",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Pilates" },
+          { "time": "10:00 – 11:00", "course": "Zumba" },
+          { "time": "17:00 – 18:00", "course": "Fatburner Workout" },
+          { "time": "18:00 – 19:00", "course": "Hot Iron" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:15", "course": "Ashtanga Yoga" }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "slots": [
+          { "time": "09:00 – 10:30", "course": "Yin Yoga" },
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:30 – 11:15", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (kids)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (teens)" },
+          { "time": "17:00 – 18:00", "course": "Zumba" },
+          { "time": "18:00 – 19:00", "course": "Energetic Flow Yoga" },
+          { "time": "19:00 – 20:00", "course": "Functional Training" },
+          { "time": "20:00 – 21:00", "course": "WingTsun (adults)" }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Rücken & Relax" },
+          { "time": "10:00 – 10:45", "course": "Rehasport Soft" },
+          { "time": "11:00 – 11:45", "course": "Rehasport" },
+          { "time": "18:00 – 19:00", "course": "Dance Aerobic Choreo" },
+          { "time": "19:00 – 20:00", "course": "Body Workout" },
+          { "time": "20:00 – 21:00", "course": "Jumping Fitness" }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "slots": [
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:15 – 11:00", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (ages 3–5)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (kids)" },
+          { "time": "17:00 – 18:00", "course": "WingTsun (teens)" },
+          { "time": "18:00 – 19:00", "course": "Step Aerobic" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:30", "course": "WingTsun (adults)" }
+        ]
+      },
+      {
+        "day": "Friday",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Intervall Mix" },
+          { "time": "10:00 – 11:00", "course": "Rückenfit" },
+          { "time": "17:00 – 18:00", "course": "Jumping Fitness" },
+          { "time": "18:00 – 19:00", "course": "Deepwork" }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "slots": [
+          { "time": "09:30 – 10:30", "course": "Zumba" },
+          { "time": "10:30 – 11:30", "course": "Hot Iron" },
+          { "time": "11:30 – 12:30", "course": "Yoga" }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "slots": [{ "time": "10:30 – 11:30", "course": "Boxen & Kickboxen" }]
+      }
+    ]
   },
   "proof": {
     "kicker": "Real voices",
@@ -163,14 +254,104 @@
       }
     ]
   },
+  "pricing": {
+    "kicker": "Clear & transparent",
+    "heading": "Plans for every goal",
+    "subheading": "Four models, one summer offer: your first 3 months of training are €0.00.",
+    "promoBadge": "Summer offer: 3 months for €0.00",
+    "promoConditions": "Valid until 31 Aug 2026, new members only, cannot be combined with other offers. Available in Lindlar and Meinerzhagen.",
+    "perMonth": "/ month",
+    "afterPromo": "from the 4th month",
+    "termLabel": "Term",
+    "highlightLabel": "Popular",
+    "plans": [
+      {
+        "id": "club24",
+        "name": "Club Abo",
+        "term": "24 months",
+        "price": "49,95 €",
+        "promo": "First 3 months €0.00",
+        "note": "",
+        "highlight": true
+      },
+      {
+        "id": "club12",
+        "name": "Club Abo",
+        "term": "12 months",
+        "price": "59,95 €",
+        "promo": "First 3 months €0.00",
+        "note": "",
+        "highlight": false
+      },
+      {
+        "id": "reha18",
+        "name": "Reha Plus",
+        "term": "18 months",
+        "price": "39,95 €",
+        "promo": "First 3 months €0.00",
+        "note": "With a doctor's rehab sports prescription",
+        "highlight": false
+      },
+      {
+        "id": "youth12",
+        "name": "Youth Abo",
+        "term": "12 months",
+        "price": "39,95 €",
+        "promo": "First 3 months €0.00",
+        "note": "For young people aged 16 to 19",
+        "highlight": false
+      }
+    ],
+    "includedHeading": "Included in every plan",
+    "included": [
+      "All fitness and health classes",
+      "250 m² sauna & wellness",
+      "Free drinks flat",
+      "Lounge & Café",
+      "Access to Lindlar and Meinerzhagen"
+    ],
+    "feesHeading": "One-off & additional costs",
+    "fees": [
+      {
+        "label": "Starter pack",
+        "value": "40 € statt 79,95 €",
+        "note": "Membership card, water bottle, training assessment, body analysis, training plan"
+      },
+      {
+        "label": "Service fee",
+        "value": "15 € alle 6 Monate",
+        "note": "From the 6th month"
+      },
+      {
+        "label": "Trial session",
+        "value": "10 €",
+        "note": "Fully credited when you become a member"
+      },
+      {
+        "label": "Day pass",
+        "value": "18 €",
+        "note": "Without trial session"
+      }
+    ],
+    "termsHeading": "Contract & cancellation",
+    "terms": [
+      "Notice period: one month before the end of the contract term.",
+      "After the term, the contract continues with a monthly cancellation option."
+    ],
+    "ctaTrial": "Book a trial session",
+    "ctaJoin": "Become a member now",
+    "ctaAll": "All plans & conditions",
+    "newTab": "opens in a new tab"
+  },
   "membership": {
     "kicker": "Join us",
     "heading": "Start your transformation",
-    "text": "All training types, 30+ classes, sauna, body analysis and access to both clubs – all included.",
+    "text": "All training types, more than 30 classes, sauna, body analysis and access to both clubs – all included.",
     "promoBadge": "3 months of fitness for €0.00",
-    "priceAfter": "then",
-    "priceValue": "from €39.95",
+    "priceAfter": "then Club Abo",
+    "priceValue": "from €49.95",
     "priceSuffix": "/ month",
+    "priceNote": "Reha Plus and Youth Abo from as little as €39.95/month.",
     "bulletsHeading": "Included in your 3 free months:",
     "bullets": [
       "All training areas & 30+ classes",
@@ -181,27 +362,102 @@
     ],
     "ctaTrial": "Book a trial session",
     "ctaCall": "Call us",
-    "promoNote": "Offer subject to availability. Terms and contract duration at the club.",
+    "ctaPrices": "See all plans",
+    "promoNote": "Summer offer until 31 Aug 2026, new members only, cannot be combined with other offers.",
     "newTab": "opens in a new tab"
+  },
+  "team": {
+    "kicker": "Since 2004",
+    "heading": "The people behind the palace",
+    "intro": "Since 2004, the Oberberg region has been training in Lindlar's glass palace. Behind the club is a team that lives fitness – with expertise, passion and personal commitment.",
+    "leadershipHeading": "Management",
+    "leadership": [
+      { "name": "Uygar Özcelik", "role": "Managing director & co-owner" },
+      { "name": "Vera Dütting", "role": "Managing director & co-owner" },
+      { "name": "Wolfgang Feykens", "role": "Managing director & co-owner" }
+    ],
+    "membersHeading": "Your team at the club",
+    "members": [
+      { "name": "Marie Bork", "role": "Head of group fitness" },
+      { "name": "Thomas Bürgerhausen", "role": "Head of fitness & training" },
+      { "name": "Saskia Klemke", "role": "Physiotherapist & internship coordinator" },
+      { "name": "Katja Lüdenbach", "role": "Group fitness instructor" }
+    ],
+    "teaser": {
+      "heading": "A team that knows you",
+      "text": "Management, trainers and therapists – working for your goal since 2004.",
+      "cta": "Meet the team"
+    }
+  },
+  "faq": {
+    "kicker": "Good to know",
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "q": "How much does a trial session cost?",
+        "a": "The trial session costs €10 and is fully credited if you become a member. Without a trial session, a day pass is €18. It includes all training areas, classes, sauna & wellness as well as the Lounge & Café."
+      },
+      {
+        "q": "Which plans are available?",
+        "a": "Club Abo for 24 months (€49.95/month) or 12 months (€59.95/month), Reha Plus for 18 months (€39.95/month, with a doctor's prescription) and the Youth Abo for ages 16 to 19 (12 months, €39.95/month). During the summer offer, your first 3 months are free."
+      },
+      {
+        "q": "What's included in the membership fee?",
+        "a": "All fitness and health classes, the entire training area, 250 m² of sauna & wellness, the free drinks flat, Lounge & Café and access to both locations in Lindlar and Meinerzhagen."
+      },
+      {
+        "q": "What's in the starter pack?",
+        "a": "Membership card, water bottle, training assessment, body analysis and your personal training plan – currently €40 instead of €79.95."
+      },
+      {
+        "q": "What are the cancellation terms?",
+        "a": "One month before the end of the contract term. After that, the contract continues with a monthly cancellation option."
+      },
+      {
+        "q": "When is the sauna open?",
+        "a": "Monday, Tuesday and Thursday 16:00–21:30, Wednesday 11:00–21:30 (ladies' sauna), Friday 11:00–21:30, Saturday and Sunday 9:30–18:30."
+      },
+      {
+        "q": "Do health insurers cover rehab sports?",
+        "a": "Yes – with a doctor's prescription, statutory health insurers cover 100% of the costs. Typically 50 sessions within 18 months; no membership is required."
+      },
+      {
+        "q": "From what age can I train?",
+        "a": "From age 16. For members between 16 and 18, a parent or legal guardian must co-sign the contract in person. The affordable Youth Abo is available for ages 16 to 19."
+      },
+      {
+        "q": "Is there parking?",
+        "a": "Yes, more than 130 free parking spaces right at the club in Lindlar. Access is barrier-free with a lift."
+      },
+      {
+        "q": "What are the opening hours on public holidays?",
+        "a": "On public holidays, weekend opening hours apply and classes are cancelled. On 24 and 31 December we're open from 9:00 to 15:00; on 25 December and 1 January we're closed."
+      }
+    ]
   },
   "contact": {
     "kicker": "Drop by",
-    "heading": "Two locations in the Oberberg region",
-    "hoursHeading": "Opening hours",
+    "heading": "Two locations, one palace",
+    "hoursHeading": "Opening hours Lindlar",
     "hours": [
-      {
-        "days": "Mon & Fri",
-        "time": "08:00 – 22:00"
-      },
-      {
-        "days": "Tue – Thu",
-        "time": "07:00 – 22:00"
-      },
-      {
-        "days": "Sat & Sun",
-        "time": "09:00 – 19:00"
-      }
+      { "days": "Mon & Fri", "time": "08:00 – 22:00" },
+      { "days": "Tue – Thu", "time": "07:00 – 22:00" },
+      { "days": "Sat & Sun", "time": "09:00 – 19:00" }
     ],
+    "saunaHeading": "Sauna & wellness",
+    "saunaHours": [
+      { "days": "Mon, Tue & Thu", "time": "16:00 – 21:30" },
+      { "days": "Wed (ladies' sauna)", "time": "11:00 – 21:30" },
+      { "days": "Fri", "time": "11:00 – 21:30" },
+      { "days": "Sat & Sun", "time": "09:30 – 18:30" }
+    ],
+    "meinerzhagenHoursHeading": "Opening hours Meinerzhagen",
+    "meinerzhagenHours": [
+      { "days": "Mon & Fri", "time": "08:00 – 23:00" },
+      { "days": "Tue – Thu", "time": "07:00 – 23:00" },
+      { "days": "Sat & Sun", "time": "09:00 – 19:00" }
+    ],
+    "holidayNote": "Public holidays: open as on weekends, classes cancelled. 24 Dec & 31 Dec: 09:00 – 15:00 · 25 Dec & 1 Jan: closed.",
     "phoneLabel": "Call us",
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "Physio via WhatsApp",
@@ -210,25 +466,33 @@
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
-        "address": "Lindlar, Oberberg district"
+        "address": "Schlosserstraße 33, 51789 Lindlar",
+        "phoneDisplay": "+49 2266 470206"
       },
       "meinerzhagen": {
         "name": "Sportpalast Meinerzhagen",
-        "address": "Meinerzhagen"
+        "address": "Siepener Weg 10, 58540 Meinerzhagen",
+        "phoneDisplay": "+49 2354 12774"
       }
     },
-    "parking": "120+ free parking spaces"
+    "parking": "130+ free parking spaces · barrier-free access with lift"
   },
   "footer": {
     "claim": "Become your best self.",
     "rights": "All rights reserved.",
     "discover": "Discover",
     "membershipCol": "Membership",
+    "moreCol": "Services",
     "legalCol": "Legal",
     "kursplan": "Class schedule",
     "trial": "Trial session",
     "about": "About us",
-    "imprint": "Imprint",
+    "prices": "Prices",
+    "physio": "Physiotherapy",
+    "reha": "Rehab sports",
+    "corporate": "Corporate fitness",
+    "career": "Careers",
+    "imprint": "Legal notice",
     "privacy": "Privacy",
     "terms": "Terms & conditions",
     "withdrawal": "Right of withdrawal",
@@ -237,31 +501,363 @@
     "newTab": "opens in a new tab",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
   },
+  "pagePreise": {
+    "metaTitle": "Prices & membership",
+    "metaDescription": "All plans at Sportpalast Lindlar: Club Abo from €49.95/month, Reha Plus and Youth Abo from €39.95. Summer offer: 3 months for €0.00.",
+    "hero": {
+      "kicker": "Prices & membership",
+      "heading": "Your plan, your pace",
+      "intro": "Four transparent models with no hidden costs – all classes, sauna and free drinks always included. With the summer offer, your first 3 months of training are €0.00."
+    },
+    "registerHeading": "How to become a member",
+    "registerSteps": [
+      "Sign up online, directly at the club or after your trial session – fast, simple and transparent.",
+      "Bring a valid photo ID. Between the ages of 16 and 18, a parent or legal guardian must co-sign in person.",
+      "On your first visit you'll receive your membership card and water bottle – and start your training right away."
+    ]
+  },
+  "pageKurse": {
+    "metaTitle": "Classes & schedule",
+    "metaDescription": "More than 30 fitness classes a week at Sportpalast Lindlar: Hot Iron, Yoga, Zumba, Jumping Fitness, rehab sports and more – full weekly schedule with times.",
+    "hero": {
+      "kicker": "Classes & schedule",
+      "heading": "Movement that's contagious",
+      "intro": "More than 30 classes a week in the 230 m² studio with stage and a high-end sound and lighting system – from strength and cardio to yoga, martial arts and rehab sports. All classes are included in your membership."
+    },
+    "categoriesHeading": "Our class worlds"
+  },
+  "pageUeberUns": {
+    "metaTitle": "About us & team",
+    "metaDescription": "Your premium fitness club in the Oberberg region since 2004: Sportpalast Lindlar in the glass palace – history, values and the team behind the club.",
+    "hero": {
+      "kicker": "About us",
+      "heading": "Your palace in your place",
+      "intro": "Since 2004, Lindlar's impressive glass palace has stood for fitness, wellness and health – surrounded by nature, with views across the Oberberg hills."
+    },
+    "story": [
+      "What began in 2004 is now an institution in the Oberberg region: more than 2,000 m² of training space, over 140 state-of-the-art machines from Life Fitness, Hoist, Techno Gym and Matrix, a 230 m² class studio with stage and 250 m² of sauna & wellness.",
+      "Our goal is more than fitness equipment: a family-friendly, welcoming environment where you feel at home from day one. Every team member shares our passion for fitness and supports you with expertise and motivation.",
+      "With our sister club in Meinerzhagen, two locations are open to you – one membership, twice the possibilities."
+    ]
+  },
+  "pagePhysio": {
+    "metaTitle": "Physiotherapy",
+    "metaDescription": "Physiotherapy at Sportpalast Lindlar: remedial exercise, manual lymphatic drainage, massage, fango, kinesio taping and more. Approved for all health insurers.",
+    "hero": {
+      "kicker": "Physiotherapy",
+      "heading": "Therapy & training under one roof",
+      "intro": "Our team of experienced therapists combines passive and active treatment methods – closely linked with the club for lasting rehabilitation."
+    },
+    "servicesHeading": "Our treatments",
+    "services": [
+      "Assessment & individual therapy planning",
+      "Remedial exercise & equipment-based remedial exercise",
+      "Classic massage & manual lymphatic drainage",
+      "Fango / natural moor applications",
+      "Heat and cold therapy (Cryojet)",
+      "Kinesio taping",
+      "Sling table therapy",
+      "TRX / suspension training",
+      "Functional training",
+      "Sports physiotherapy"
+    ],
+    "insuranceNote": "Approved for all statutory and private health insurers.",
+    "sessionNote": "A treatment usually takes 20 to 30 minutes.",
+    "contactHeading": "Book an appointment",
+    "phoneLabel": "Call physio",
+    "whatsappLabel": "Appointment via WhatsApp",
+    "whatsappText": "Hello, I would like to book a physiotherapy appointment."
+  },
+  "pageReha": {
+    "metaTitle": "Rehab sports",
+    "metaDescription": "Rehab sports at Sportpalast Lindlar: 100% of costs covered by statutory health insurers, no membership, no waiting list – find out more now.",
+    "hero": {
+      "kicker": "Rehab sports",
+      "heading": "Come back stronger",
+      "intro": "Therapeutic group training led by certified trainers – for more strength, mobility, coordination and less pain. For all age groups."
+    },
+    "variantsHeading": "Two paths, one goal",
+    "variants": [
+      {
+        "name": "Rehasport",
+        "text": "Group training with a doctor's prescription – statutory health insurers cover 100% of the costs. No membership, no waiting list."
+      },
+      {
+        "name": "Rehasport Plus",
+        "text": "Combines the group training with full club access: machine training, classes, sauna, body analysis and personal coaching."
+      }
+    ],
+    "stepsHeading": "How to get started",
+    "steps": [
+      "Your doctor issues the rehab sports prescription.",
+      "Your health insurer approves the prescription.",
+      "You start right away – we advise you personally before your first session."
+    ],
+    "factsHeading": "Good to know",
+    "facts": [
+      "Typically 50 sessions within 18 months – attending 1–2× per week.",
+      "Class times in Lindlar: Monday to Thursday, mornings (10:00 – 11:45) and evenings (19:00 – 19:45).",
+      "No waiting lists, no membership required."
+    ],
+    "ctaCall": "Find out more"
+  },
+  "pageFirmenfitness": {
+    "metaTitle": "Corporate fitness",
+    "metaDescription": "Corporate fitness at Sportpalast Lindlar & Meinerzhagen: three flexible models for healthy, motivated teams – book a consultation now.",
+    "hero": {
+      "kicker": "Corporate fitness",
+      "heading": "Healthy teams achieve more",
+      "intro": "Healthy, active teams are more motivated, more productive and less often ill. We build the right corporate fitness programme for your company – at two locations."
+    },
+    "modelsHeading": "Three models",
+    "models": [
+      {
+        "name": "Premium membership",
+        "text": "The company covers the premium membership in full – employees get unrestricted access to all areas and classes."
+      },
+      {
+        "name": "Subsidy & discount",
+        "text": "Employees receive attractive discounts on the monthly fee, and the company can add an individual subsidy – the bigger the team, the bigger the benefit."
+      },
+      {
+        "name": "Individual solution",
+        "text": "Tailor-made programmes that combine elements of both models – aligned with your company's needs."
+      }
+    ],
+    "benefitsHeading": "What your company gains",
+    "benefits": [
+      "Maintain workforce performance",
+      "Reduce sickness and absence costs",
+      "Increase productivity and quality",
+      "Strengthen your employer brand",
+      "Secure competitiveness"
+    ],
+    "ctaCall": "Book a consultation"
+  },
+  "pageKarriere": {
+    "metaTitle": "Careers",
+    "metaDescription": "Jobs at Sportpalast Lindlar: apprenticeship, dual study programme, service staff and training support – apply now at bewerbung@sportpalast-lindlar.de.",
+    "hero": {
+      "kicker": "Careers",
+      "heading": "Work where others train",
+      "intro": "Do you share our passion for fitness and health? Then join the team at the glass palace."
+    },
+    "jobsHeading": "Open positions",
+    "jobs": [
+      {
+        "title": "Apprenticeship: Sport and Fitness Business Administrator (IST)",
+        "type": "Apprenticeship"
+      },
+      {
+        "title": "Dual study programme: B.A. Fitness Science & Fitness Economics",
+        "type": "Dual study programme · 36 months"
+      },
+      {
+        "title": "Service staff (m/f/d)",
+        "type": "Hourly basis · flexible hours"
+      },
+      {
+        "title": "Training support (m/f/d)",
+        "type": "Mini-job · flexible hours"
+      }
+    ],
+    "applyHeading": "Your application",
+    "applyText": "Send your documents to Ms Vera Dütting – we look forward to meeting you.",
+    "applyAddress": "Sportpalast Lindlar · Schlosserstraße 33 · 51789 Lindlar",
+    "applyCta": "Apply now"
+  },
+  "subpage": {
+    "backHome": "Back to home"
+  },
   "legal": {
     "backHome": "Back to home",
     "liveButton": "Read the full text",
     "note": "The legally binding text will be added here. Until then, you'll find it in full on our existing website.",
+    "bindingNote": "Only the German version of this page is legally binding.",
     "newTab": "opens in a new tab",
     "docs": {
       "impressum": {
         "title": "Legal notice",
-        "intro": "Provider identification pursuant to § 5 DDG."
+        "intro": "Provider identification pursuant to § 5 DDG.",
+        "sections": [
+          {
+            "heading": "Betreiber",
+            "body": [
+              "Sportpalast GmbH & Co. KG",
+              "Siepener Weg 10",
+              "58540 Meinerzhagen"
+            ]
+          },
+          {
+            "heading": "Kontakt",
+            "body": [
+              "Telefon: +49 (0) 2266 470206",
+              "E-Mail: info@sportpalast-lindlar.de"
+            ]
+          },
+          {
+            "heading": "Vertretungsberechtigte Geschäftsführer",
+            "body": ["Uygar Özcelik", "Vera Dütting", "Wolfgang Feykens"]
+          },
+          {
+            "heading": "Registereintrag",
+            "body": [
+              "Registergericht: Amtsgericht Meinerzhagen",
+              "Registernummer: HRB 521",
+              "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 216167832"
+            ]
+          },
+          {
+            "heading": "Verbraucherstreitbeilegung",
+            "body": [
+              "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+              "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+            ]
+          }
+        ]
       },
       "datenschutz": {
         "title": "Privacy policy",
-        "intro": "Information on the processing of your data pursuant to Art. 13 GDPR."
+        "intro": "Information on the processing of your data pursuant to Art. 13 GDPR.",
+        "sections": [
+          {
+            "heading": "Verantwortlicher",
+            "body": [
+              "Sportpalast GmbH & Co. KG, Siepener Weg 10, 58540 Meinerzhagen, Deutschland.",
+              "Telefon: +49 (0) 2354 12774 · E-Mail: info@sportpalast-meinerzhagen.de"
+            ]
+          },
+          {
+            "heading": "Datenschutzbeauftragter",
+            "body": [
+              "bensom GmbH – Michael Lang, Alte Heerstr. 8, 53757 Sankt Augustin.",
+              "Telefon: +49 2241 8797813 · E-Mail: dsb.lang@bensom.gmbh"
+            ]
+          },
+          {
+            "heading": "Zugriffsdaten / Server-Logfiles",
+            "body": [
+              "Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter automatisch Informationen, die dein Browser übermittelt: Browsertyp und -version, Betriebssystem, Referrer-URL, IP-Adresse sowie Uhrzeit der Anfrage.",
+              "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung von Stabilität und Sicherheit des Angebots. Ein Rückschluss auf einzelne Personen findet nicht statt."
+            ]
+          },
+          {
+            "heading": "Cookies und Tracking",
+            "body": [
+              "Diese Website setzt keine Tracking- oder Marketing-Cookies ein. Es wird lediglich eine lokale Einstellung gespeichert, wenn du den Aktions-Hinweis schließt (localStorage, ohne Personenbezug).",
+              "Sollten künftig Analyse- oder Marketing-Dienste zum Einsatz kommen, werden diese erst nach deiner ausdrücklichen Einwilligung geladen (Art. 6 Abs. 1 lit. a DSGVO)."
+            ]
+          },
+          {
+            "heading": "Schriftarten",
+            "body": [
+              "Die verwendeten Schriftarten werden lokal von unserem Server ausgeliefert. Eine Verbindung zu Servern von Google oder anderen Drittanbietern findet beim Laden der Schriften nicht statt."
+            ]
+          },
+          {
+            "heading": "Externe Links und Dienste",
+            "body": [
+              "Diese Website verlinkt auf externe Dienste, z. B. Google Maps (Routenplanung), WhatsApp (Terminvereinbarung Physiotherapie), unser Online-Buchungssystem sowie unsere Social-Media-Profile (Instagram, Facebook, YouTube).",
+              "Beim Aufruf dieser Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Eine Datenübertragung an diese Anbieter findet erst statt, wenn du den Link aktiv anklickst."
+            ]
+          },
+          {
+            "heading": "Kontaktaufnahme",
+            "body": [
+              "Wenn du uns per Telefon, E-Mail oder WhatsApp kontaktierst, verarbeiten wir deine Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen."
+            ]
+          },
+          {
+            "heading": "Deine Rechte",
+            "body": [
+              "Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).",
+              "Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Außerdem steht dir ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu."
+            ]
+          }
+        ]
       },
       "agb": {
         "title": "Terms & conditions",
-        "intro": "General terms and conditions for membership and use."
+        "intro": "General terms and conditions for membership and use.",
+        "sections": []
       },
       "widerruf": {
         "title": "Right of withdrawal",
-        "intro": "Your right of withdrawal when entering into a distance contract."
+        "intro": "Your right of withdrawal when entering into a distance contract.",
+        "sections": []
       },
       "hausordnung": {
         "title": "House rules",
-        "intro": "Rules for getting along well at the Sportpalast."
+        "intro": "Rules for getting along well at the Sportpalast.",
+        "sections": [
+          {
+            "heading": "1. Check-in & Zugang",
+            "body": [
+              "Das Betreten des Fitnessstudios und die Nutzung unserer Geräte und Einrichtungen ist nur nach erfolgreichem Check-in am Empfang möglich. Für die Nutzung der Spinde ist der Mitgliedsausweis erforderlich."
+            ]
+          },
+          {
+            "heading": "2. Getränke",
+            "body": [
+              "Im Studio sind ausschließlich Trinkflaschen als Behälter erlaubt. Eine Getränkeflatrate kann optional hinzugebucht werden."
+            ]
+          },
+          {
+            "heading": "3. Trainingskleidung",
+            "body": [
+              "Erforderlich sind entsprechende Sportkleidung und saubere Sportschuhe. Barfußtraining, Flip-Flops und Sandalen sind aus Sicherheits- und Hygienegründen nicht gestattet.",
+              "Bitte lege beim Training ein Handtuch auf die Geräteflächen."
+            ]
+          },
+          {
+            "heading": "4. Verhalten beim Training",
+            "body": [
+              "Überlasse Geräte anderen Mitgliedern, wenn du sie nicht aktiv nutzt. Lege Gewichte sanft ab, um Lärm zu vermeiden, und räume alle Trainingsmittel nach Gebrauch an ihren Platz zurück. Ausdauergeräte bitte nach der Nutzung desinfizieren."
+            ]
+          },
+          {
+            "heading": "5. Kursbereich",
+            "body": [
+              "Bitte erscheine pünktlich zu den Kursen und räume das Equipment nach Kursende zurück. Außerhalb der Kurszeiten ist das Betreten des Kursraums nicht gestattet. Gläser sind aus Sicherheitsgründen im Kursraum nicht erlaubt."
+            ]
+          },
+          {
+            "heading": "6. Umkleidebereiche",
+            "body": [
+              "Persönliche Gegenstände bitte ausschließlich in den Spinden lagern. Für Verlust oder Beschädigung übernimmt das Studio keine Haftung."
+            ]
+          },
+          {
+            "heading": "7. Sauna & Ruheraum",
+            "body": [
+              "Im Saunabereich gelten gesonderte Saunaregeln. Das Tragen von Kleidungsstücken in der Sauna ist aus hygienischen Gründen strengstens untersagt."
+            ]
+          },
+          {
+            "heading": "8. Nassbereich",
+            "body": [
+              "Im Nassbereich sind Badeschuhe erforderlich. Das Rasieren jeglicher Körperregionen ist nicht gestattet."
+            ]
+          },
+          {
+            "heading": "9. Sauberkeit",
+            "body": [
+              "Bitte hinterlasse alle Bereiche ordentlich, sauber und gepflegt."
+            ]
+          },
+          {
+            "heading": "10. Allgemeines Verhalten",
+            "body": [
+              "Jedes Mitglied hat sich so zu verhalten, dass niemand anderes eingeschränkt oder unangenehm berührt wird. Lautes Stöhnen ist zu vermeiden. Den Anweisungen der Mitarbeitenden ist Folge zu leisten."
+            ]
+          },
+          {
+            "heading": "11. Kinder",
+            "body": [
+              "Das Betreten der Trainingsfläche und die Nutzung der Geräte sind für Kinder aus Sicherheitsgründen nicht gestattet."
+            ]
+          }
+        ]
       }
     }
   }

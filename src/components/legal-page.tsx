@@ -1,18 +1,39 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { SITE } from '@/lib/site';
 
 type LegalDoc = 'impressum' | 'datenschutz' | 'agb' | 'widerruf' | 'hausordnung';
 
+interface LegalSection {
+  heading: string;
+  body: string[];
+}
+
+// Live-Fallbacks nur noch für Dokumente ohne eingepflegten Volltext
+// (AGB/Widerruf liegen auf der externen Konzern-Domain).
+const LIVE_FALLBACK: Partial<Record<LegalDoc, string>> = {
+  agb: SITE.legal.agb,
+  widerruf: SITE.legal.widerruf,
+};
+
 // Eigenständiges, minimales Layout für die Rechtsseiten — bewusst ohne die
 // Home-Anker des Hauptfooters, damit jeder Link von hier aus funktioniert.
-// Das Gerüst verweist auf den rechtsverbindlichen Live-Text, bis er hier
-// eingepflegt wird (Routen sind auf noindex gesetzt).
+// Dokumente mit `sections` in den Messages rendern den Volltext; ohne
+// `sections` bleibt der Verweis auf den rechtsverbindlichen Live-Text.
 export function LegalPage({ doc }: { doc: LegalDoc }) {
   const t = useTranslations('legal');
   const tHero = useTranslations('hero');
-  const liveUrl = SITE.legal[doc];
+  const locale = useLocale();
+  const liveUrl = LIVE_FALLBACK[doc];
+
+  let sections: LegalSection[] = [];
+  try {
+    sections = t.raw(`docs.${doc}.sections`) as LegalSection[];
+  } catch {
+    sections = [];
+  }
+  const hasFullText = Array.isArray(sections) && sections.length > 0;
 
   return (
     <div className="flex min-h-screen flex-col bg-ink text-paper">
@@ -37,19 +58,44 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
         </h1>
         <p className="mt-5 text-lg text-paper/70">{t(`docs.${doc}.intro`)}</p>
 
-        <div className="mt-10 rounded-2xl border border-ink-line/60 bg-ink-soft p-6 md:p-8">
-          <p className="text-paper/75">{t('note')}</p>
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold-bright"
-          >
-            {t('liveButton')}
-            <ExternalLink className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
-            <span className="sr-only"> ({t('newTab')})</span>
-          </a>
-        </div>
+        {hasFullText && locale !== 'de' && (
+          <p className="mt-6 rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-paper/85">
+            {t('bindingNote')}
+          </p>
+        )}
+
+        {hasFullText ? (
+          <div className="mt-10 flex flex-col gap-8">
+            {sections.map((section, i) => (
+              <section key={i}>
+                <h2 className="font-display text-xl text-paper">
+                  {section.heading}
+                </h2>
+                {section.body.map((paragraph, j) => (
+                  <p key={j} className="mt-3 leading-relaxed text-paper/75">
+                    {paragraph}
+                  </p>
+                ))}
+              </section>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-10 rounded-2xl border border-ink-line/60 bg-ink-soft p-6 md:p-8">
+            <p className="text-paper/75">{t('note')}</p>
+            {liveUrl && (
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold-bright"
+              >
+                {t('liveButton')}
+                <ExternalLink className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+                <span className="sr-only"> ({t('newTab')})</span>
+              </a>
+            )}
+          </div>
+        )}
       </main>
 
       <footer className="border-t border-ink-line/60">

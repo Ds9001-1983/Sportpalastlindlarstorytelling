@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Check, Phone, ArrowRight, Sparkles } from 'lucide-react';
 import { SITE } from '@/lib/site';
+import { Link } from '@/i18n/navigation';
 
 export function MembershipCta() {
   const t = useTranslations('membership');
@@ -43,7 +44,7 @@ export function MembershipCta() {
               </h2>
               <p className="mt-5 max-w-md text-lg text-ink/80">{t('text')}</p>
 
-              <div className="mt-8 flex items-baseline gap-2">
+              <div className="mt-8 flex flex-wrap items-baseline gap-2">
                 <span className="text-sm uppercase tracking-wide text-ink/60">
                   {t('priceAfter')}
                 </span>
@@ -52,6 +53,15 @@ export function MembershipCta() {
                 </span>
                 <span className="text-lg text-ink/70">{t('priceSuffix')}</span>
               </div>
+              <p className="mt-2 text-sm text-ink/70">
+                {t('priceNote')}{' '}
+                <Link
+                  href={SITE.routes.preise}
+                  className="font-semibold underline underline-offset-2 hover:text-ink"
+                >
+                  {t('ctaPrices')}
+                </Link>
+              </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a

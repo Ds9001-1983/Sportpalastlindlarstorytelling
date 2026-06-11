@@ -90,6 +90,7 @@ export function StoryRoom({
   const stickyRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
+  const dimRef = useRef<HTMLDivElement>(null);
   const seqRef = useRef<LoadedSequence | null>(null);
   const progressRef = useRef(0);
   const renderRef = useRef<(() => void) | null>(null);
@@ -184,6 +185,17 @@ export function StoryRoom({
       el.style.transform = `translateY(${(1 - o) * 24}px)`;
     };
 
+    // Boundary-Dim: jeder Room endet in Fast-Schwarz und beginnt aus Fast-Schwarz.
+    // Dadurch ist die harte Bild-an-Bild-Kante beim Unpin schwarz-auf-schwarz und
+    // unsichtbar; der letzte Room mündet nahtlos ins dunkle Stats-Band.
+    const setDim = (p: number) => {
+      const el = dimRef.current;
+      if (!el) return;
+      const tail = p > 0.88 ? (p - 0.88) / 0.12 : 0;
+      const head = index === 0 ? 0 : p < 0.12 ? 1 - p / 0.12 : 0;
+      el.style.opacity = String(Math.min(1, Math.max(tail, head)) * 0.9);
+    };
+
     const prefersReduced = window.matchMedia(
       '(prefers-reduced-motion: reduce)',
     ).matches;
@@ -199,6 +211,7 @@ export function StoryRoom({
     if (prefersReduced) {
       progressRef.current = 0.5;
       setOverlay(1);
+      if (dimRef.current) dimRef.current.style.opacity = '0';
       render();
     } else {
       st = ScrollTrigger.create({
@@ -211,10 +224,12 @@ export function StoryRoom({
         onUpdate: (self) => {
           progressRef.current = self.progress;
           setOverlay(self.progress);
+          setDim(self.progress);
           render();
         },
       });
       setOverlay(0);
+      setDim(0);
     }
 
     return () => {
@@ -240,7 +255,13 @@ export function StoryRoom({
           className="absolute inset-0 h-full w-full"
           aria-hidden="true"
         />
-        <div className="text-scrim pointer-events-none absolute inset-0" />
+        <div
+          ref={dimRef}
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-ink"
+          style={{ opacity: index === 0 ? 0 : 0.9 }}
+        />
+        <div className="story-scrim pointer-events-none absolute inset-0" />
         <div className="absolute inset-0 flex items-end md:items-center">
           <div
             ref={overlayRef}
@@ -256,10 +277,10 @@ export function StoryRoom({
                 {String(total).padStart(2, '0')}
               </span>
             </span>
-            <h2 className="font-display max-w-4xl text-[clamp(2.5rem,8vw,7rem)] text-paper">
+            <h2 className="font-display text-shadow-scrim max-w-4xl text-[clamp(2.5rem,8vw,7rem)] text-paper">
               {beat}
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-paper/80 md:text-lg">
+            <p className="text-shadow-scrim mt-5 max-w-xl text-base leading-relaxed text-paper/90 md:text-lg">
               {subline}
             </p>
           </div>

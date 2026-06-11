@@ -14,7 +14,7 @@
  * Voraussetzung: @playwright/test installiert + chromium browser.
  */
 
-import { test, expect, devices, Page } from '@playwright/test'
+import { test, expect, devices } from '@playwright/test'
 import fs from 'fs'
 import path from 'path'
 
@@ -51,7 +51,12 @@ const SCROLL_POSITIONS = [0, 0.25, 0.5, 0.75, 1.0]
 test.describe('Visual Regression', () => {
   for (const breakpoint of BREAKPOINTS) {
     test.describe(`@ ${breakpoint.name}`, () => {
-      test.use({ viewport: breakpoint.viewport, userAgent: breakpoint.userAgent })
+      test.use({
+        viewport: breakpoint.viewport,
+        ...('userAgent' in breakpoint
+          ? { userAgent: breakpoint.userAgent as string }
+          : {}),
+      })
 
       test('Page loads ohne Errors', async ({ page }) => {
         const errors: string[] = []
@@ -139,15 +144,17 @@ test.describe('Scrollytelling Specific', () => {
     await page.waitForTimeout(2000)
 
     // Scroll auslösen und prüfen ob Canvas Frame wechselt
+    // (der CanvasSequence-Renderer setzt window.__currentFrame)
     const initialFrame = await page.evaluate(() => {
-      // @ts-ignore - der CanvasSequence-Renderer setzt window.__currentFrame
-      return (window as any).__currentFrame || 0
+      return (window as unknown as { __currentFrame?: number }).__currentFrame || 0
     })
 
     await page.evaluate(() => window.scrollTo(0, 1500))
     await page.waitForTimeout(800)
 
-    const newFrame = await page.evaluate(() => (window as any).__currentFrame || 0)
+    const newFrame = await page.evaluate(
+      () => (window as unknown as { __currentFrame?: number }).__currentFrame || 0
+    )
 
     if (newFrame === initialFrame) {
       console.warn('   ⚠️ Frame hat sich nicht geändert — Canvas-Renderer ggf. nicht aktiv')
@@ -175,6 +182,127 @@ test.describe('Scrollytelling Specific', () => {
     expect(hasCanvasSequence).toBe(false)
     expect(hasScrollSnap).toBe(true)
     await ctx.close()
+  })
+})
+
+// ─────────────────────────────────────────
+// STUFE 2+: Reveal-Robustheit (Geister-Karten)
+// ─────────────────────────────────────────
+// Regression-Schutz: data-reveal-Inhalte dürfen nach Scroll-Sprüngen nicht
+// halbtransparent "hängen" (Sofort-Reveal-Fast-Path in reveal.tsx).
+
+test.describe('Reveal-Robustheit', () => {
+  for (const bp of [
+    { name: 'Desktop 1920', viewport: { width: 1920, height: 1080 } },
+    { name: 'iPhone 14 Pro', viewport: devices['iPhone 14 Pro'].viewport },
+  ]) {
+    test(`Keine halbtransparenten Karten @ ${bp.name}`, async ({ browser }) => {
+      const ctx = await browser.newContext({ viewport: bp.viewport })
+      const page = await ctx.newPage()
+      await page.goto('/de')
+      await page.waitForLoadState('networkidle')
+      await page.waitForTimeout(1500)
+
+      const max = await page.evaluate(
+        () => document.body.scrollHeight - window.innerHeight
+      )
+      // Harte Sprünge quer durch den Content-Bereich (inkl. Rücksprung)
+      for (const pos of [0.45, 0.55, 0.65, 0.75, 0.85, 0.95, 0.6]) {
+        await page.evaluate(
+          (y) => window.scrollTo({ top: y, behavior: 'instant' }),
+          max * pos
+        )
+        await page.waitForTimeout(400) // Fast-Path (0.18s) + Puffer
+
+        const ghosts = await page.evaluate(() =>
+          Array.from(document.querySelectorAll('[data-reveal]'))
+            .filter((el) => {
+              const r = el.getBoundingClientRect()
+              // Nur Elemente klar im Blickfeld (obere 55%): dort gilt Sofort-Reveal
+              return (
+                r.top < window.innerHeight * 0.55 &&
+                r.bottom > 0 &&
+                parseFloat(getComputedStyle(el).opacity) < 0.9
+              )
+            })
+            .map((el) => el.textContent?.trim().slice(0, 40))
+        )
+        expect(ghosts).toEqual([])
+      }
+      await ctx.close()
+    })
+  }
+
+  test('Count-up erreicht Endwerte nach Anker-Sprung', async ({ page }) => {
+    await page.goto('/de')
+    await page.waitForLoadState('networkidle')
+    await page.waitForTimeout(1500)
+
+    await page.evaluate(() => {
+      document
+        .querySelector('#stats-heading')
+        ?.scrollIntoView({ behavior: 'instant' as ScrollBehavior, block: 'center' })
+    })
+    await page.waitForTimeout(1000) // Sprung-Duration 0.4s + Puffer
+
+    const texts = await page.locator('[data-countup]').allTextContents()
+    expect(texts).toEqual(['2.000', '140', '30', '250', '130', '2'])
+  })
+})
+
+// ─────────────────────────────────────────
+// STUFE 2+: Routen-Crawl (Hybrid-Unterseiten)
+// ─────────────────────────────────────────
+
+const LOCALES = ['de', 'en', 'tr', 'ru']
+const ROUTES = [
+  '',
+  '/preise',
+  '/kurse',
+  '/ueber-uns',
+  '/physiotherapie',
+  '/rehasport',
+  '/firmenfitness',
+  '/karriere',
+  '/impressum',
+  '/datenschutz',
+  '/agb',
+  '/widerruf',
+  '/hausordnung',
+]
+
+test.describe('Routen-Crawl', () => {
+  test('Alle Routen liefern 200 in allen Locales', async ({ request }) => {
+    const failures: string[] = []
+    for (const locale of LOCALES) {
+      for (const route of ROUTES) {
+        const res = await request.get(`/${locale}${route}`)
+        if (res.status() !== 200) {
+          failures.push(`/${locale}${route} → ${res.status()}`)
+        }
+      }
+    }
+    expect(failures).toEqual([])
+  })
+
+  test('Genau eine H1 pro Seite (de)', async ({ page }) => {
+    const failures: string[] = []
+    for (const route of ROUTES) {
+      await page.goto(`/de${route}`)
+      const h1Count = await page.locator('h1').count()
+      if (h1Count !== 1) failures.push(`/de${route} → ${h1Count} H1s`)
+    }
+    expect(failures).toEqual([])
+  })
+
+  test('Canonical zeigt auf eigene Route (Unterseiten)', async ({ page }) => {
+    for (const route of ['/preise', '/kurse', '/ueber-uns']) {
+      await page.goto(`/de${route}`)
+      const canonical = await page
+        .locator('link[rel="canonical"]')
+        .getAttribute('href')
+      expect(canonical, `Canonical für ${route}`).toContain(`/de${route}`)
+    }
   })
 })
 

@@ -41,10 +41,10 @@ export function MobileStory({ rooms }: { rooms: MobileRoom[] }) {
                 {String(rooms.length).padStart(2, '0')}
               </span>
             </span>
-            <h2 className="font-display text-[2.5rem] leading-[0.95] text-paper">
+            <h2 className="font-display text-shadow-scrim text-[2.5rem] leading-[0.95] text-paper">
               {room.beat}
             </h2>
-            <p className="mt-3 max-w-md text-base leading-relaxed text-paper/85">
+            <p className="text-shadow-scrim mt-3 max-w-md text-base leading-relaxed text-paper/90">
               {room.subline}
             </p>
           </div>

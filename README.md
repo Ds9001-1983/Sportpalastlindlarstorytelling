@@ -23,16 +23,23 @@ npm run qa:lighthouse  # Lighthouse-Budget-Check (Server muss laufen; --url anpa
 npm run qa:visual      # Playwright Visual Regression (5 Breakpoints)
 ```
 
-## Architektur
+## Architektur (Hybrid)
 
-- `src/app/[locale]/` — lokalisiertes Root-Layout + Single-Page-Komposition
+- `src/app/[locale]/` — lokalisiertes Root-Layout, Scrollytelling-Home + Unterseiten
+  - Unterseiten: `/preise`, `/kurse` (voller Wochenkursplan), `/ueber-uns`,
+    `/physiotherapie`, `/rehasport`, `/firmenfitness`, `/karriere`
+  - Legal-Routen mit eingepflegten Volltexten: `/impressum`, `/datenschutz`,
+    `/hausordnung` (AGB/Widerruf verlinken noch auf sportpalast-fitness.de)
 - `src/proxy.ts` — next-intl Locale-Routing (Next 16: „Middleware" heißt jetzt „Proxy")
 - `src/i18n/` — `routing.ts`, `request.ts`, `navigation.ts`
-- `messages/{de,en,tr,ru}.json` — alle Texte
+- `messages/{de,en,tr,ru}.json` — alle Texte (Key-Parität; Inhalte 1:1 von
+  www.sportpalast-lindlar.de übernommen — Preise, Kursplan, Team, Öffnungszeiten)
 - `src/components/story-room.tsx` — gepinnter **Frame-Scrub-Canvas** (Desktop)
 - `src/lib/frame-sequence.ts` — Manifest-Loader mit Eager/Lazy-Preloading
 - `src/components/mobile-story.tsx` — **Variante B** (statische Keyframes, kein Scrub)
-- `src/components/sections/*` — Angebot, Social Proof, Mitglieds-CTA, Kontakt
+- `src/components/sections/*` — Stats, Ziele, Angebot, Kursplan, Social Proof,
+  Preise, Mitglieds-CTA, Team, FAQ, Kontakt
+- `src/components/subpage-shell.tsx` + `page-hero.tsx` — Gerüst der Unterseiten
 - `story-spec.json` — verbindliche Story-/Asset-Definition (gegen Skill-Schema validiert)
 
 Die StoryRoom-Komponente lädt pro Room `/<framesBase>/manifest.json`. **Solange keine
@@ -78,7 +85,14 @@ Vercel Pro, Region `fra1` (`vercel.json`). Domain `sportpalast-lindlar.de`.
   Vor Go-live am echten Sportpalast-Logo verifizieren/justieren (`src/app/globals.css`).
 - **Tracking:** GA4/Meta-Pixel sind im `story-spec.json` als `null` angelegt
   (Consent-gated). IDs nachtragen, wenn vom Kunden gewünscht.
-- **Impressum/Datenschutz:** Footer-Links sind Platzhalter (`#`).
+- **AGB/Widerruf:** Volltexte liegen auf sportpalast-fitness.de — bis zur Übernahme
+  verlinken die Routen auf die Live-Texte (`src/components/legal-page.tsx`).
+- **Vor Go-live verifizieren:** Studio-Adresse Meinerzhagen (aktuell Firmensitz
+  Siepener Weg 10 aus dem Impressum), Schreibweise „Uygar/Uysal Özcelik" im Impressum,
+  Datenschutztext vom DSB (bensom GmbH) freigeben lassen, Team-Namen mit Kunde bestätigen.
+- **Kursplan:** statisch gepflegt (Stand Juni 2026) in `messages/*.json` → `schedule.days`;
+  Live-PDF der Referenz ist von `/kurse` verlinkt.
+- **Sommeraktion** endet 31.08.2026 — Texte zentral in `promo`, `pricing`, `membership`.
 
 ---
 

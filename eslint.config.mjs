@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Node-CJS-Tooling (kein App-Code, eigene Laufzeitumgebung):
+    "scripts/lighthouse-check.js",
   ]),
 ]);
 

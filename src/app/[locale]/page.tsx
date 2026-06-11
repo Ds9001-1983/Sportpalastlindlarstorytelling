@@ -11,8 +11,12 @@ import { Reveal } from '@/components/reveal';
 import { Stats } from '@/components/sections/stats';
 import { Goals } from '@/components/sections/goals';
 import { Offers } from '@/components/sections/offers';
+import { Schedule } from '@/components/sections/schedule';
 import { SocialProof } from '@/components/sections/social-proof';
+import { Pricing } from '@/components/sections/pricing';
 import { MembershipCta } from '@/components/sections/membership-cta';
+import { Team } from '@/components/sections/team';
+import { Faq } from '@/components/sections/faq';
 import { Contact } from '@/components/sections/contact';
 
 export default async function HomePage({
@@ -25,6 +29,7 @@ export default async function HomePage({
 
   const t = await getTranslations('hero');
   const tMeta = await getTranslations('meta');
+  const tFaq = await getTranslations('faq');
 
   const rooms = ROOMS.map((r, i) => ({
     ...r,
@@ -33,7 +38,7 @@ export default async function HomePage({
     subline: t(`rooms.${r.id}.subline`),
   }));
 
-  // Structured Data: SportsActivityLocation + ExerciseGym
+  // Structured Data: SportsActivityLocation + ExerciseGym (beide Standorte)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': ['SportsActivityLocation', 'ExerciseGym'],
@@ -41,9 +46,12 @@ export default async function HomePage({
     description: tMeta('description'),
     url: 'https://www.sportpalast-lindlar.de',
     telephone: SITE.phone,
+    email: SITE.email,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Lindlar',
+      streetAddress: SITE.address.lindlar.street,
+      postalCode: SITE.address.lindlar.zip,
+      addressLocality: SITE.address.lindlar.city,
       addressRegion: 'NRW',
       addressCountry: 'DE',
     },
@@ -68,7 +76,32 @@ export default async function HomePage({
         closes: '19:00',
       },
     ],
+    containsPlace: {
+      '@type': 'ExerciseGym',
+      name: 'Sportpalast Meinerzhagen',
+      telephone: SITE.phoneMeinerzhagen,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: SITE.address.meinerzhagen.street,
+        postalCode: SITE.address.meinerzhagen.zip,
+        addressLocality: SITE.address.meinerzhagen.city,
+        addressRegion: 'NRW',
+        addressCountry: 'DE',
+      },
+    },
     sameAs: [SITE.social.instagram, SITE.social.facebook, SITE.social.youtube],
+  };
+
+  // FAQPage-Schema aus den FAQ-Inhalten
+  const faqItems = tFaq.raw('items') as { q: string; a: string }[];
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
   };
 
   return (
@@ -77,9 +110,13 @@ export default async function HomePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <PromoBanner />
       <SiteHeader />
-      <main id="top">
+      <main id="inhalt">
         {/* Genau eine H1 für die ganze Seite (Story-Beats bleiben H2). */}
         <h1 className="sr-only">{t('h1')}</h1>
 
@@ -103,12 +140,18 @@ export default async function HomePage({
         {/* Mobile: Variante B (statische Keyframes, kein Scrub) */}
         <MobileStory rooms={rooms} />
 
-        {/* Content-Module nach der Hero (CTA delayed_after_arrival) */}
+        {/* Content-Module nach der Hero (CTA delayed_after_arrival):
+            Stats → Ziele → Angebot → Kursplan-Teaser → Social Proof →
+            Preise → Mitglieds-CTA → Team-Teaser → FAQ → Kontakt */}
         <Stats />
         <Goals />
         <Offers />
+        <Schedule variant="teaser" />
         <SocialProof />
+        <Pricing variant="home" />
         <MembershipCta />
+        <Team variant="teaser" />
+        <Faq />
         <Contact />
       </main>
       <SiteFooter />

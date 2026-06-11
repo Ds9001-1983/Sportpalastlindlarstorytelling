@@ -23,10 +23,10 @@ export function SiteFooter() {
     {
       title: t('discover'),
       links: [
-        { label: tNav('goals'), href: '#ziele' },
-        { label: tNav('offers'), href: '#angebot' },
-        { label: t('kursplan'), href: SITE.links.kursplan, external: true },
-        { label: tNav('contact'), href: '#kontakt' },
+        { label: tNav('goals'), href: '/#ziele' },
+        { label: tNav('offers'), href: '/#angebot' },
+        { label: t('kursplan'), href: SITE.routes.kursplan },
+        { label: tNav('contact'), href: '/#kontakt' },
       ],
     },
     {
@@ -34,7 +34,18 @@ export function SiteFooter() {
       links: [
         { label: t('trial'), href: SITE.links.trial, external: true },
         { label: tNav('membership'), href: SITE.links.join, external: true },
-        { label: t('about'), href: SITE.links.ueberUns, external: true },
+        { label: t('prices'), href: SITE.routes.preise },
+        { label: t('about'), href: SITE.routes.ueberUns },
+        { label: t('career'), href: SITE.routes.karriere },
+      ],
+    },
+    {
+      title: t('moreCol'),
+      links: [
+        { label: tNav('courses'), href: SITE.routes.kurse },
+        { label: t('physio'), href: SITE.routes.physio },
+        { label: t('reha'), href: SITE.routes.reha },
+        { label: t('corporate'), href: SITE.routes.firmenfitness },
       ],
     },
     {
@@ -69,8 +80,8 @@ export function SiteFooter() {
       </span>
 
       <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-          <div data-reveal className="md:col-span-3">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12">
+          <div data-reveal className="sm:col-span-2 lg:col-span-4">
             <div className="font-display text-2xl">{tHero('brand')}</div>
             <p className="mt-2 max-w-xs text-paper/60">{t('claim')}</p>
             <div className="mt-6 flex items-center gap-4">
@@ -94,7 +105,7 @@ export function SiteFooter() {
               key={col.title}
               data-reveal
               aria-label={col.title}
-              className="md:col-span-3"
+              className="lg:col-span-2"
             >
               <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
                 {col.title}

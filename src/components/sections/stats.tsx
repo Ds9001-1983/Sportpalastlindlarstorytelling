@@ -30,7 +30,7 @@ export function Stats() {
           {t('kicker')}
         </h2>
 
-        <dl className="mt-12 grid grid-cols-2 gap-y-12 md:grid-cols-5 md:gap-y-0">
+        <dl className="mt-12 grid grid-cols-2 gap-y-12 md:grid-cols-3 lg:grid-cols-6 lg:gap-y-0">
           {items.map((s, i) => {
             const to = parseFloat(s.to);
             return (
@@ -38,18 +38,21 @@ export function Stats() {
                 key={i}
                 data-reveal
                 className={`flex flex-col items-center px-4 text-center ${
-                  i > 0 ? 'md:border-l md:border-gold/15' : ''
+                  i > 0 ? 'lg:border-l lg:border-gold/15' : ''
                 }`}
               >
+                {/* Zahl und Suffix getrennt: „m²" bricht nie um und der
+                    Count-up überschreibt den Suffix nicht mit. */}
                 <dd
-                  data-countup
-                  data-to={s.to}
-                  data-suffix={s.suffix}
-                  className="font-display text-[clamp(2.75rem,6vw,5rem)] leading-none text-gold tabular-nums"
+                  className="font-display whitespace-nowrap text-[clamp(2.5rem,4.5vw,4.25rem)] leading-none text-gold tabular-nums"
                   aria-label={`${numberFmt.format(to)}${s.suffix}`}
                 >
-                  {numberFmt.format(to)}
-                  {s.suffix}
+                  <span data-countup data-to={s.to} aria-hidden="true">
+                    {numberFmt.format(to)}
+                  </span>
+                  <span aria-hidden="true" className="text-[0.55em]">
+                    {s.suffix}
+                  </span>
                 </dd>
                 <dt className="mt-3 text-xs uppercase tracking-[0.2em] text-paper/55 md:text-sm">
                   {s.label}

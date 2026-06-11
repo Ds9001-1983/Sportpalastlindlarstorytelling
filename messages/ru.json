@@ -1,19 +1,24 @@
 {
   "meta": {
     "title": "Sportpalast Lindlar — Стань лучшей версией себя",
-    "description": "Премиальный фитнес-клуб в регионе Оберберг: eGym, более 30 занятий, сауна и велнес, физиотерапия. Стань лучшей версией себя — от 39,95 €/месяц."
+    "description": "Премиальный фитнес-клуб в регионе Оберберг: eGym, более 30 занятий в неделю, 250 м² сауны и велнеса, физиотерапия и Rehasport. Запишись на пробную тренировку."
   },
   "nav": {
     "offers": "Что мы предлагаем",
     "goals": "Цели",
+    "courses": "Занятия",
+    "prices": "Цены",
+    "about": "О нас",
     "membership": "Стать членом",
     "contact": "Контакты",
     "language": "Язык",
-    "skipToContent": "Перейти к содержанию"
+    "skipToContent": "Перейти к содержанию",
+    "menuOpen": "Открыть меню",
+    "menuClose": "Закрыть меню"
   },
   "promo": {
     "badge": "3 месяца за 0,00 €",
-    "text": "Летняя акция — всё включено, 2 локации.",
+    "text": "Летняя акция до 31.08 — всё включено, 2 локации.",
     "cta": "Забронировать сейчас",
     "dismiss": "Закрыть баннер"
   },
@@ -60,31 +65,12 @@
   "stats": {
     "kicker": "Дворец в цифрах",
     "items": [
-      {
-        "to": "2000",
-        "suffix": " m²",
-        "label": "Тренировочная площадь"
-      },
-      {
-        "to": "250",
-        "suffix": " m²",
-        "label": "Сауна и велнес"
-      },
-      {
-        "to": "120",
-        "suffix": "+",
-        "label": "Парковочных мест"
-      },
-      {
-        "to": "30",
-        "suffix": "+",
-        "label": "Занятий в неделю"
-      },
-      {
-        "to": "2",
-        "suffix": "",
-        "label": "Локации"
-      }
+      { "to": "2000", "suffix": " m²", "label": "Тренировочная площадь" },
+      { "to": "140", "suffix": "+", "label": "Тренажёров" },
+      { "to": "30", "suffix": "+", "label": "Занятий в неделю" },
+      { "to": "250", "suffix": " m²", "label": "Сауна и велнес" },
+      { "to": "130", "suffix": "+", "label": "Парковочных мест" },
+      { "to": "2", "suffix": "", "label": "Локации" }
     ]
   },
   "goals": {
@@ -104,20 +90,20 @@
   "offers": {
     "kicker": "Всё включено",
     "heading": "Дворец для твоих тренировок",
-    "subheading": "2000 м² тренировочной площади, 250 м² велнеса и команда, которая тебя знает.",
+    "subheading": "2000 м² тренировочной площади, 140+ тренажёров, 250 м² велнеса и команда, которая тебя знает.",
     "newTab": "откроется в новой вкладке",
     "items": {
       "egym": {
         "title": "eGym и сила",
-        "text": "Умные силовые тренировки с eGym, свободными весами, Plate-Loaded-тренажёрами и анализом тела SECA."
+        "text": "Умные силовые тренировки с eGym Fitness Hub, свободными весами, Plate-Loaded-тренажёрами и анализом тела SECA."
       },
       "kurse": {
         "title": "Более 30 занятий",
-        "text": "От Athletic и Lady Fitness до тренировок для спины — более 30 занятий в расписании каждую неделю."
+        "text": "От Hot Iron и Yoga до Jumping Fitness — каждую неделю более 30 занятий в зале 230 м² со сценой."
       },
       "ausdauer": {
         "title": "Кардио и Vibrafit",
-        "text": "Современная кардиозона и Vibrafit — вибротренинг для всего тела ради выносливости и обмена веществ."
+        "text": "Современная кардиозона с панорамным видом и Vibrafit — вибротренинг всего тела для выносливости и обмена веществ."
       },
       "functional": {
         "title": "Functional и Athletic Box",
@@ -125,21 +111,126 @@
       },
       "wellness": {
         "title": "Сауна и велнес",
-        "text": "250 м² сауны внутри и снаружи, Lounge & Café — восстановление и безлимитные напитки включены."
+        "text": "250 м² сауны внутри и снаружи, комната отдыха, Lounge & Café — восстановление и безлимитные напитки включены."
       },
       "lady": {
         "title": "Lady Fitness",
-        "text": "Защищённая тренировочная зона исключительно для женщин — чувствуй себя комфортно и становись сильнее."
+        "text": "Защищённая тренировочная зона исключительно для женщин — плюс женский день в сауне каждую среду."
       },
       "personal": {
         "title": "Personal Training",
-        "text": "Индивидуальное сопровождение с личным тренером — твой план, твои цели, максимальный прогресс."
+        "text": "Индивидуальное сопровождение 1:1 с личным тренером — занятия по 30 или 60 минут, твой план, твои цели."
       },
       "physio": {
         "title": "Физио и Rehasport",
-        "text": "Интегрированная физиотерапия и Rehasport (5 занятий в неделю) для здоровья надолго."
+        "text": "Интегрированная физиотерапия и Rehasport со 100 % оплатой больничными кассами."
       }
     }
+  },
+  "schedule": {
+    "kicker": "Твой недельный план",
+    "heading": "Более 30 занятий в неделю",
+    "subheading": "Сила, кардио, йога, единоборства и Rehasport — в зале 230 м² со сценой и звуком high-end-класса.",
+    "asOf": "По состоянию на июнь 2026 г. — возможны изменения.",
+    "liveNote": "Актуальное на сегодня расписание ты найдёшь в живом расписании занятий.",
+    "livePdfLabel": "Открыть актуальное расписание",
+    "planHeading": "Недельное расписание занятий",
+    "newTab": "откроется в новой вкладке",
+    "teaser": {
+      "heading": "На этой неделе во дворце",
+      "text": "Pilates утром, Hot Iron вечером, Yoga в субботу — более 30 занятий в неделю, все включены в членский взнос.",
+      "cta": "К полному расписанию"
+    },
+    "categories": {
+      "strength": {
+        "title": "Сила и выносливость",
+        "courses": ["Body Workout", "Functional Training", "Hot Iron", "Zirkel Training", "Pilates"]
+      },
+      "cardio": {
+        "title": "Кардио и жиросжигание",
+        "courses": ["Step Aerobic", "Dance Aerobic Choreo", "Jumping Fitness", "Zumba", "Fatburner Workout", "Intervall Mix"]
+      },
+      "mind": {
+        "title": "Mind-Body и расслабление",
+        "courses": ["Yoga", "Ashtanga Yoga", "Yin Yoga", "Energetic Flow Yoga", "Rücken & Relax", "Deepwork"]
+      },
+      "special": {
+        "title": "Спецзанятия и реабилитация",
+        "courses": ["Boxen & Kickboxen", "WingTsun", "Rehasport", "Rehasport Soft", "Rückenfit"]
+      }
+    },
+    "days": [
+      {
+        "day": "Понедельник",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Pilates" },
+          { "time": "10:00 – 11:00", "course": "Zumba" },
+          { "time": "17:00 – 18:00", "course": "Fatburner Workout" },
+          { "time": "18:00 – 19:00", "course": "Hot Iron" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:15", "course": "Ashtanga Yoga" }
+        ]
+      },
+      {
+        "day": "Вторник",
+        "slots": [
+          { "time": "09:00 – 10:30", "course": "Yin Yoga" },
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:30 – 11:15", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (дети)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (подростки)" },
+          { "time": "17:00 – 18:00", "course": "Zumba" },
+          { "time": "18:00 – 19:00", "course": "Energetic Flow Yoga" },
+          { "time": "19:00 – 20:00", "course": "Functional Training" },
+          { "time": "20:00 – 21:00", "course": "WingTsun (взрослые)" }
+        ]
+      },
+      {
+        "day": "Среда",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Rücken & Relax" },
+          { "time": "10:00 – 10:45", "course": "Rehasport Soft" },
+          { "time": "11:00 – 11:45", "course": "Rehasport" },
+          { "time": "18:00 – 19:00", "course": "Dance Aerobic Choreo" },
+          { "time": "19:00 – 20:00", "course": "Body Workout" },
+          { "time": "20:00 – 21:00", "course": "Jumping Fitness" }
+        ]
+      },
+      {
+        "day": "Четверг",
+        "slots": [
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:15 – 11:00", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (3–5 лет)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (дети)" },
+          { "time": "17:00 – 18:00", "course": "WingTsun (подростки)" },
+          { "time": "18:00 – 19:00", "course": "Step Aerobic" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:30", "course": "WingTsun (взрослые)" }
+        ]
+      },
+      {
+        "day": "Пятница",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Intervall Mix" },
+          { "time": "10:00 – 11:00", "course": "Rückenfit" },
+          { "time": "17:00 – 18:00", "course": "Jumping Fitness" },
+          { "time": "18:00 – 19:00", "course": "Deepwork" }
+        ]
+      },
+      {
+        "day": "Суббота",
+        "slots": [
+          { "time": "09:30 – 10:30", "course": "Zumba" },
+          { "time": "10:30 – 11:30", "course": "Hot Iron" },
+          { "time": "11:30 – 12:30", "course": "Yoga" }
+        ]
+      },
+      {
+        "day": "Воскресенье",
+        "slots": [{ "time": "10:30 – 11:30", "course": "Boxen & Kickboxen" }]
+      }
+    ]
   },
   "proof": {
     "kicker": "Реальные отзывы",
@@ -163,14 +254,104 @@
       }
     ]
   },
+  "pricing": {
+    "kicker": "Ясно и прозрачно",
+    "heading": "Тарифы для любой цели",
+    "subheading": "Четыре модели и одна летняя акция: первые 3 месяца ты тренируешься за 0,00 €.",
+    "promoBadge": "Летняя акция: 3 месяца за 0,00 €",
+    "promoConditions": "Действует до 31.08.2026, только для новых клиентов, не суммируется с другими акциями. Доступно в Линдларе и Майнерцхагене.",
+    "perMonth": "/ месяц",
+    "afterPromo": "с 4-го месяца",
+    "termLabel": "Срок договора",
+    "highlightLabel": "Популярный",
+    "plans": [
+      {
+        "id": "club24",
+        "name": "Club Abo",
+        "term": "24 месяца",
+        "price": "49,95 €",
+        "promo": "Первые 3 месяца 0,00 €",
+        "note": "",
+        "highlight": true
+      },
+      {
+        "id": "club12",
+        "name": "Club Abo",
+        "term": "12 месяцев",
+        "price": "59,95 €",
+        "promo": "Первые 3 месяца 0,00 €",
+        "note": "",
+        "highlight": false
+      },
+      {
+        "id": "reha18",
+        "name": "Reha Plus",
+        "term": "18 месяцев",
+        "price": "39,95 €",
+        "promo": "Первые 3 месяца 0,00 €",
+        "note": "При наличии врачебного направления на Rehasport",
+        "highlight": false
+      },
+      {
+        "id": "youth12",
+        "name": "Youth Abo",
+        "term": "12 месяцев",
+        "price": "39,95 €",
+        "promo": "Первые 3 месяца 0,00 €",
+        "note": "Для подростков от 16 до 19 лет",
+        "highlight": false
+      }
+    ],
+    "includedHeading": "Включено в каждый тариф",
+    "included": [
+      "Все фитнес- и оздоровительные занятия",
+      "250 м² сауны и велнеса",
+      "Безлимитные напитки",
+      "Lounge & Café",
+      "Доступ в Линдлар и Майнерцхаген"
+    ],
+    "feesHeading": "Разовые и дополнительные платежи",
+    "fees": [
+      {
+        "label": "Стартовый пакет",
+        "value": "40 € вместо 79,95 €",
+        "note": "Членская карта, бутылка для воды, фитнес-ассессмент, анализ тела, план тренировок"
+      },
+      {
+        "label": "Сервисный сбор",
+        "value": "15 € каждые 6 месяцев",
+        "note": "Начиная с 6-го месяца"
+      },
+      {
+        "label": "Пробная тренировка",
+        "value": "10 €",
+        "note": "При оформлении членства засчитывается полностью"
+      },
+      {
+        "label": "Дневной абонемент",
+        "value": "18 €",
+        "note": "Без пробной тренировки"
+      }
+    ],
+    "termsHeading": "Договор и расторжение",
+    "terms": [
+      "Срок уведомления о расторжении: один месяц до окончания срока договора.",
+      "После окончания срока договор продлевается с возможностью ежемесячного расторжения."
+    ],
+    "ctaTrial": "Записаться на пробную тренировку",
+    "ctaJoin": "Стать членом клуба",
+    "ctaAll": "Все тарифы и условия",
+    "newTab": "откроется в новой вкладке"
+  },
   "membership": {
     "kicker": "Присоединяйся",
     "heading": "Начни своё преображение",
     "text": "Все виды тренировок, более 30 занятий, сауна, анализ тела и доступ к обоим клубам — всё включено.",
     "promoBadge": "3 месяца фитнеса за 0,00 €",
-    "priceAfter": "затем",
-    "priceValue": "от 39,95 €",
+    "priceAfter": "затем Club Abo",
+    "priceValue": "от 49,95 €",
     "priceSuffix": "/ месяц",
+    "priceNote": "Reha Plus и Youth Abo уже от 39,95 €/месяц.",
     "bulletsHeading": "Что входит в твои 3 бесплатных месяца:",
     "bullets": [
       "Все тренировочные зоны и более 30 занятий",
@@ -181,27 +362,102 @@
     ],
     "ctaTrial": "Записаться на пробную тренировку",
     "ctaCall": "Позвонить",
-    "promoNote": "Акция действует при наличии мест. Условия и срок действия уточняйте в клубе.",
+    "ctaPrices": "Посмотреть все тарифы",
+    "promoNote": "Летняя акция до 31.08.2026, только для новых клиентов, не суммируется с другими акциями.",
     "newTab": "откроется в новой вкладке"
+  },
+  "team": {
+    "kicker": "С 2004 года",
+    "heading": "Люди, стоящие за дворцом",
+    "intro": "С 2004 года жители Оберберга тренируются в стеклянном дворце Линдлара. За клубом стоит команда, которая живёт фитнесом — с экспертизой, страстью и личной вовлечённостью.",
+    "leadershipHeading": "Руководство",
+    "leadership": [
+      { "name": "Uygar Özcelik", "role": "Директор и совладелец" },
+      { "name": "Vera Dütting", "role": "Директор и совладелица" },
+      { "name": "Wolfgang Feykens", "role": "Директор и совладелец" }
+    ],
+    "membersHeading": "Твоя команда в клубе",
+    "members": [
+      { "name": "Marie Bork", "role": "Руководитель Group Fitness" },
+      { "name": "Thomas Bürgerhausen", "role": "Руководитель фитнеса и тренинга" },
+      { "name": "Saskia Klemke", "role": "Физиотерапевт и руководитель практики" },
+      { "name": "Katja Lüdenbach", "role": "Тренер Group Fitness" }
+    ],
+    "teaser": {
+      "heading": "Команда, которая тебя знает",
+      "text": "Руководство, тренеры и терапевты — с 2004 года работают ради твоей цели.",
+      "cta": "Познакомься с командой"
+    }
+  },
+  "faq": {
+    "kicker": "Полезно знать",
+    "heading": "Частые вопросы",
+    "items": [
+      {
+        "q": "Сколько стоит пробная тренировка?",
+        "a": "Пробная тренировка стоит 10 € и при оформлении членства засчитывается полностью. Без пробной тренировки действует дневной абонемент за 18 €. Включены все тренировочные зоны, занятия, сауна и велнес, а также Lounge & Café."
+      },
+      {
+        "q": "Какие есть тарифы?",
+        "a": "Club Abo на 24 месяца (49,95 €/месяц) или 12 месяцев (59,95 €/месяц), Reha Plus на 18 месяцев (39,95 €/месяц, при наличии врачебного направления) и Youth Abo для подростков 16–19 лет (12 месяцев, 39,95 €/месяц). По летней акции первые 3 месяца — без взносов."
+      },
+      {
+        "q": "Что входит в членский взнос?",
+        "a": "Все фитнес- и оздоровительные занятия, вся тренировочная зона, 250 м² сауны и велнеса, безлимитные напитки, Lounge & Café, а также доступ к обеим локациям — в Линдларе и Майнерцхагене."
+      },
+      {
+        "q": "Что входит в стартовый пакет?",
+        "a": "Членская карта, бутылка для воды, фитнес-ассессмент, анализ тела и твой персональный план тренировок — сейчас за 40 € вместо 79,95 €."
+      },
+      {
+        "q": "Каковы сроки расторжения договора?",
+        "a": "Один месяц до окончания срока договора. После этого договор продлевается с возможностью ежемесячного расторжения."
+      },
+      {
+        "q": "Когда работает сауна?",
+        "a": "Понедельник, вторник и четверг 16:00–21:30, среда 11:00–21:30 (женская сауна), пятница 11:00–21:30, суббота и воскресенье 9:30–18:30."
+      },
+      {
+        "q": "Оплачивает ли больничная касса Rehasport?",
+        "a": "Да — при наличии врачебного направления государственные больничные кассы оплачивают 100 % стоимости. Обычно это 50 занятий в течение 18 месяцев, членство для этого не требуется."
+      },
+      {
+        "q": "С какого возраста можно тренироваться?",
+        "a": "С 16 лет. Для членов от 16 до 18 лет договор должен лично подписать также законный представитель. Для подростков 16–19 лет есть выгодный Youth Abo."
+      },
+      {
+        "q": "Есть ли парковка?",
+        "a": "Да, более 130 бесплатных парковочных мест прямо у клуба в Линдларе. Доступ безбарьерный, есть лифт."
+      },
+      {
+        "q": "Как работает клуб в праздничные дни?",
+        "a": "В праздничные дни действует расписание выходных, занятия не проводятся. 24 и 31 декабря открыто с 9:00 до 15:00, 25 декабря и 1 января — закрыто."
+      }
+    ]
   },
   "contact": {
     "kicker": "Заходи в гости",
-    "heading": "Две локации в регионе Оберберг",
-    "hoursHeading": "Часы работы",
+    "heading": "Две локации, один дворец",
+    "hoursHeading": "Часы работы — Линдлар",
     "hours": [
-      {
-        "days": "Пн и Пт",
-        "time": "08:00 – 22:00"
-      },
-      {
-        "days": "Вт – Чт",
-        "time": "07:00 – 22:00"
-      },
-      {
-        "days": "Сб и Вс",
-        "time": "09:00 – 19:00"
-      }
+      { "days": "Пн и Пт", "time": "08:00 – 22:00" },
+      { "days": "Вт – Чт", "time": "07:00 – 22:00" },
+      { "days": "Сб и Вс", "time": "09:00 – 19:00" }
     ],
+    "saunaHeading": "Сауна и велнес",
+    "saunaHours": [
+      { "days": "Пн, Вт и Чт", "time": "16:00 – 21:30" },
+      { "days": "Ср (женская сауна)", "time": "11:00 – 21:30" },
+      { "days": "Пт", "time": "11:00 – 21:30" },
+      { "days": "Сб и Вс", "time": "09:30 – 18:30" }
+    ],
+    "meinerzhagenHoursHeading": "Часы работы — Майнерцхаген",
+    "meinerzhagenHours": [
+      { "days": "Пн и Пт", "time": "08:00 – 23:00" },
+      { "days": "Вт – Чт", "time": "07:00 – 23:00" },
+      { "days": "Сб и Вс", "time": "09:00 – 19:00" }
+    ],
+    "holidayNote": "Праздничные дни: работаем по расписанию выходных, занятия не проводятся. 24.12 и 31.12: 09:00 – 15:00 · 25.12 и 01.01: закрыто.",
     "phoneLabel": "Позвонить",
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "Физио через WhatsApp",
@@ -210,24 +466,32 @@
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
-        "address": "Линдлар, район Обербергишер Крайс"
+        "address": "Schlosserstraße 33, 51789 Lindlar",
+        "phoneDisplay": "+49 2266 470206"
       },
       "meinerzhagen": {
         "name": "Sportpalast Meinerzhagen",
-        "address": "Майнерцхаген"
+        "address": "Siepener Weg 10, 58540 Meinerzhagen",
+        "phoneDisplay": "+49 2354 12774"
       }
     },
-    "parking": "120+ бесплатных парковочных мест"
+    "parking": "130+ бесплатных парковочных мест · безбарьерный доступ с лифтом"
   },
   "footer": {
     "claim": "Стань лучшей версией себя.",
     "rights": "Все права защищены.",
     "discover": "Открой для себя",
     "membershipCol": "Членство",
+    "moreCol": "Услуги",
     "legalCol": "Правовая информация",
     "kursplan": "Расписание занятий",
     "trial": "Пробная тренировка",
     "about": "О нас",
+    "prices": "Цены",
+    "physio": "Физиотерапия",
+    "reha": "Rehasport",
+    "corporate": "Корпоративный фитнес",
+    "career": "Карьера",
     "imprint": "Выходные данные",
     "privacy": "Конфиденциальность",
     "terms": "Условия",
@@ -237,31 +501,363 @@
     "newTab": "откроется в новой вкладке",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
   },
+  "pagePreise": {
+    "metaTitle": "Цены и членство",
+    "metaDescription": "Все тарифы Sportpalast Lindlar: Club Abo от 49,95 €/месяц, Reha Plus и Youth Abo от 39,95 €. Летняя акция: 3 месяца за 0,00 €.",
+    "hero": {
+      "kicker": "Цены и членство",
+      "heading": "Твой тариф, твой темп",
+      "intro": "Четыре прозрачные модели без скрытых платежей — все занятия, сауна и безлимитные напитки всегда включены. По летней акции первые 3 месяца ты тренируешься за 0,00 €."
+    },
+    "registerHeading": "Как стать членом клуба",
+    "registerSteps": [
+      "Оформи членство онлайн, прямо в клубе или после пробной тренировки — быстро, просто и прозрачно.",
+      "Возьми с собой действующее удостоверение личности с фото. Для подростков от 16 до 18 лет договор лично подписывает также законный представитель.",
+      "При первом визите ты получишь членскую карту и бутылку для воды — и сразу начнёшь тренироваться."
+    ]
+  },
+  "pageKurse": {
+    "metaTitle": "Занятия и расписание",
+    "metaDescription": "Более 30 фитнес-занятий в неделю в Sportpalast Lindlar: Hot Iron, Yoga, Zumba, Jumping Fitness, Rehasport и многое другое — полное недельное расписание со временем.",
+    "hero": {
+      "kicker": "Занятия и расписание",
+      "heading": "Заразительное движение",
+      "intro": "Более 30 занятий в неделю в зале площадью 230 м² со сценой и системой звука и света high-end-класса — от силовых и кардио до йоги, единоборств и Rehasport. Все занятия включены в членский взнос."
+    },
+    "categoriesHeading": "Наши направления"
+  },
+  "pageUeberUns": {
+    "metaTitle": "О нас и команда",
+    "metaDescription": "С 2004 года твой премиальный фитнес-клуб в регионе Оберберг: Sportpalast Lindlar в стеклянном дворце — история, ценности и команда клуба.",
+    "hero": {
+      "kicker": "О нас",
+      "heading": "Твой дворец в твоём городе",
+      "intro": "С 2004 года впечатляющий стеклянный дворец Линдлара олицетворяет фитнес, велнес и здоровье — в окружении природы, с видом на Оберберг."
+    },
+    "story": [
+      "То, что началось в 2004 году, сегодня — заметная величина в регионе Оберберг: более 2000 м² тренировочной площади, свыше 140 ультрасовременных тренажёров от Life Fitness, Hoist, Techno Gym и Matrix, зал для занятий площадью 230 м² со сценой, а также 250 м² сауны и велнеса.",
+      "Наша цель — больше, чем фитнес-оборудование: дружелюбная к семьям и гостеприимная атмосфера, в которой тебе комфортно с первого дня. Каждый член команды разделяет нашу страсть к фитнесу и поддерживает тебя знаниями и мотивацией.",
+      "С клубом-партнёром в Майнерцхагене тебе открыты две локации — одно членство, двойные возможности."
+    ]
+  },
+  "pagePhysio": {
+    "metaTitle": "Физиотерапия",
+    "metaDescription": "Физиотерапия в Sportpalast Lindlar: лечебная гимнастика, мануальный лимфодренаж, массаж, фанго, кинезиотейпирование и многое другое. Принимаются все кассы.",
+    "hero": {
+      "kicker": "Физиотерапия",
+      "heading": "Терапия и тренировки под одной крышей",
+      "intro": "Наша команда опытных терапевтов сочетает пассивные и активные методы лечения — в тесной связке с клубом для устойчивой реабилитации."
+    },
+    "servicesHeading": "Наши процедуры",
+    "services": [
+      "Диагностика и индивидуальное планирование терапии",
+      "Лечебная гимнастика и лечебная гимнастика на тренажёрах",
+      "Классический массаж и мануальный лимфодренаж",
+      "Аппликации фанго / природной лечебной грязи",
+      "Тепло- и криотерапия (Cryojet)",
+      "Кинезиотейпирование",
+      "Терапия на подвесном (слинг-) столе",
+      "TRX / тренировки с подвесными петлями",
+      "Функциональный тренинг",
+      "Спортивная физиотерапия"
+    ],
+    "insuranceNote": "Принимаются все государственные и частные больничные кассы.",
+    "sessionNote": "Сеанс обычно длится от 20 до 30 минут.",
+    "contactHeading": "Записаться на приём",
+    "phoneLabel": "Позвонить в физио",
+    "whatsappLabel": "Запись через WhatsApp",
+    "whatsappText": "Здравствуйте, я хотел(а) бы записаться на приём к физиотерапевту."
+  },
+  "pageReha": {
+    "metaTitle": "Rehasport",
+    "metaDescription": "Rehasport в Sportpalast Lindlar: 100 % оплата государственными больничными кассами, без членства и без листа ожидания — узнай подробности.",
+    "hero": {
+      "kicker": "Rehasport",
+      "heading": "Возвращайся в жизнь сильным",
+      "intro": "Терапевтические групповые тренировки под руководством сертифицированных тренеров — больше силы, мобильности, координации и меньше боли. Для всех возрастов."
+    },
+    "variantsHeading": "Два пути, одна цель",
+    "variants": [
+      {
+        "name": "Rehasport",
+        "text": "Групповые тренировки по врачебному направлению — государственные больничные кассы оплачивают 100 % стоимости. Без членства, без листа ожидания."
+      },
+      {
+        "name": "Rehasport Plus",
+        "text": "Сочетает групповые тренировки с полным доступом в клуб: тренажёры, занятия, сауна, анализ тела и персональный коучинг."
+      }
+    ],
+    "stepsHeading": "Как начать",
+    "steps": [
+      "Твой врач выписывает направление на Rehasport.",
+      "Твоя больничная касса одобряет направление.",
+      "Ты начинаешь сразу — перед первым занятием мы проконсультируем тебя лично."
+    ],
+    "factsHeading": "Полезно знать",
+    "facts": [
+      "Обычно это 50 занятий в течение 18 месяцев — участие 1–2 раза в неделю.",
+      "Время занятий в Линдларе: с понедельника по четверг, утром (10:00 – 11:45) и вечером (19:00 – 19:45).",
+      "Без листов ожидания, членство не требуется."
+    ],
+    "ctaCall": "Узнать подробности"
+  },
+  "pageFirmenfitness": {
+    "metaTitle": "Корпоративный фитнес",
+    "metaDescription": "Корпоративный фитнес в Sportpalast Lindlar и Meinerzhagen: три гибкие модели для здоровых и мотивированных команд — запишись на консультацию.",
+    "hero": {
+      "kicker": "Корпоративный фитнес",
+      "heading": "Здоровые команды достигают большего",
+      "intro": "Здоровые и активные команды более мотивированы, продуктивны и реже болеют. Мы создадим подходящую программу корпоративного фитнеса для твоей компании — в двух локациях."
+    },
+    "modelsHeading": "Три модели",
+    "models": [
+      {
+        "name": "Премиум-членство",
+        "text": "Компания полностью оплачивает премиум-членство — сотрудники получают неограниченный доступ ко всем зонам и занятиям."
+      },
+      {
+        "name": "Субсидия и скидка",
+        "text": "Сотрудники получают привлекательные скидки на ежемесячный взнос, компания может субсидировать индивидуально — чем больше команда, тем больше выгода."
+      },
+      {
+        "name": "Индивидуальное решение",
+        "text": "Программы под заказ, объединяющие элементы обеих моделей — с учётом потребностей твоей компании."
+      }
+    ],
+    "benefitsHeading": "Что выигрывает твоя компания",
+    "benefits": [
+      "Сохранение работоспособности персонала",
+      "Снижение расходов из-за болезней и простоев",
+      "Рост продуктивности и качества",
+      "Укрепление имиджа работодателя",
+      "Обеспечение конкурентоспособности"
+    ],
+    "ctaCall": "Записаться на консультацию"
+  },
+  "pageKarriere": {
+    "metaTitle": "Карьера",
+    "metaDescription": "Работа в Sportpalast Lindlar: профобучение, дуальное обучение, сервис и сопровождение тренировок — отправляй заявку на bewerbung@sportpalast-lindlar.de.",
+    "hero": {
+      "kicker": "Карьера",
+      "heading": "Работай там, где другие тренируются",
+      "intro": "Ты разделяешь нашу страсть к фитнесу и здоровью? Тогда стань частью команды в стеклянном дворце."
+    },
+    "jobsHeading": "Открытые вакансии",
+    "jobs": [
+      {
+        "title": "Профобучение «Менеджер спортивного и фитнес-бизнеса» (IST)",
+        "type": "Профобучение"
+      },
+      {
+        "title": "Дуальное обучение B.A. «Фитнес-наука и фитнес-экономика»",
+        "type": "Дуальное обучение · 36 месяцев"
+      },
+      {
+        "title": "Сотрудник сервиса (м/ж/д)",
+        "type": "Почасовая занятость · гибкий график"
+      },
+      {
+        "title": "Сопровождение тренировок (м/ж/д)",
+        "type": "Minijob · гибкий график"
+      }
+    ],
+    "applyHeading": "Твоя заявка",
+    "applyText": "Отправь свои документы госпоже Vera Dütting — мы будем рады познакомиться.",
+    "applyAddress": "Sportpalast Lindlar · Schlosserstraße 33 · 51789 Lindlar",
+    "applyCta": "Откликнуться"
+  },
+  "subpage": {
+    "backHome": "На главную"
+  },
   "legal": {
     "backHome": "На главную",
     "liveButton": "К полному тексту",
     "note": "Юридически обязывающий текст будет размещён здесь. До этого ты найдёшь его полностью на нашем действующем сайте.",
+    "bindingNote": "Юридически обязательной является исключительно немецкая версия этой страницы.",
     "newTab": "откроется в новой вкладке",
     "docs": {
       "impressum": {
         "title": "Выходные данные",
-        "intro": "Сведения о поставщике услуг согласно § 5 DDG."
+        "intro": "Сведения о поставщике услуг согласно § 5 DDG.",
+        "sections": [
+          {
+            "heading": "Betreiber",
+            "body": [
+              "Sportpalast GmbH & Co. KG",
+              "Siepener Weg 10",
+              "58540 Meinerzhagen"
+            ]
+          },
+          {
+            "heading": "Kontakt",
+            "body": [
+              "Telefon: +49 (0) 2266 470206",
+              "E-Mail: info@sportpalast-lindlar.de"
+            ]
+          },
+          {
+            "heading": "Vertretungsberechtigte Geschäftsführer",
+            "body": ["Uygar Özcelik", "Vera Dütting", "Wolfgang Feykens"]
+          },
+          {
+            "heading": "Registereintrag",
+            "body": [
+              "Registergericht: Amtsgericht Meinerzhagen",
+              "Registernummer: HRB 521",
+              "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 216167832"
+            ]
+          },
+          {
+            "heading": "Verbraucherstreitbeilegung",
+            "body": [
+              "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+              "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+            ]
+          }
+        ]
       },
       "datenschutz": {
         "title": "Политика конфиденциальности",
-        "intro": "Информация об обработке твоих данных согласно ст. 13 GDPR."
+        "intro": "Информация об обработке твоих данных согласно ст. 13 GDPR (DSGVO).",
+        "sections": [
+          {
+            "heading": "Verantwortlicher",
+            "body": [
+              "Sportpalast GmbH & Co. KG, Siepener Weg 10, 58540 Meinerzhagen, Deutschland.",
+              "Telefon: +49 (0) 2354 12774 · E-Mail: info@sportpalast-meinerzhagen.de"
+            ]
+          },
+          {
+            "heading": "Datenschutzbeauftragter",
+            "body": [
+              "bensom GmbH – Michael Lang, Alte Heerstr. 8, 53757 Sankt Augustin.",
+              "Telefon: +49 2241 8797813 · E-Mail: dsb.lang@bensom.gmbh"
+            ]
+          },
+          {
+            "heading": "Zugriffsdaten / Server-Logfiles",
+            "body": [
+              "Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter automatisch Informationen, die dein Browser übermittelt: Browsertyp und -version, Betriebssystem, Referrer-URL, IP-Adresse sowie Uhrzeit der Anfrage.",
+              "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung von Stabilität und Sicherheit des Angebots. Ein Rückschluss auf einzelne Personen findet nicht statt."
+            ]
+          },
+          {
+            "heading": "Cookies und Tracking",
+            "body": [
+              "Diese Website setzt keine Tracking- oder Marketing-Cookies ein. Es wird lediglich eine lokale Einstellung gespeichert, wenn du den Aktions-Hinweis schließt (localStorage, ohne Personenbezug).",
+              "Sollten künftig Analyse- oder Marketing-Dienste zum Einsatz kommen, werden diese erst nach deiner ausdrücklichen Einwilligung geladen (Art. 6 Abs. 1 lit. a DSGVO)."
+            ]
+          },
+          {
+            "heading": "Schriftarten",
+            "body": [
+              "Die verwendeten Schriftarten werden lokal von unserem Server ausgeliefert. Eine Verbindung zu Servern von Google oder anderen Drittanbietern findet beim Laden der Schriften nicht statt."
+            ]
+          },
+          {
+            "heading": "Externe Links und Dienste",
+            "body": [
+              "Diese Website verlinkt auf externe Dienste, z. B. Google Maps (Routenplanung), WhatsApp (Terminvereinbarung Physiotherapie), unser Online-Buchungssystem sowie unsere Social-Media-Profile (Instagram, Facebook, YouTube).",
+              "Beim Aufruf dieser Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Eine Datenübertragung an diese Anbieter findet erst statt, wenn du den Link aktiv anklickst."
+            ]
+          },
+          {
+            "heading": "Kontaktaufnahme",
+            "body": [
+              "Wenn du uns per Telefon, E-Mail oder WhatsApp kontaktierst, verarbeiten wir deine Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen."
+            ]
+          },
+          {
+            "heading": "Deine Rechte",
+            "body": [
+              "Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).",
+              "Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Außerdem steht dir ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu."
+            ]
+          }
+        ]
       },
       "agb": {
         "title": "Условия",
-        "intro": "Общие условия членства и пользования."
+        "intro": "Общие условия членства и пользования.",
+        "sections": []
       },
       "widerruf": {
         "title": "Право на отказ",
-        "intro": "Твоё право на отказ при заключении договора дистанционным способом."
+        "intro": "Твоё право на отказ при заключении договора дистанционным способом.",
+        "sections": []
       },
       "hausordnung": {
         "title": "Правила клуба",
-        "intro": "Правила доброго взаимодействия в Sportpalast."
+        "intro": "Правила доброго взаимодействия в Sportpalast.",
+        "sections": [
+          {
+            "heading": "1. Check-in & Zugang",
+            "body": [
+              "Das Betreten des Fitnessstudios und die Nutzung unserer Geräte und Einrichtungen ist nur nach erfolgreichem Check-in am Empfang möglich. Für die Nutzung der Spinde ist der Mitgliedsausweis erforderlich."
+            ]
+          },
+          {
+            "heading": "2. Getränke",
+            "body": [
+              "Im Studio sind ausschließlich Trinkflaschen als Behälter erlaubt. Eine Getränkeflatrate kann optional hinzugebucht werden."
+            ]
+          },
+          {
+            "heading": "3. Trainingskleidung",
+            "body": [
+              "Erforderlich sind entsprechende Sportkleidung und saubere Sportschuhe. Barfußtraining, Flip-Flops und Sandalen sind aus Sicherheits- und Hygienegründen nicht gestattet.",
+              "Bitte lege beim Training ein Handtuch auf die Geräteflächen."
+            ]
+          },
+          {
+            "heading": "4. Verhalten beim Training",
+            "body": [
+              "Überlasse Geräte anderen Mitgliedern, wenn du sie nicht aktiv nutzt. Lege Gewichte sanft ab, um Lärm zu vermeiden, und räume alle Trainingsmittel nach Gebrauch an ihren Platz zurück. Ausdauergeräte bitte nach der Nutzung desinfizieren."
+            ]
+          },
+          {
+            "heading": "5. Kursbereich",
+            "body": [
+              "Bitte erscheine pünktlich zu den Kursen und räume das Equipment nach Kursende zurück. Außerhalb der Kurszeiten ist das Betreten des Kursraums nicht gestattet. Gläser sind aus Sicherheitsgründen im Kursraum nicht erlaubt."
+            ]
+          },
+          {
+            "heading": "6. Umkleidebereiche",
+            "body": [
+              "Persönliche Gegenstände bitte ausschließlich in den Spinden lagern. Für Verlust oder Beschädigung übernimmt das Studio keine Haftung."
+            ]
+          },
+          {
+            "heading": "7. Sauna & Ruheraum",
+            "body": [
+              "Im Saunabereich gelten gesonderte Saunaregeln. Das Tragen von Kleidungsstücken in der Sauna ist aus hygienischen Gründen strengstens untersagt."
+            ]
+          },
+          {
+            "heading": "8. Nassbereich",
+            "body": [
+              "Im Nassbereich sind Badeschuhe erforderlich. Das Rasieren jeglicher Körperregionen ist nicht gestattet."
+            ]
+          },
+          {
+            "heading": "9. Sauberkeit",
+            "body": [
+              "Bitte hinterlasse alle Bereiche ordentlich, sauber und gepflegt."
+            ]
+          },
+          {
+            "heading": "10. Allgemeines Verhalten",
+            "body": [
+              "Jedes Mitglied hat sich so zu verhalten, dass niemand anderes eingeschränkt oder unangenehm berührt wird. Lautes Stöhnen ist zu vermeiden. Den Anweisungen der Mitarbeitenden ist Folge zu leisten."
+            ]
+          },
+          {
+            "heading": "11. Kinder",
+            "body": [
+              "Das Betreten der Trainingsfläche und die Nutzung der Geräte sind für Kinder aus Sicherheitsgründen nicht gestattet."
+            ]
+          }
+        ]
       }
     }
   }

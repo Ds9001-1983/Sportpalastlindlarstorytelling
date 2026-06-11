@@ -1,19 +1,24 @@
 {
   "meta": {
     "title": "Sportpalast Lindlar — En iyi haline dönüş",
-    "description": "Oberberg bölgesinde premium fitness kulübü: eGym, 30'dan fazla ders, sauna & wellness, fizyoterapi. En iyi halin ol – aylık 39,95 €'dan itibaren."
+    "description": "Oberberg bölgesinde premium fitness kulübü: eGym, haftada 30'dan fazla ders, 250 m² sauna & wellness, fizyoterapi & Rehasport. Hemen deneme antrenmanını ayarla."
   },
   "nav": {
     "offers": "Sunduklarımız",
     "goals": "Hedefler",
+    "courses": "Dersler",
+    "prices": "Fiyatlar",
+    "about": "Hakkımızda",
     "membership": "Üye ol",
     "contact": "İletişim",
     "language": "Dil",
-    "skipToContent": "İçeriğe geç"
+    "skipToContent": "İçeriğe geç",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat"
   },
   "promo": {
     "badge": "3 ay 0,00 €",
-    "text": "Yaz kampanyası – her şey dahil, 2 lokasyon.",
+    "text": "31.08'e kadar yaz kampanyası – her şey dahil, 2 lokasyon.",
     "cta": "Hemen yararlan",
     "dismiss": "Banner'ı kapat"
   },
@@ -41,7 +46,7 @@
       },
       "functional": {
         "beat": "Sınırına git",
-        "subline": "Athletic Box ve Functional antrenmanla gerçek performans."
+        "subline": "Gerçek performans için Athletic Box ve Functional Training."
       },
       "regeneration": {
         "beat": "Huzura kavuş",
@@ -60,31 +65,12 @@
   "stats": {
     "kicker": "Rakamlarla saray",
     "items": [
-      {
-        "to": "2000",
-        "suffix": " m²",
-        "label": "Antrenman alanı"
-      },
-      {
-        "to": "250",
-        "suffix": " m²",
-        "label": "Sauna & wellness"
-      },
-      {
-        "to": "120",
-        "suffix": "+",
-        "label": "Park yeri"
-      },
-      {
-        "to": "30",
-        "suffix": "+",
-        "label": "Ders / hafta"
-      },
-      {
-        "to": "2",
-        "suffix": "",
-        "label": "Lokasyon"
-      }
+      { "to": "2000", "suffix": " m²", "label": "Antrenman alanı" },
+      { "to": "140", "suffix": "+", "label": "Cihaz" },
+      { "to": "30", "suffix": "+", "label": "Ders / hafta" },
+      { "to": "250", "suffix": " m²", "label": "Sauna & wellness" },
+      { "to": "130", "suffix": "+", "label": "Park yeri" },
+      { "to": "2", "suffix": "", "label": "Lokasyon" }
     ]
   },
   "goals": {
@@ -104,20 +90,20 @@
   "offers": {
     "kicker": "Hepsi dahil",
     "heading": "Antrenmanın için bir saray",
-    "subheading": "2.000 m² antrenman alanı, 250 m² wellness ve seni tanıyan bir ekip.",
+    "subheading": "2000 m² antrenman alanı, 140'tan fazla cihaz, 250 m² wellness ve seni tanıyan bir ekip.",
     "newTab": "yeni sekmede açılır",
     "items": {
       "egym": {
         "title": "eGym & güç",
-        "text": "eGym, serbest ağırlık, Plate-Loaded cihazları ve SECA vücut analiziyle akıllı güç antrenmanı."
+        "text": "eGym Fitness Hub, serbest ağırlıklar, Plate-Loaded cihazları ve SECA vücut analiziyle akıllı güç antrenmanı."
       },
       "kurse": {
         "title": "30'dan fazla ders",
-        "text": "Athletic'ten Lady Fitness'a, sırt fitness'ına kadar – her hafta 30'dan fazla ders programda."
+        "text": "Hot Iron'dan Yoga'ya, Jumping Fitness'a kadar – her hafta sahneli 230 m² ders salonunda 30'dan fazla ders."
       },
       "ausdauer": {
         "title": "Kardiyo & Vibrafit",
-        "text": "Modern kardiyo dünyası ve Vibrafit – kondisyon ve metabolizma için tüm vücut titreşim antrenmanı."
+        "text": "Panoramik manzaralı modern kardiyo dünyası ve Vibrafit – kondisyon ve metabolizma için tüm vücut titreşim antrenmanı."
       },
       "functional": {
         "title": "Functional & Athletic Box",
@@ -125,21 +111,126 @@
       },
       "wellness": {
         "title": "Sauna & wellness",
-        "text": "250 m² iç & dış sauna, Lounge & Café – dinlenme ve sınırsız içecek dahil."
+        "text": "250 m² iç & dış sauna, dinlenme odası, Lounge & Café – dinlenme ve sınırsız içecek dahil."
       },
       "lady": {
         "title": "Lady Fitness",
-        "text": "Kadınlara özel, korunaklı bir antrenman alanı – rahat hisset, güçlen."
+        "text": "Kadınlara özel, korunaklı bir antrenman alanı – artı her çarşamba kadınlar saunası günü."
       },
       "personal": {
         "title": "Personal Training",
-        "text": "Kendi koçunla birebir takip – senin planın, senin hedeflerin, maksimum ilerleme."
+        "text": "Kendi koçunla 30 veya 60 dakikalık seanslarda birebir takip – senin planın, senin hedeflerin."
       },
       "physio": {
         "title": "Fizyo & Rehasport",
-        "text": "Kalıcı sağlık için entegre fizyoterapi ve Rehasport (haftada 5 ders)."
+        "text": "Entegre fizyoterapi ve sağlık sigortaları tarafından masrafları %100 karşılanan Rehasport."
       }
     }
+  },
+  "schedule": {
+    "kicker": "Haftalık planın",
+    "heading": "Haftada 30'dan fazla ders",
+    "subheading": "Güç, kardiyo, yoga, dövüş sporu ve Rehasport – sahneli ve üst düzey ses sistemli 230 m² ders salonunda.",
+    "asOf": "Güncellik: Haziran 2026 – değişiklik hakkı saklıdır.",
+    "liveNote": "Günlük güncel ders programını canlı ders programında bulabilirsin.",
+    "livePdfLabel": "Canlı ders programını aç",
+    "planHeading": "Haftalık ders programı",
+    "newTab": "yeni sekmede açılır",
+    "teaser": {
+      "heading": "Bu hafta sarayda",
+      "text": "Sabah Pilates, akşam Hot Iron, cumartesi Yoga – haftada 30'dan fazla ders, hepsi üyelik ücretine dahil.",
+      "cta": "Tüm ders programına git"
+    },
+    "categories": {
+      "strength": {
+        "title": "Güç & dayanıklılık",
+        "courses": ["Body Workout", "Functional Training", "Hot Iron", "Zirkel Training", "Pilates"]
+      },
+      "cardio": {
+        "title": "Kardiyo & yağ yakımı",
+        "courses": ["Step Aerobic", "Dance Aerobic Choreo", "Jumping Fitness", "Zumba", "Fatburner Workout", "Intervall Mix"]
+      },
+      "mind": {
+        "title": "Mind-Body & rahatlama",
+        "courses": ["Yoga", "Ashtanga Yoga", "Yin Yoga", "Energetic Flow Yoga", "Rücken & Relax", "Deepwork"]
+      },
+      "special": {
+        "title": "Özel & rehabilitasyon",
+        "courses": ["Boxen & Kickboxen", "WingTsun", "Rehasport", "Rehasport Soft", "Rückenfit"]
+      }
+    },
+    "days": [
+      {
+        "day": "Pazartesi",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Pilates" },
+          { "time": "10:00 – 11:00", "course": "Zumba" },
+          { "time": "17:00 – 18:00", "course": "Fatburner Workout" },
+          { "time": "18:00 – 19:00", "course": "Hot Iron" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:15", "course": "Ashtanga Yoga" }
+        ]
+      },
+      {
+        "day": "Salı",
+        "slots": [
+          { "time": "09:00 – 10:30", "course": "Yin Yoga" },
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:30 – 11:15", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (Çocuklar)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (Gençler)" },
+          { "time": "17:00 – 18:00", "course": "Zumba" },
+          { "time": "18:00 – 19:00", "course": "Energetic Flow Yoga" },
+          { "time": "19:00 – 20:00", "course": "Functional Training" },
+          { "time": "20:00 – 21:00", "course": "WingTsun (Yetişkinler)" }
+        ]
+      },
+      {
+        "day": "Çarşamba",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Rücken & Relax" },
+          { "time": "10:00 – 10:45", "course": "Rehasport Soft" },
+          { "time": "11:00 – 11:45", "course": "Rehasport" },
+          { "time": "18:00 – 19:00", "course": "Dance Aerobic Choreo" },
+          { "time": "19:00 – 20:00", "course": "Body Workout" },
+          { "time": "20:00 – 21:00", "course": "Jumping Fitness" }
+        ]
+      },
+      {
+        "day": "Perşembe",
+        "slots": [
+          { "time": "09:15 – 10:00", "course": "Zirkel Training" },
+          { "time": "10:15 – 11:00", "course": "Rehasport" },
+          { "time": "15:00 – 16:00", "course": "WingTsun (3–5 yaş)" },
+          { "time": "16:00 – 17:00", "course": "WingTsun (Çocuklar)" },
+          { "time": "17:00 – 18:00", "course": "WingTsun (Gençler)" },
+          { "time": "18:00 – 19:00", "course": "Step Aerobic" },
+          { "time": "19:00 – 19:45", "course": "Rehasport" },
+          { "time": "20:00 – 21:30", "course": "WingTsun (Yetişkinler)" }
+        ]
+      },
+      {
+        "day": "Cuma",
+        "slots": [
+          { "time": "09:00 – 10:00", "course": "Intervall Mix" },
+          { "time": "10:00 – 11:00", "course": "Rückenfit" },
+          { "time": "17:00 – 18:00", "course": "Jumping Fitness" },
+          { "time": "18:00 – 19:00", "course": "Deepwork" }
+        ]
+      },
+      {
+        "day": "Cumartesi",
+        "slots": [
+          { "time": "09:30 – 10:30", "course": "Zumba" },
+          { "time": "10:30 – 11:30", "course": "Hot Iron" },
+          { "time": "11:30 – 12:30", "course": "Yoga" }
+        ]
+      },
+      {
+        "day": "Pazar",
+        "slots": [{ "time": "10:30 – 11:30", "course": "Boxen & Kickboxen" }]
+      }
+    ]
   },
   "proof": {
     "kicker": "Gerçek sesler",
@@ -163,14 +254,104 @@
       }
     ]
   },
+  "pricing": {
+    "kicker": "Net & şeffaf",
+    "heading": "Her hedefe uygun tarifeler",
+    "subheading": "Dört model, bir yaz kampanyası: ilk 3 ay 0,00 € ile antrenman yapıyorsun.",
+    "promoBadge": "Yaz kampanyası: 3 ay 0,00 €",
+    "promoConditions": "31.08.2026'ya kadar geçerli, sadece yeni müşteriler için, diğer kampanyalarla birleştirilemez. Lindlar ve Meinerzhagen'de geçerli.",
+    "perMonth": "/ ay",
+    "afterPromo": "4. aydan itibaren",
+    "termLabel": "Süre",
+    "highlightLabel": "Popüler",
+    "plans": [
+      {
+        "id": "club24",
+        "name": "Club Abo",
+        "term": "24 ay",
+        "price": "49,95 €",
+        "promo": "İlk 3 ay 0,00 €",
+        "note": "",
+        "highlight": true
+      },
+      {
+        "id": "club12",
+        "name": "Club Abo",
+        "term": "12 ay",
+        "price": "59,95 €",
+        "promo": "İlk 3 ay 0,00 €",
+        "note": "",
+        "highlight": false
+      },
+      {
+        "id": "reha18",
+        "name": "Reha Plus",
+        "term": "18 ay",
+        "price": "39,95 €",
+        "promo": "İlk 3 ay 0,00 €",
+        "note": "Doktor tarafından verilen Rehasport reçetesiyle",
+        "highlight": false
+      },
+      {
+        "id": "youth12",
+        "name": "Youth Abo",
+        "term": "12 ay",
+        "price": "39,95 €",
+        "promo": "İlk 3 ay 0,00 €",
+        "note": "16–19 yaş arası gençler için",
+        "highlight": false
+      }
+    ],
+    "includedHeading": "Her tarifeye dahil olanlar",
+    "included": [
+      "Tüm fitness ve sağlık dersleri",
+      "250 m² sauna & wellness",
+      "Sınırsız içecek",
+      "Lounge & Café",
+      "Lindlar ve Meinerzhagen'e erişim"
+    ],
+    "feesHeading": "Tek seferlik & diğer ücretler",
+    "fees": [
+      {
+        "label": "Başlangıç paketi",
+        "value": "79,95 € yerine 40 €",
+        "note": "Üyelik kartı, içecek şişesi, antrenman değerlendirmesi, vücut analizi, antrenman planı"
+      },
+      {
+        "label": "Hizmet ücreti",
+        "value": "Her 6 ayda 15 €",
+        "note": "6. aydan itibaren"
+      },
+      {
+        "label": "Deneme antrenmanı",
+        "value": "10 €",
+        "note": "Üyelik halinde tamamen mahsup edilir"
+      },
+      {
+        "label": "Günlük bilet",
+        "value": "18 €",
+        "note": "Deneme antrenmanı olmadan"
+      }
+    ],
+    "termsHeading": "Sözleşme & fesih",
+    "terms": [
+      "Fesih süresi: sözleşme süresinin bitiminden bir ay önce.",
+      "Süre bitiminde sözleşme, aylık fesih imkanıyla uzar."
+    ],
+    "ctaTrial": "Deneme antrenmanı ayarla",
+    "ctaJoin": "Hemen üye ol",
+    "ctaAll": "Tüm tarifeler & koşullar",
+    "newTab": "yeni sekmede açılır"
+  },
   "membership": {
     "kicker": "Aramıza katıl",
     "heading": "Dönüşümünü başlat",
     "text": "Tüm antrenman türleri, 30'dan fazla ders, sauna, vücut analizi ve iki kulübe de erişim – hepsi dahil.",
     "promoBadge": "3 ay fitness 0,00 €",
-    "priceAfter": "sonrasında",
-    "priceValue": "39,95 €'dan",
+    "priceAfter": "sonrasında Club Abo",
+    "priceValue": "49,95 €'dan",
     "priceSuffix": "/ ay",
+    "priceNote": "Reha Plus ve Youth Abo ayda 39,95 €'dan itibaren.",
     "bulletsHeading": "3 ücretsiz ayında dahil olanlar:",
     "bullets": [
       "Tüm antrenman alanları & 30'dan fazla ders",
@@ -181,27 +362,102 @@
     ],
     "ctaTrial": "Deneme antrenmanı ayarla",
     "ctaCall": "Ara",
-    "promoNote": "Kampanya, mevcudiyete bağlıdır. Koşullar ve süre kulüpte.",
+    "ctaPrices": "Tüm tarifeleri görüntüle",
+    "promoNote": "Yaz kampanyası 31.08.2026'ya kadar, sadece yeni müşteriler için, diğer kampanyalarla birleştirilemez.",
     "newTab": "yeni sekmede açılır"
+  },
+  "team": {
+    "kicker": "2004'ten beri",
+    "heading": "Sarayın arkasındaki insanlar",
+    "intro": "2004'ten beri Oberberg bölgesi, Lindlar'ın cam sarayında antrenman yapıyor. Kulübün arkasında fitness'ı yaşayan bir ekip var – uzmanlık, tutku ve kişisel adanmışlıkla.",
+    "leadershipHeading": "Yönetim",
+    "leadership": [
+      { "name": "Uygar Özcelik", "role": "Genel müdür & ortak" },
+      { "name": "Vera Dütting", "role": "Genel müdür & ortak" },
+      { "name": "Wolfgang Feykens", "role": "Genel müdür & ortak" }
+    ],
+    "membersHeading": "Kulüpteki ekibin",
+    "members": [
+      { "name": "Marie Bork", "role": "Group Fitness sorumlusu" },
+      { "name": "Thomas Bürgerhausen", "role": "Fitness & antrenman sorumlusu" },
+      { "name": "Saskia Klemke", "role": "Fizyoterapist & staj sorumlusu" },
+      { "name": "Katja Lüdenbach", "role": "Group Fitness eğitmeni" }
+    ],
+    "teaser": {
+      "heading": "Seni tanıyan bir ekip",
+      "text": "Yönetim, eğitmenler ve terapistler – 2004'ten beri senin hedefin için çalışıyor.",
+      "cta": "Ekiple tanış"
+    }
+  },
+  "faq": {
+    "kicker": "Bilmen iyi olur",
+    "heading": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Deneme antrenmanı ne kadar?",
+        "a": "Deneme antrenmanı 10 € ve üyelik halinde tamamen mahsup edilir. Deneme antrenmanı olmadan günlük bilet 18 €. Tüm antrenman alanları, dersler, sauna & wellness ile Lounge & Café dahildir."
+      },
+      {
+        "q": "Hangi tarifeler var?",
+        "a": "24 aylık (ayda 49,95 €) veya 12 aylık (ayda 59,95 €) Club Abo, 18 aylık Reha Plus (ayda 39,95 €, doktor reçetesiyle) ve 16–19 yaş arası için Youth Abo (12 ay, ayda 39,95 €). Yaz kampanyasında ilk 3 ay ücretsizdir."
+      },
+      {
+        "q": "Üyelik ücretine neler dahil?",
+        "a": "Tüm fitness ve sağlık dersleri, tüm antrenman alanı, 250 m² sauna & wellness, sınırsız içecek, Lounge & Café ile Lindlar ve Meinerzhagen'deki iki lokasyona erişim."
+      },
+      {
+        "q": "Başlangıç paketinde neler var?",
+        "a": "Üyelik kartı, içecek şişesi, antrenman değerlendirmesi, vücut analizi ve kişisel antrenman planın – şu anda 79,95 € yerine 40 €."
+      },
+      {
+        "q": "Fesih süreleri nasıl?",
+        "a": "Sözleşme süresinin bitiminden bir ay önce. Sonrasında sözleşme, aylık fesih imkanıyla uzar."
+      },
+      {
+        "q": "Sauna ne zaman açık?",
+        "a": "Pazartesi, salı ve perşembe 16:00–21:30, çarşamba 11:00–21:30 (kadınlar saunası), cuma 11:00–21:30, cumartesi ve pazar 9:30–18:30."
+      },
+      {
+        "q": "Sağlık sigortası Rehasport'u karşılıyor mu?",
+        "a": "Evet – doktor reçetesiyle yasal sağlık sigortaları masrafları %100 karşılar. Genellikle 18 ay içinde 50 seans olur, bunun için üyelik gerekmez."
+      },
+      {
+        "q": "Kaç yaşından itibaren antrenman yapabilirim?",
+        "a": "16 yaşından itibaren. 16–18 yaş arası üyelerde bir velinin sözleşmeyi şahsen birlikte imzalaması gerekir. 16–19 yaş arası için uygun fiyatlı Youth Abo var."
+      },
+      {
+        "q": "Park yeri var mı?",
+        "a": "Evet, Lindlar'daki kulübün hemen yanında 130'dan fazla ücretsiz park yeri. Giriş, asansörle engelsiz erişime uygundur."
+      },
+      {
+        "q": "Resmi tatillerde çalışma saatleri nasıl?",
+        "a": "Resmi tatillerde hafta sonu çalışma saatleri geçerlidir, dersler yapılmaz. 24 ve 31 Aralık'ta 9:00–15:00 arası açık, 25 Aralık ve 1 Ocak'ta kapalıdır."
+      }
+    ]
   },
   "contact": {
     "kicker": "Bize uğra",
-    "heading": "Oberberg bölgesinde iki lokasyon",
-    "hoursHeading": "Çalışma saatleri",
+    "heading": "İki lokasyon, tek saray",
+    "hoursHeading": "Lindlar çalışma saatleri",
     "hours": [
-      {
-        "days": "Pzt & Cum",
-        "time": "08:00 – 22:00"
-      },
-      {
-        "days": "Sal – Per",
-        "time": "07:00 – 22:00"
-      },
-      {
-        "days": "Cmt & Paz",
-        "time": "09:00 – 19:00"
-      }
+      { "days": "Pzt & Cum", "time": "08:00 – 22:00" },
+      { "days": "Sal – Per", "time": "07:00 – 22:00" },
+      { "days": "Cmt & Paz", "time": "09:00 – 19:00" }
     ],
+    "saunaHeading": "Sauna & wellness",
+    "saunaHours": [
+      { "days": "Pzt, Sal & Per", "time": "16:00 – 21:30" },
+      { "days": "Çar (kadınlar saunası)", "time": "11:00 – 21:30" },
+      { "days": "Cum", "time": "11:00 – 21:30" },
+      { "days": "Cmt & Paz", "time": "09:30 – 18:30" }
+    ],
+    "meinerzhagenHoursHeading": "Meinerzhagen çalışma saatleri",
+    "meinerzhagenHours": [
+      { "days": "Pzt & Cum", "time": "08:00 – 23:00" },
+      { "days": "Sal – Per", "time": "07:00 – 23:00" },
+      { "days": "Cmt & Paz", "time": "09:00 – 19:00" }
+    ],
+    "holidayNote": "Resmi tatiller: hafta sonu gibi açık, dersler yapılmaz. 24.12. & 31.12.: 09:00 – 15:00 · 25.12. & 01.01.: kapalı.",
     "phoneLabel": "Ara",
     "phoneDisplay": "+49 2266 470206",
     "whatsappLabel": "WhatsApp ile fizyo",
@@ -210,24 +466,32 @@
     "locations": {
       "lindlar": {
         "name": "Sportpalast Lindlar",
-        "address": "Lindlar, Oberberg bölgesi"
+        "address": "Schlosserstraße 33, 51789 Lindlar",
+        "phoneDisplay": "+49 2266 470206"
       },
       "meinerzhagen": {
         "name": "Sportpalast Meinerzhagen",
-        "address": "Meinerzhagen"
+        "address": "Siepener Weg 10, 58540 Meinerzhagen",
+        "phoneDisplay": "+49 2354 12774"
       }
     },
-    "parking": "120+ ücretsiz park yeri"
+    "parking": "130+ ücretsiz park yeri · asansörle engelsiz erişim"
   },
   "footer": {
     "claim": "En iyi halin ol.",
     "rights": "Tüm hakları saklıdır.",
     "discover": "Keşfet",
     "membershipCol": "Üyelik",
+    "moreCol": "Hizmetler",
     "legalCol": "Hukuki",
     "kursplan": "Ders programı",
     "trial": "Deneme antrenmanı",
     "about": "Hakkımızda",
+    "prices": "Fiyatlar",
+    "physio": "Fizyoterapi",
+    "reha": "Rehasport",
+    "corporate": "Şirket fitness'ı",
+    "career": "Kariyer",
     "imprint": "Künye",
     "privacy": "Gizlilik",
     "terms": "Genel şartlar",
@@ -237,31 +501,363 @@
     "newTab": "yeni sekmede açılır",
     "madeWith": "Made with ❤️ by SUPERBRAND.marketing – Dein Superheld für deine Werbung."
   },
+  "pagePreise": {
+    "metaTitle": "Fiyatlar & üyelik",
+    "metaDescription": "Sportpalast Lindlar'ın tüm tarifeleri: Club Abo ayda 49,95 €'dan, Reha Plus ve Youth Abo 39,95 €'dan. Yaz kampanyası: 3 ay 0,00 €.",
+    "hero": {
+      "kicker": "Fiyatlar & üyelik",
+      "heading": "Senin tarifen, senin temponda",
+      "intro": "Gizli ücret olmadan dört şeffaf model – tüm dersler, sauna ve sınırsız içecek her zaman dahil. Yaz kampanyasıyla ilk 3 ay 0,00 € ile antrenman yapıyorsun."
+    },
+    "registerHeading": "Üye olmak bu kadar kolay",
+    "registerSteps": [
+      "Online, doğrudan kulüpte veya deneme antrenmanından sonra kayıt ol – hızlı, kolay ve şeffaf.",
+      "Geçerli bir fotoğraflı kimlik getir. 16–18 yaş arasında bir veli şahsen birlikte imzalar.",
+      "İlk ziyaretinde üyelik kartını ve içecek şişeni alırsın – ve hemen antrenmanına başlarsın."
+    ]
+  },
+  "pageKurse": {
+    "metaTitle": "Dersler & ders programı",
+    "metaDescription": "Sportpalast Lindlar'da haftada 30'dan fazla fitness dersi: Hot Iron, Yoga, Zumba, Jumping Fitness, Rehasport ve daha fazlası – saatleriyle tam haftalık ders programı.",
+    "hero": {
+      "kicker": "Dersler & ders programı",
+      "heading": "Bulaşıcı bir hareket",
+      "intro": "Sahneli, üst düzey ses ve ışık sistemli 230 m² ders salonunda haftada 30'dan fazla ders – güç ve kardiyodan yogaya, dövüş sporuna ve Rehasport'a kadar. Tüm dersler üyelik ücretine dahildir."
+    },
+    "categoriesHeading": "Ders dünyalarımız"
+  },
+  "pageUeberUns": {
+    "metaTitle": "Hakkımızda & ekip",
+    "metaDescription": "2004'ten beri Oberberg bölgesindeki premium fitness kulübün: cam saraydaki Sportpalast Lindlar – tarihçe, değerler ve kulübün arkasındaki ekip.",
+    "hero": {
+      "kicker": "Hakkımızda",
+      "heading": "Senin yerindeki sarayın",
+      "intro": "2004'ten beri Lindlar'ın etkileyici cam sarayı fitness, wellness ve sağlığın adresi – doğayla çevrili, Oberberg manzaralı."
+    },
+    "story": [
+      "2004'te başlayan, bugün Oberberg bölgesinin vazgeçilmezi: 2000 m²'den fazla antrenman alanı, Life Fitness, Hoist, Techno Gym ve Matrix'ten 140'tan fazla son model cihaz, sahneli 230 m² ders salonu ve 250 m² sauna & wellness.",
+      "Hedefimiz fitness ekipmanından fazlası: ilk günden kendini iyi hissedeceğin, aile dostu ve davetkar bir ortam. Ekibin her üyesi fitness tutkumuzu paylaşıyor ve seni uzmanlık ve motivasyonla destekliyor.",
+      "Meinerzhagen'deki kardeş kulüple birlikte iki lokasyon hizmetinde – tek üyelik, çift imkan."
+    ]
+  },
+  "pagePhysio": {
+    "metaTitle": "Fizyoterapi",
+    "metaDescription": "Sportpalast Lindlar'da fizyoterapi: tedavi jimnastiği, manuel lenf drenajı, masaj, fango, kinesiotape ve daha fazlası. Tüm sağlık sigortaları için onaylı.",
+    "hero": {
+      "kicker": "Fizyoterapi",
+      "heading": "Terapi & antrenman tek çatı altında",
+      "intro": "Deneyimli terapistlerden oluşan ekibimiz pasif ve aktif tedavi yöntemlerini birleştiriyor – kalıcı bir rehabilitasyon için kulüple sıkı bir şekilde entegre."
+    },
+    "servicesHeading": "Tedavilerimiz",
+    "services": [
+      "Değerlendirme & bireysel terapi planlaması",
+      "Tedavi jimnastiği & cihaz destekli tedavi jimnastiği",
+      "Klasik masaj & manuel lenf drenajı",
+      "Fango / doğal turba uygulamaları",
+      "Sıcak ve soğuk terapisi (Cryojet)",
+      "Kinesiotape uygulamaları",
+      "Askı masası terapisi",
+      "TRX / askı antrenmanı",
+      "Fonksiyonel antrenman",
+      "Spor fizyoterapisi"
+    ],
+    "insuranceNote": "Tüm yasal ve özel sağlık sigortaları için onaylı.",
+    "sessionNote": "Bir tedavi genellikle 20 ila 30 dakika sürer.",
+    "contactHeading": "Randevu al",
+    "phoneLabel": "Fizyoyu ara",
+    "whatsappLabel": "WhatsApp ile randevu",
+    "whatsappText": "Merhaba, bir fizyoterapi randevusu almak istiyorum."
+  },
+  "pageReha": {
+    "metaTitle": "Rehasport",
+    "metaDescription": "Sportpalast Lindlar'da Rehasport: yasal sağlık sigortaları tarafından %100 masraf karşılama, üyeliksiz, bekleme listesiz – hemen bilgi al.",
+    "hero": {
+      "kicker": "Rehasport",
+      "heading": "Hayata güçlü dönüş",
+      "intro": "Sertifikalı eğitmenler yönetiminde terapötik grup antrenmanı – daha fazla güç, hareketlilik, koordinasyon ve daha az ağrı için. Her yaş grubuna uygun."
+    },
+    "variantsHeading": "İki yol, tek hedef",
+    "variants": [
+      {
+        "name": "Rehasport",
+        "text": "Doktor reçetesiyle grup antrenmanı – masrafları yasal sağlık sigortaları %100 karşılar. Üyeliksiz, bekleme listesiz."
+      },
+      {
+        "name": "Rehasport Plus",
+        "text": "Grup antrenmanını tam kulüp erişimiyle birleştirir: cihaz antrenmanı, dersler, sauna, vücut analizi ve kişisel koçluk."
+      }
+    ],
+    "stepsHeading": "Böyle başlarsın",
+    "steps": [
+      "Doktorun Rehasport reçetesini düzenler.",
+      "Sağlık sigortan reçeteyi onaylar.",
+      "Hemen başlarsın – ilk seanstan önce sana kişisel danışmanlık veririz."
+    ],
+    "factsHeading": "Bilmen iyi olur",
+    "facts": [
+      "Genellikle 18 ay içinde 50 seans olur – katılım haftada 1–2 kez.",
+      "Lindlar'daki ders saatleri: pazartesiden perşembeye, sabahları (10:00 – 11:45) ve akşamları (19:00 – 19:45).",
+      "Bekleme listesi yok, üyelik gerekmez."
+    ],
+    "ctaCall": "Hemen bilgi al"
+  },
+  "pageFirmenfitness": {
+    "metaTitle": "Şirket fitness'ı",
+    "metaDescription": "Sportpalast Lindlar & Meinerzhagen'de şirket fitness'ı: sağlıklı, motive ekipler için üç esnek model – hemen danışmanlık randevusu al.",
+    "hero": {
+      "kicker": "Şirket fitness'ı",
+      "heading": "Sağlıklı ekipler daha fazlasını başarır",
+      "intro": "Sağlıklı ve aktif ekipler daha motive, daha üretken ve daha az hastalanır. Şirketin için uygun şirket fitness programını oluşturuyoruz – iki lokasyonda."
+    },
+    "modelsHeading": "Üç model",
+    "models": [
+      {
+        "name": "Premium üyelik",
+        "text": "Şirket, premium üyeliği tamamen üstlenir – çalışanlar tüm alanlara ve derslere sınırsız erişim kazanır."
+      },
+      {
+        "name": "Katkı & indirim",
+        "text": "Çalışanlar aylık ücrette cazip indirimler alır, şirket bireysel olarak katkıda bulunabilir – ekip ne kadar büyükse avantaj o kadar büyük."
+      },
+      {
+        "name": "Bireysel çözüm",
+        "text": "Her iki modelin unsurlarını birleştiren, şirketinin ihtiyaçlarına göre uyarlanmış özel programlar."
+      }
+    ],
+    "benefitsHeading": "Şirketinin kazanımları",
+    "benefits": [
+      "Çalışanların performansını korumak",
+      "Hastalık ve devamsızlık maliyetlerini düşürmek",
+      "Üretkenliği ve kaliteyi artırmak",
+      "İşveren imajını güçlendirmek",
+      "Rekabet gücünü güvence altına almak"
+    ],
+    "ctaCall": "Danışmanlık randevusu al"
+  },
+  "pageKarriere": {
+    "metaTitle": "Kariyer",
+    "metaDescription": "Sportpalast Lindlar'da iş imkanları: meslek eğitimi, ikili üniversite programı, servis görevlisi ve antrenman danışmanlığı – hemen bewerbung@sportpalast-lindlar.de adresine başvur.",
+    "hero": {
+      "kicker": "Kariyer",
+      "heading": "Başkalarının antrenman yaptığı yerde çalış",
+      "intro": "Fitness ve sağlık tutkumuzu paylaşıyor musun? O zaman cam saraydaki ekibin bir parçası ol."
+    },
+    "jobsHeading": "Açık pozisyonlar",
+    "jobs": [
+      {
+        "title": "Ausbildung Sport- und Fitnessbetriebswirt/in (IST)",
+        "type": "Meslek eğitimi"
+      },
+      {
+        "title": "Duales Studium B.A. Fitnesswissenschaft & Fitnessökonomie",
+        "type": "İkili üniversite programı · 36 ay"
+      },
+      {
+        "title": "Servicekraft (m/w/d)",
+        "type": "Saatlik · esnek çalışma saatleri"
+      },
+      {
+        "title": "Trainingsbetreuung (m/w/d)",
+        "type": "Minijob · esnek çalışma saatleri"
+      }
+    ],
+    "applyHeading": "Başvurun",
+    "applyText": "Belgelerini Bayan Vera Dütting'e gönder – seni bekliyoruz.",
+    "applyAddress": "Sportpalast Lindlar · Schlosserstraße 33 · 51789 Lindlar",
+    "applyCta": "Hemen başvur"
+  },
+  "subpage": {
+    "backHome": "Ana sayfaya dön"
+  },
   "legal": {
     "backHome": "Ana sayfaya dön",
     "liveButton": "Tam metne git",
     "note": "Hukuken bağlayıcı metin buraya eklenecektir. O zamana kadar metnin tamamını mevcut web sitemizde bulabilirsin.",
+    "bindingNote": "Hukuken bağlayıcı olan, bu sayfanın yalnızca Almanca sürümüdür.",
     "newTab": "yeni sekmede açılır",
     "docs": {
       "impressum": {
         "title": "Künye",
-        "intro": "§ 5 DDG uyarınca sağlayıcı bilgileri."
+        "intro": "§ 5 DDG uyarınca sağlayıcı bilgileri.",
+        "sections": [
+          {
+            "heading": "Betreiber",
+            "body": [
+              "Sportpalast GmbH & Co. KG",
+              "Siepener Weg 10",
+              "58540 Meinerzhagen"
+            ]
+          },
+          {
+            "heading": "Kontakt",
+            "body": [
+              "Telefon: +49 (0) 2266 470206",
+              "E-Mail: info@sportpalast-lindlar.de"
+            ]
+          },
+          {
+            "heading": "Vertretungsberechtigte Geschäftsführer",
+            "body": ["Uygar Özcelik", "Vera Dütting", "Wolfgang Feykens"]
+          },
+          {
+            "heading": "Registereintrag",
+            "body": [
+              "Registergericht: Amtsgericht Meinerzhagen",
+              "Registernummer: HRB 521",
+              "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE 216167832"
+            ]
+          },
+          {
+            "heading": "Verbraucherstreitbeilegung",
+            "body": [
+              "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+              "Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+            ]
+          }
+        ]
       },
       "datenschutz": {
         "title": "Gizlilik",
-        "intro": "GDPR Madde 13 uyarınca verilerinin işlenmesine ilişkin bilgiler."
+        "intro": "GDPR Madde 13 uyarınca verilerinin işlenmesine ilişkin bilgiler.",
+        "sections": [
+          {
+            "heading": "Verantwortlicher",
+            "body": [
+              "Sportpalast GmbH & Co. KG, Siepener Weg 10, 58540 Meinerzhagen, Deutschland.",
+              "Telefon: +49 (0) 2354 12774 · E-Mail: info@sportpalast-meinerzhagen.de"
+            ]
+          },
+          {
+            "heading": "Datenschutzbeauftragter",
+            "body": [
+              "bensom GmbH – Michael Lang, Alte Heerstr. 8, 53757 Sankt Augustin.",
+              "Telefon: +49 2241 8797813 · E-Mail: dsb.lang@bensom.gmbh"
+            ]
+          },
+          {
+            "heading": "Zugriffsdaten / Server-Logfiles",
+            "body": [
+              "Beim Aufruf dieser Website verarbeitet der Hosting-Anbieter automatisch Informationen, die dein Browser übermittelt: Browsertyp und -version, Betriebssystem, Referrer-URL, IP-Adresse sowie Uhrzeit der Anfrage.",
+              "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO zur Sicherstellung von Stabilität und Sicherheit des Angebots. Ein Rückschluss auf einzelne Personen findet nicht statt."
+            ]
+          },
+          {
+            "heading": "Cookies und Tracking",
+            "body": [
+              "Diese Website setzt keine Tracking- oder Marketing-Cookies ein. Es wird lediglich eine lokale Einstellung gespeichert, wenn du den Aktions-Hinweis schließt (localStorage, ohne Personenbezug).",
+              "Sollten künftig Analyse- oder Marketing-Dienste zum Einsatz kommen, werden diese erst nach deiner ausdrücklichen Einwilligung geladen (Art. 6 Abs. 1 lit. a DSGVO)."
+            ]
+          },
+          {
+            "heading": "Schriftarten",
+            "body": [
+              "Die verwendeten Schriftarten werden lokal von unserem Server ausgeliefert. Eine Verbindung zu Servern von Google oder anderen Drittanbietern findet beim Laden der Schriften nicht statt."
+            ]
+          },
+          {
+            "heading": "Externe Links und Dienste",
+            "body": [
+              "Diese Website verlinkt auf externe Dienste, z. B. Google Maps (Routenplanung), WhatsApp (Terminvereinbarung Physiotherapie), unser Online-Buchungssystem sowie unsere Social-Media-Profile (Instagram, Facebook, YouTube).",
+              "Beim Aufruf dieser Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Eine Datenübertragung an diese Anbieter findet erst statt, wenn du den Link aktiv anklickst."
+            ]
+          },
+          {
+            "heading": "Kontaktaufnahme",
+            "body": [
+              "Wenn du uns per Telefon, E-Mail oder WhatsApp kontaktierst, verarbeiten wir deine Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen."
+            ]
+          },
+          {
+            "heading": "Deine Rechte",
+            "body": [
+              "Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO).",
+              "Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Außerdem steht dir ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu."
+            ]
+          }
+        ]
       },
       "agb": {
         "title": "Genel şartlar",
-        "intro": "Üyelik ve kullanım için genel iş koşulları."
+        "intro": "Üyelik ve kullanım için genel iş koşulları.",
+        "sections": []
       },
       "widerruf": {
         "title": "Cayma hakkı bildirimi",
-        "intro": "Mesafeli sözleşmede sözleşme kuruluşundaki cayma hakkın."
+        "intro": "Mesafeli sözleşmede sözleşme kuruluşundaki cayma hakkın.",
+        "sections": []
       },
       "hausordnung": {
         "title": "İç tüzük",
-        "intro": "Sportpalast'ta iyi bir birliktelik için kurallar."
+        "intro": "Sportpalast'ta iyi bir birliktelik için kurallar.",
+        "sections": [
+          {
+            "heading": "1. Check-in & Zugang",
+            "body": [
+              "Das Betreten des Fitnessstudios und die Nutzung unserer Geräte und Einrichtungen ist nur nach erfolgreichem Check-in am Empfang möglich. Für die Nutzung der Spinde ist der Mitgliedsausweis erforderlich."
+            ]
+          },
+          {
+            "heading": "2. Getränke",
+            "body": [
+              "Im Studio sind ausschließlich Trinkflaschen als Behälter erlaubt. Eine Getränkeflatrate kann optional hinzugebucht werden."
+            ]
+          },
+          {
+            "heading": "3. Trainingskleidung",
+            "body": [
+              "Erforderlich sind entsprechende Sportkleidung und saubere Sportschuhe. Barfußtraining, Flip-Flops und Sandalen sind aus Sicherheits- und Hygienegründen nicht gestattet.",
+              "Bitte lege beim Training ein Handtuch auf die Geräteflächen."
+            ]
+          },
+          {
+            "heading": "4. Verhalten beim Training",
+            "body": [
+              "Überlasse Geräte anderen Mitgliedern, wenn du sie nicht aktiv nutzt. Lege Gewichte sanft ab, um Lärm zu vermeiden, und räume alle Trainingsmittel nach Gebrauch an ihren Platz zurück. Ausdauergeräte bitte nach der Nutzung desinfizieren."
+            ]
+          },
+          {
+            "heading": "5. Kursbereich",
+            "body": [
+              "Bitte erscheine pünktlich zu den Kursen und räume das Equipment nach Kursende zurück. Außerhalb der Kurszeiten ist das Betreten des Kursraums nicht gestattet. Gläser sind aus Sicherheitsgründen im Kursraum nicht erlaubt."
+            ]
+          },
+          {
+            "heading": "6. Umkleidebereiche",
+            "body": [
+              "Persönliche Gegenstände bitte ausschließlich in den Spinden lagern. Für Verlust oder Beschädigung übernimmt das Studio keine Haftung."
+            ]
+          },
+          {
+            "heading": "7. Sauna & Ruheraum",
+            "body": [
+              "Im Saunabereich gelten gesonderte Saunaregeln. Das Tragen von Kleidungsstücken in der Sauna ist aus hygienischen Gründen strengstens untersagt."
+            ]
+          },
+          {
+            "heading": "8. Nassbereich",
+            "body": [
+              "Im Nassbereich sind Badeschuhe erforderlich. Das Rasieren jeglicher Körperregionen ist nicht gestattet."
+            ]
+          },
+          {
+            "heading": "9. Sauberkeit",
+            "body": [
+              "Bitte hinterlasse alle Bereiche ordentlich, sauber und gepflegt."
+            ]
+          },
+          {
+            "heading": "10. Allgemeines Verhalten",
+            "body": [
+              "Jedes Mitglied hat sich so zu verhalten, dass niemand anderes eingeschränkt oder unangenehm berührt wird. Lautes Stöhnen ist zu vermeiden. Den Anweisungen der Mitarbeitenden ist Folge zu leisten."
+            ]
+          },
+          {
+            "heading": "11. Kinder",
+            "body": [
+              "Das Betreten der Trainingsfläche und die Nutzung der Geräte sind für Kinder aus Sicherheitsgründen nicht gestattet."
+            ]
+          }
+        ]
       }
     }
   }

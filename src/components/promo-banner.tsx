@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { X } from 'lucide-react';
 
@@ -22,7 +22,9 @@ export function PromoBanner() {
     setVisible(true);
   }, []);
 
-  useEffect(() => {
+  // useLayoutEffect: --promo-h muss synchron vor dem Paint stehen, sonst liegt
+  // der Header für einen Frame hinter dem Banner (bzw. rückt beim Dismiss spät hoch).
+  useLayoutEffect(() => {
     const root = document.documentElement;
     if (!visible) {
       root.style.setProperty('--promo-h', '0px');
