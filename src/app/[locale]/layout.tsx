@@ -57,7 +57,11 @@ export async function generateMetadata({
       title: t('title'),
       description: t('description'),
     },
-    robots: { index: true, follow: true },
+    // Entwurf: ohne NEXT_PUBLIC_ALLOW_INDEXING=true noindex (passend zum X-Robots-Tag aus next.config.ts).
+    robots:
+      process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true'
+        ? { index: true, follow: true }
+        : { index: false, follow: false },
   };
 }
 
